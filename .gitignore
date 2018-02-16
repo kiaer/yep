@@ -2,3 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+
+*.tex
+*.log
+*.pdf
+*.toc
+*.synctex.gz
+*.sty
+*.DS_Store
+.SPR.txt.kate-swp
+*.aux
