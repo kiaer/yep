@@ -1,1 +1,9 @@
 \section{Background}
+
+\subsection{Species information}
+\subsection{Study sites}
+\subsection{Data used in article}
+\subsubsection{Demographic data}
+\subsubsection{Environmental data}
+
+
