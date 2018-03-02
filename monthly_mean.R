@@ -3,8 +3,6 @@ library('raster')
 fname <- "HadISST_sst.nc"
 HadISST.b <- brick(fname)
 
-points(lon.pts,lat.pts,pch=4,col="red")
-
 nms <- expand.grid(paste0('X',1954:2014),c("01","02","03","04","05"
                                            ,"06","07","08","09","10","11","12"),'16')
 nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
@@ -46,7 +44,6 @@ sum = 0
 
 for (i in 1:12){
   for (j in 1:years){
-    test = test + 2
     pos = i + ((j - 1) * 12)
     sum = sum + head(ann.extract[pos])
   }
