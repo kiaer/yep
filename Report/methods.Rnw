@@ -1,2 +1,10 @@
 \section{Methods}
-hejhej
+
+\subsection{Methods from project description}
+Reproduce the results obtained in Mattern et. al [2017]
+
+Carry out a statistical analysis to determine whether the SST data from Mattern et al. [2017] is representative as a proxy or not, when compared to satellite data.
+
+Use climate data from satellites to determine if other physical or biological  aspects can be associated with the population variation.
+
+
