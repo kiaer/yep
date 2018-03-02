@@ -76,9 +76,9 @@ Manja Marie \textsc{Kudahl}: s134752
 \newpage
 <<Introduction, child='introduction.Rnw'>>=
 @
-<<Introduction, child='methods.Rnw'>>=
-@
 <<Background, child='Background.Rnw'>>=
+@
+<<Methods, child='methods.Rnw'>>=
 @
 <<Results, child='results.Rnw'>>=
 @
