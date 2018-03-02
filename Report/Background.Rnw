@@ -1,9 +1,15 @@
 \section{Background}
 
 \subsection{Species information}
+Something about total number of breeding pairs and IUCN list. 
+
+The population of the Yellow-eyed penguins is colonised in three different locations: the Auckland Islands, along New Zealand's south-eastern coastlines and Steward Island. The population of the Yellow-eyed penguins is colonised in three different locations: the Auckland Islands, along New Zealand's south-eastern coastlines and Steward Island. On the mainland the biggest colony of YEP is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011. 
+
 \subsection{Study sites}
+
 \subsection{Data used in article}
 \subsubsection{Demographic data}
+
 \subsubsection{Environmental data}
 
 
