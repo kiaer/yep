@@ -3,20 +3,6 @@ library('raster')
 fname <- "~/yep/HadISST_sst.nc"
 HadISST.b <- brick(fname)
 
-r <- HadISST.b[[1776]]
-r[r < -300] <- NA
-
-test <- HadISST.b[["X1961.02.16"]]
-HadISST.b$
-
-plot(r)
-ROI <- extent(165,175,-48,-44)
-ROI
-r.crop <- crop(r,ROI)
-plot(r.crop)
-
-lon.pts <- seq(169,170, by=1)
-lat.pts <- rep(-47,length(lon.pts))
 points(lon.pts,lat.pts,pch=4,col="red")
 
 nms <- expand.grid(paste0('X',1954:2014),c("01","02","03","04","05"
