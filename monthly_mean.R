@@ -1,6 +1,6 @@
 library('raster')
 
-fname <- "~/yep/HadISST_sst.nc"
+fname <- "HadISST_sst.nc"
 HadISST.b <- brick(fname)
 
 points(lon.pts,lat.pts,pch=4,col="red")
