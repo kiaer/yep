@@ -78,6 +78,8 @@ Manja Marie \textsc{Kudahl}: s134752
 @
 <<Introduction, child='methods.Rnw'>>=
 @
+<<Background, child='Background.Rnw'>>=
+@
 <<Results, child='results.Rnw'>>=
 @
 <<Discussion, child='discussion.Rnw'>>=
