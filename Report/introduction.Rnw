@@ -5,6 +5,9 @@ The yellow-eyed Penguin is a penguin found only in certain areas of New Zealand.
 
 \subsection{Learning objectives}
 Upon completion, the students will be able to:
-Demonstrate a basic understanding of how physics affects biology.
-Extract and assess satellite data in order to address questions of climate change and its impacts on biological organisms.
-Gain the ability to reproduce results and critically assess scientific literature
+\begin{itemize} 
+\item	Demonstrate a basic understanding of how physics affects biology.
+\item	Extract and assess satellite data in order to address questions of climate change and its impacts on biological organisms.
+\item	Gain the ability to reproduce results and critically assess scientific literature
+\end{itemize}
+
