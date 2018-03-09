@@ -12,7 +12,7 @@ The population of the Yellow-eyed penguins is colonised in three different locat
 \subsubsection{Demographic data}
 
 \subsubsection{Environmental data}
-The environmental data used in XX et al. [XXXX] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
+The environmental data used in Mattern et. al [2017] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
 
 -	Total rainfall
 -	Wet days
@@ -22,7 +22,8 @@ The environmental data used in XX et al. [XXXX] are monthly averages for selecte
 -	Days of wind gusts >= 33 Knots
 -	Sea surface temperature anomaly (Portobello Marine Lab)
 
-Data for the top 6 variables are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. 
+Data for the top 6 variables are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
+
 
 
 
