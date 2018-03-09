@@ -10,7 +10,11 @@ The population of the Yellow-eyed penguins is colonised in three different locat
 \subsection{Data used in article}
 
 \subsubsection{Demographic data}
-The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula.\ \textcolor{red}{Her kan vi putte et billede in, som viser omraadet}.\ From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
+The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula, because the data from here is the most recent and has been monitered for the longest period. 
+
+\textcolor{red}{Her kan vi putte et billede in, som viser omraadet}. 
+
+From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
 
 
 \subsubsection{Environmental data}
