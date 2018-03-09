@@ -23,6 +23,8 @@
 \linespread{1.3}
 \usepackage{datenumber}
 \usepackage{color}
+\usepackage{natbib}
+
 
 
 
@@ -92,6 +94,11 @@ Thanks
 @
 <<Conclusion, child='conclusion.Rnw'>>=
 @
+\newpage
+\nocite{mattern}
+\nocite{gartrell}
+\bibliographystyle{agsm}
+\bibliography{references}
 \newpage
 \section{Appendix}
 \end{document}

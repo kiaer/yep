@@ -13,5 +13,7 @@
 .SPR.txt.kate-swp
 *.aux
 *.nc
+*.nc.gz
+*.bbl
 
 Litterature/
