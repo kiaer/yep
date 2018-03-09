@@ -23,7 +23,7 @@ anomaly <- function(monthly.mean, yearly.mean, mj.mean, year, ROI, HadISST.b, la
   
   ann.extract <- extract(r.crop,extract.pts,method="bilinear")
   
-  yearly.ano <- mean(ann.extract)
+  yearly.ano <- mean(ann.extract) - yearly.mean
   
   monthly.ano <- lapply(1:12, function(x) ann.extract[x] - monthly.mean[[x]])
   
