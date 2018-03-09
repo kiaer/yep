@@ -8,6 +8,8 @@ The population of the Yellow-eyed penguins is colonised in three different locat
 \subsection{Geography}
 Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Habour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean.
 
+\textcolor{red}{Map of area}. 
+
 \subsubsection{Currents along the east coast of South New Zealand}
 
 
@@ -16,20 +18,22 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 
 The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula, because the data from here is the most recent and has been monitered for the longest period. 
 
-\textcolor{red}{Her kan vi putte et billede in, som viser omraadet}. 
+\textcolor{red}{Reference til område}. 
 
 From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
 
 \subsubsection{Environmental data}
 The environmental data used in Mattern et. al [2017] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
 
--	Total rainfall
--	Wet days
--	Maximum 1 day rainfall
--	Mean air temperature
--	Mean daily minimum temperature
--	Days of wind gusts >= 33 Knots
--	Sea surface temperature anomaly (Portobello Marine Lab)
+\begin{itemize} 
+\item	Total rainfall
+\item	Wet days
+\item	Maximum 1 day rainfall
+\item	Mean air temperature
+\item	Mean daily minimum temperature
+\item	Days of wind gusts above or equal to 33 Knots
+\item	Sea surface temperature anomaly (Portobello Marine Lab)
+\end{itemize}
 
 Data for the top 6 variables are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
 
