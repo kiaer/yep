@@ -23,7 +23,7 @@ The data used in the article comes from The Yellow-eyed penguin database (YEPDB)
 From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
 
 \subsubsection{Environmental data}
-The environmental data used in Mattern et. al [2017] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
+The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
 
 \begin{itemize} 
 \item	Total rainfall
@@ -43,13 +43,13 @@ Hvordan er de linket i artiklen?
 \subsection{Hypotheses}
 The analytical/statistical work of this project is based on two hypotheses. The two hypotheses are covering the two main assumptions:
 \begin{itemize} 
-\item	The SST used in Mattern et al. are not representative for SST outside Otago Habour
+\item	The SST used in  \cite{mattern} are not representative for SST outside Otago Habour
 \item	The SST cannot be directly linked to survival of YEP due to XX
 \end{itemize}
 
 The two hypotheses tested in this project are the following:
 \begin{itemize} 
-\item	The SST used in Mattern et al. will not correlate with data from satelite data
+\item	The SST used in \cite{mattern} will not correlate with data from satelite data
 \item	The variation in population size of YEP can be explained with a higher percentage than 33\% when using other variables than SST
 \end{itemize}
 
