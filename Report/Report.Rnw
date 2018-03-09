@@ -64,13 +64,17 @@ Manja Marie \textsc{Kudahl}: s134752
 \end{flushleft}
 \vfill
 \begin{flushleft} \large
-
+\emph{Supervisor:}\\
+Mark \textsc{Payne}
 \end{flushleft}
 \vfill
 \begin{center}
 {\large \today}
 \end{center}
 \end{titlepage}
+\newpage
+\section*{Acknowledgement}
+Thanks
 \newpage
 \section*{Summary}
 \newpage

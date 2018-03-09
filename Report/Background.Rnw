@@ -13,7 +13,17 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 
 \subsection{Data used in article}
 \subsubsection{Demographic data}
+<<<<<<< HEAD
 The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula.\ \textcolor{red}{Her kan vi putte et billede in, som viser omraadet}.\ From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
+=======
+The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula, because the data from here is the most recent and has been monitered for the longest period. 
+
+\textcolor{red}{Her kan vi putte et billede in, som viser omraadet}. 
+
+From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
+
+
+>>>>>>> acdf7f74a5a0a337464b294dbf7f36156f1f36d6
 \subsubsection{Environmental data}
 The environmental data used in Mattern et. al [2017] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
 
