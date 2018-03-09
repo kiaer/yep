@@ -8,8 +8,21 @@ The population of the Yellow-eyed penguins is colonised in three different locat
 \subsection{Study sites}
 
 \subsection{Data used in article}
+
 \subsubsection{Demographic data}
 
 \subsubsection{Environmental data}
+The environmental data used in XX et al. [XXXX] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
+
+-	Total rainfall
+-	Wet days
+-	Maximum 1 day rainfall
+-	Mean air temperature
+-	Mean daily minimum temperature
+-	Days of wind gusts >= 33 Knots
+-	Sea surface temperature anomaly (Portobello Marine Lab)
+
+Data for the top 6 variables are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. 
+
 
 
