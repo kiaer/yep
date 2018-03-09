@@ -5,14 +5,15 @@ Something about total number of breeding pairs and IUCN list.
 
 The population of the Yellow-eyed penguins is colonised in three different locations: the Auckland Islands, along New Zealand's south-eastern coastlines and Steward Island. The population of the Yellow-eyed penguins is colonised in three different locations: the Auckland Islands, along New Zealand's south-eastern coastlines and Steward Island. On the mainland the biggest colony of YEP is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011.
 
-\subsection{Study sites}
+\subsection{Geography}
+Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Habour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean.
+
+\subsubsection{}
+
 
 \subsection{Data used in article}
-
 \subsubsection{Demographic data}
 The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula.\ \textcolor{red}{Her kan vi putte et billede in, som viser omraadet}.\ From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
-
-
 \subsubsection{Environmental data}
 The environmental data used in Mattern et. al [2017] are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
 
