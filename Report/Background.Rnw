@@ -3,7 +3,12 @@
 \subsection{Species information}
 Something about total number of breeding pairs and IUCN list. 
 
-The population of the Yellow-eyed penguins is colonised in three different locations: the Auckland Islands, along New Zealand's south-eastern coastlines and Steward Island. The population of the Yellow-eyed penguins is colonised in three different locations: the Auckland Islands, along New Zealand's south-eastern coastlines and Steward Island. On the mainland the biggest colony of YEP is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011.
+The population of the Yellow-eyed penguins (YEP) are colonised in three different locations: the two subantarctic Auckland and Campbell Islands and along New Zealand's south-eastern coastlines including the Steward Island. The three subpopulations are considered to be separate in that they do not share genes, and while the total population of breeding birds is approximately 3400 (1700 breeding pairs), approximately 40\% of them are on the mainland. The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 (Mattern).According to the IUCN red list assessment from 2016, the species is and has been since year 2000. This is because, the area where it breeds is very small and declining in quality due to multiple reasons (IUCN). Climatic changes such as Sea Surface Temperature (SST) increases over the last 30 years is just one stressing factor, though this is thought to increase the birds' sensitivity to e.g. anthropogenic factors. The overall decline in the population is primarily expected to be caused by several events 
+
+
+
+
+
 
 \subsection{Geography}
 Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Habour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean.
