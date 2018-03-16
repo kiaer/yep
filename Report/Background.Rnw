@@ -5,18 +5,12 @@ Something about total number of breeding pairs and IUCN list.
 
 The population of the Yellow-eyed penguins (YEP) are colonised in three different locations: the two subantarctic Auckland and Campbell Islands and along New Zealand's south-eastern coastlines including the Steward Island. The three subpopulations are considered to be separate in that they do not share genes, and while the total population of breeding birds is approximately 3400 (1700 breeding pairs), approximately 40\% of them are on the mainland. The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 (Mattern).According to the IUCN red list assessment from 2016, the species is and has been since year 2000. This is because, the area where it breeds is very small and declining in quality due to multiple reasons (IUCN). Climatic changes such as Sea Surface Temperature (SST) increases over the last 30 years is just one stressing factor, though this is thought to increase the birds' sensitivity to e.g. anthropogenic factors. The overall decline in the population is primarily expected to be caused by several events 
 
-
-
-
-
-
 \subsection{Geography}
 Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Habour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean.
 
 \textcolor{red}{Map of area}. 
 
 \subsubsection{Currents along the east coast of South New Zealand}
-
 
 \subsection{Data used in article}
 \subsubsection{Demographic data}
@@ -43,7 +37,18 @@ The environmental data used in  \cite{mattern} are monthly averages for selected
 Data for the top 6 variables are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
 
 \subsection{Sea surface temperature and Yellow-eyed penguin survival}
-Hvordan er de linket i artiklen? 
+Using population model, Bayesian mark-recapture model that incorporated effects from climate variables. 
+33\% of th variation in population could be explained by SST alone. (dont find the 33\% in any of the tables)
+
+Statements from article:
+Temperature affects annual biomass - biomass important as YEP prey (Red cod)
+Penguins foraging condition are likely compromised under stratified, warm water conditions.
+Ocean temperatures play important role in spatial distribution of fish population. 
+
+
+Page. 15. 2012 die-off, harmful algae, marine biotoxins not present in any birds, water samples fromsurace water showed no harmful algea, unlikely that it only affects one species. Only bottom foraging YEP were affected suggesting that distribution of a toxin was limited to the near-seafloor region. Speculations. SST coolder than normal probably help reestablish population after die-off in 1989. 
+
+Evidence for their future projections? (YEP is predicted to be ocally extinct by 2043)
 
 \subsection{Hypotheses}
 The analytical/statistical work of this project is based on two hypotheses. The two hypotheses are covering the two main assumptions:
