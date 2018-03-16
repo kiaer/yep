@@ -14,6 +14,7 @@ ROI <- extent(165,175,-48,-44)
 lon.pts <- seq(169.5,169.5, by=1)
 lat.pts <- rep(-46.5,length(lon.pts))
 r <- HadISST.b[[1776]]
+r
 r[r < -300] <- NA
 
 r.crop <- crop(r,ROI)
@@ -43,3 +44,46 @@ unlist(mj.timeseries)
 plot(1982:2014, unlist(mj.timeseries))
 
 plot(1982:2014, unlist(an.timeseries))
+
+library('lubridate')
+
+fname <- "MET.nc"
+nrtname <- "METnrt.nc"
+
+nrt.b <- brick(nrtname)
+MET.b <- brick(fname, varname = "analysed_sst")
+#comb.b <- mosaic(MET.b, nrt.b, fun = mean)
+comb <- stack(MET.b, nrt.b)
+z <- list(getZ(MET.b), getZ(nrt.b))  
+getZ(MET.b)
+z = unlist(z) + ISOdatetime(year = 1981, 1, 1,0,0,0,tz="GMT") 
+
+comb@z <- list(z)
+
+#z <- months(z)
+comb@z
+
+names(comb) <- year(z)
+comb
+comb[["X1985.12"]]
+
+ROI <- extent(165,175,-48,-44)
+
+
+nms <- expand.grid(paste0('X',1985:2014),c("3","4","5"
+                                           ,"6"))
+nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
+
+nms <- sort(nms)
+
+r = comb[[nms]]
+r[r < -300] <- NA
+
+r.crop <- crop(r,ROI)
+
+r.crop <- calc(r.crop, mean)
+r.mean <- calc(r.crop, fun = function(x) {x - 273.15})
+
+plot(r.mean)
+
+#lubridate
