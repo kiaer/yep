@@ -1,28 +1,29 @@
 \section{Background}
 
 \subsection{Species information}
-The Yellow-eyed penguin (YEP, Megadyptes antipodes) is a species that is of great cultural and economical importance for New Zealand (Seddon, Ellenberg and van Heezik, 2013). YEP’s are an important tourist attraction at the Otago Peninsula and the local area benefits from the presence of the birds since the tourism industry contributes with more than NZ\$100 mio annually to the local economy (Tisdell, 2007).  Furthermore the YEP is a native species to New Zealand and is seen as xxx. 
-\\The population of YEP’s are colonised at three different locations: at the sub-Antarctic Auckland Islands, the sub-Antarctic Campbell Islands and along New Zealand's south-eastern coastline including the Steward Island. The three subpopulations are considered to be separate since they do not share genes (Boessenkool et al. 2009a). While the total population of breeding birds is approximately 3400 (1700 breeding pairs), around 40\% of them are inhabited on the mainland (Seddon, Ellenberg and van Heezik, 2013). The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 \cite{mattern}.  
+The Yellow-eyed penguin (YEP, Megadyptes antipodes) is a species that is of great cultural and economical importance for New Zealand (Seddon, Ellenberg and van Heezik, 2013). YEP’s are an important tourist attraction at the Otago Peninsula and the local area benefits from the presence of the birds since the tourism industry contributes with more than NZ\$100 mio annually to the local economy (Tisdell, 2007). Furthermore the YEP is a native species to New Zealand and is seen as xxx. 
+\\The population of YEP’s are colonised at three different locations: at the Auckland Islands,the Campbell Islands and along New Zealand's south-eastern coastline including the Steward Island. The three subpopulations are considered to be separate since they do not share genes (Boessenkool et al. 2009a). This is represented by figure X. While the total population of breeding birds is approximately 3400 (1700 breeding pairs), around 40\% of them are inhabited on the mainland (Seddon, Ellenberg and van Heezik, 2013). The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 \citep{mattern}.  
 \\YEP are dependent on both marine and terrestrial habitats. While the land provides the nesting habitat, the sea provides the habitat for the food. At the South Island the nests typically have surrounding vegetation that is thought to hide them from visual contact with conspecifics (Seddon and Davis, 1989 (IUCN)), though is it not believed to be a requirement for a successful breeding (Clarke et at. 2015 (IUCN)).  The breeding season range from mid-September to mid-March. From mid-September to mid-October two eggs are laid and the hatching occurs at the beginning of November. The chicks fledge from mid-February until mid-March (Seddon et al. 2013). YEP feed mainly along the seafloor (87\% of all dives) and pelagic dives usually occur on their way back to the breeding area (Mattern et al. 2007). The depths of the dives are typically less than 100 meters, but can occasionally get deeper than 120 meters (Seddon et al. 2013). The individuals have foraging sites they revisit and are very sensitive to disturbance and degradation of their benthic foraging habitat (Browne et al. 2011; Ellenberg and Mattern 2012; Mattern et al. 2013).  
 \\According to the International Union for Conservation of Nature (IUCN) Red List assessment from 2016 the YEP is endangered and has been since 2000. The species is listed as endangered due to the fact that it is limited to a very small range when breeding, in which its habitat also has declined in quality. Furthermore the population undergo extreme fluctuations and is thought to be in overall decline. 
 
 \subsection{Geography}
-Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Habour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean.
+Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Harbour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean. This is represented by figure X. 
 
 \textcolor{red}{Map of area}. 
 
 \subsubsection{Currents along the east coast of South New Zealand}
+
 
 \subsubsection{Frontal zones around New Zealand}
 
 \subsection{Data used in article}
 \subsubsection{Demographic data}
 
-The data used in the article comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula, because the data from here is the most recent and has been monitered for the longest period. 
+The data used in \cite{mattern} comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula, because the data from here is the most recent and has been monitered for the longest period. 
 
 \textcolor{red}{Reference til område}. 
 
-From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated.Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
+From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated. Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
 
 \subsubsection{Environmental data}
 The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
@@ -56,7 +57,7 @@ Evidence for their future projections? (YEP is predicted to be ocally extinct by
 \subsection{Hypotheses}
 The analytical/statistical work of this project is based on two hypotheses. The two hypotheses are covering the two main assumptions:
 \begin{itemize} 
-\item	The SST used in  \cite{mattern} are not representative for SST outside Otago Habour
+\item	The SST used in \cite{mattern} are not representative for SST outside Otago Habour
 \item	The SST cannot be directly linked to survival of YEP due to XX
 \end{itemize}
 
