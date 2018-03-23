@@ -4,8 +4,8 @@ source('anomaly.R')
 
 fname <- "HadISST_sst.nc"
 HadISST.b <- brick(fname)
-
-matten <- c( 0.34,-1.14, 0.19, 0.66, 0.23, 0.03,-1.06,-0.01, 0.24,-0.27,-1.51,
+#0.34,-1.14, 0.19,
+matten <- c(  0.66, 0.23, 0.03,-1.06,-0.01, 0.24,-0.27,-1.51,
             -0.50,-0.23, 0.37, 0.29, 0.13, 0.64, 1.11, 0.41, 0.52, 0.47, 0.67, 
             -0.36, 0.23, 0.36, 0.74, 0.82, 0.16, 0.21, 0.34,-0.04, 0.94, 0.48)
 
@@ -81,9 +81,66 @@ r[r < -300] <- NA
 
 r.crop <- crop(r,ROI)
 
-r.crop <- calc(r.crop, mean)
-r.mean <- calc(r.crop, fun = function(x) {x - 273.15})
+r.mean <- calc(r.crop, mean)
 
+r.mean <- calc(r.mean, fun = function(x) {x - 273.15})
+
+#r.mean[]
+indices = lapply(1:(30*4), function(x) {x %% 30 + 1})
+
+r.mjmean <- stackApply(r.crop, indices = sort(unlist(indices)), fun = sum, na.rm = TRUE)
+#r.mjmean[[30]][]
+r.mjmean <- calc(r.mjmean, fun = function(x) {(x / 4) - 273.15})
+r.mjmean[r.mjmean < -100] <- NA
+
+
+r.anom <- r.mjmean[[1]] - r.mean
+plot(r.mjmean[[18]])
+for (i in 2:30){
+  temp <- r.mjmean[[i]] - r.mean
+  r.anom <- stack(r.anom, temp)
+}
+
+r.anom
+r.mjmean
+
+r.corr <- stackApply(r.anom, indices = c(1), fun = function(x, na.rm) {cor(matten, x)})
+
+
+r.mean[640]
+r.mjmean[[1]][640]
+plot(r.mjmean[[3]])
 plot(r.mean)
 
-#lubridate
+#arg <- list(at=c(0.12,0.5,0.87), labels=c("Low","Med.","High"))
+library(maps)
+library(mapdata)
+library(reshape)
+library(ggplot2)
+library(rasterVis)
+
+
+
+plot(r.corr, xlab="Longitude", ylab="Latitude", legend.args=list(text='Correlation', side=4, font=2, line=2.5, cex=0.8))#lubridate
+rcorr.dat <- data.frame(coordinates(r.corr),as.data.frame(r.corr))
+head(rcorr.dat)
+
+plt.dat <- melt(rcorr.dat,id.vars = c("x","y"))
+head(plt.dat)
+ggplot(plt.dat,aes(x=x,y=y,fill=value))+
+  geom_raster()+borders(fill="black",colour="black") + facet_wrap(~variable)+
+  scale_fill_distiller(palette="RdPu")+ coord_quickmap()
+
+gplot(r.corr, xlab="lat")+geom_raster(aes(fill=value))+
+  borders(fill="black",colour="black") + facet_wrap(~variable)+
+  scale_fill_distiller(palette="RdYlBu")+ coord_quickmap(165:175, -44:-48)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude") + ylab("Latitude")
+
+
+nrtnameH <- "METHigh.nc"
+
+nrtH.b <- brick(nrtnameH)
+
+plot(nrtH.b[[1]])
+
+#col=terrain.colors(2),
