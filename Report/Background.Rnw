@@ -18,27 +18,53 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 
 \subsection{Data used in article}
 \subsubsection{Demographic data}
+The demographic data used in \cite{mattern} comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure X), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.    
+The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table X. 
 
-The data used in \cite{mattern} comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the same department in New Zealand, as the YEP monitoring program. The data on the penguins is recorded at Boulder Beach Complex, which is located at the southern coast of the Otago Peninsula, because the data from here is the most recent and has been monitered for the longest period. 
-
-\textcolor{red}{Reference til område}. 
-
-From here, information about breeding penguins, nests and the ages of the breeding birds were extracted and calculated. Since 1982, the database has also included records of individuals and the years where each of them became breeding penguins.This information is used to determine the encounter histories for each of the birds.
+%% table containing information about environmental data 
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ll}
+  \hline
+  Population data & Calculation \\ 
+  \hline
+  Number of breeding adults  & Multiplying number of nest by two \\ 
+  Number of fledglings & Sum of chicks fledged from all nest \\ 
+  Number of new breeders & Sum of all adults that where recorded as breeders for the first time \\ 
+  Age of breeding birds per year & Querying their banding details, though age is unknown \\ 
+  & for birds banded as adults (15\% of all banded birds) \\
+  \hline
+\end{tabular}
+\end{center}
+\end{table}
+% 
+ID numbers were extracted for individuals banded at the Boulder Beach complex to determine the encounter histories for each of the birds. The data set containing nest records was combined with the data set containing branding records to one data set representing both nest data and individual encounter histories. A bird was defined dead when it had missed at least two consecutive breading seasons \citep{mattern}. 
 
 \subsubsection{Environmental data}
-The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the parameter is considered to likely have an influence on the demographic data.  The selected variables are as follows:
+The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the variable is considered to likely have an influence on the demographic data.  The selected variables are listed in table X. 
 
-\begin{itemize} 
-\item	Total rainfall
-\item	Wet days
-\item	Maximum 1 day rainfall
-\item	Mean air temperature
-\item	Mean daily minimum temperature
-\item	Days of wind gusts above or equal to 33 Knots
-\item	Sea surface temperature anomaly (Portobello Marine Lab)
-\end{itemize}
-
-Data for the top 6 variables are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
+%% table containing information about environmental data 
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ll}
+  \hline
+  Variable & Station \\ 
+  \hline
+  Total rainfal (mm)  & Southern Reservoir (National Climate database, \\ 
+  & CloFlo ID 5400) \\ 
+  Wet days - Number of days with 1 mm or & Southern Reservoir (5400) \\ 
+  more of rain (days)  &  \\ 
+  Maximum 1-day rainfall - 9 am to 9 am local time  & Dunedin, Musselburgh (5402) \\ 
+  Mean air temperature  & Dunedin, Musselburgh (5402) \\ 
+  Mean daily minimum air temperature  & Dunedin, Musselburgh (5402) \\ 
+  Days of wind gusts  & Dunedin, Musselburgh (5402) \\ 
+  Sea surface temperature anomaly & Portobello MArine Lab, University of Otago \\ 
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+% 
+Data for the 6 variables listed in table X are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable. A mean has also been calculated for the months covering the penguin’s annual moult and post-moult period (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
 
 \subsection{Sea surface temperature and Yellow-eyed penguin survival}
 Using population model, Bayesian mark-recapture model that incorporated effects from climate variables. 
