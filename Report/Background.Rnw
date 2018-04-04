@@ -21,7 +21,7 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 The demographic data used in \cite{mattern} comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure X), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.    
 The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table X. 
 
-%% table containing information about environmental data 
+%% table containing information about demographic data
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{ll}
