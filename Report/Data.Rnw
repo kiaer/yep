@@ -4,8 +4,12 @@ This project aims to examine whether the observed SST data from inside the Otago
 
 Copernicus provides a data product called The global Sea Surface Temperature Reanalysis, which is made by The Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) system. The system produces a daily analysis of SST from data from different satellites and datasets that measures SST with different instruments such as High Resolution Radiometers (AVHRR) and an Along Track Scanning Radiometers (ATSR). In table xx below, some more detailed information about the datasets are provided.There are two data products, containing data from different time periods 1985-2007 and 2007-present respectively, but besides that, they provide the same information.
 
+It has to be mentioned, that the data sets overlap in 2007, which is the data that is used starts in 2008 for this.
+
 
 %% lav tabel!
+
+
 
 \begin{table}[ht]
 \begin{center}
@@ -25,6 +29,28 @@ block       & 5 & 343.29 & 68.66 & 4.45 & 0.0159 \\
 \end{tabular}
 \end{center}
 \end{table}
+
+
+
+\begin{table}
+\begin{center}
+    \begin{tabular}{c c c c c}
+    \hline
+    & \multicolumn{4}{c}{Original data} \\ \hline
+    Name&1 & 2 & 3 & 4  \\ \hline
+    Resolution & 0.25 & 0.05 & 0.25 & 0.05 \\ 
+    Temporal resolution&monthly mean&daily mean&monthly mean&daily mean \\ 
+    start &\multicolumn{2}{|c|}{1985}& \multicolumn{2}{|c|}{2007} \\ 
+    end &\multicolumn{2}{|c|}{2007}& \multicolumn{2}{|c|}{present} \\ 
+    
+
+    \end{tabular}
+    \end{center}
+    \caption{Original data}
+ \end{table}
+
+
+
 % 
 
 \subsection{Satellite data from Copernicus}
