@@ -69,6 +69,23 @@ Data for the 6 variables listed in table X are received from The National Climat
 \subsection{Sea surface temperature and Yellow-eyed penguin survival}
 The \cite{mattern} uses a population model to describe the variations in the populations explained by the selected environmental variables. The population model used was the Bayesian mark-recapture model that estimates the size of a population. A sample of a population is captured, marked and then released again. Later on another sample is captured and the number of marked individuals is counted. The marked individuals within the second sample should be proportional to the number of marked individuals within the entire population, thus an estimate of the population size can be made by dividing the number of marked individuals by the proportion of marked individuals in the second sample. By developing a mark-recapture model that incorporates the effects from climate variables it was possible for \cite{mattern} to estimate the adult and fledgling survival. The results showed that sea surface temperatures explained 33.2\% of the variation in fledgling survival and 36.8\% of the variation in adult survival. Selected results are shown in table X.
 
+%% estimated effect size for adults survival 
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ll}
+  \hline
+  Covariate & Median & 2.5\% CI & 97.5\% CI & PVE\\ 
+  \hline
+  sst_anomaly_austral & -1.267 & -1.925 & -0.631 & 36.8\% \\ 
+  mean_air_temp_annual & -0.529 & -0.817 & -0.251 & 34.4\% \\ 
+  daily_min_temp_annual & -0.516 & -0.796 & -0.227 & 34.4\% \\
+  sst_anomaly_mar_june & -0.808 & -1.329 & -0.310 & 26.2\% \\ 
+  sst_anomaly_minus_1yr & -1.056 & -1.719 & -0.406 & 25.7\% \\ 
+  \hline
+\end{tabular}
+\end{center}
+\end{table}
+% 
 
 Statements from article:
 Temperature affects annual biomass - biomass important as YEP prey (Red cod)
