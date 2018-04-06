@@ -24,7 +24,7 @@
 \usepackage{datenumber}
 \usepackage{color}
 \usepackage{natbib}
-
+\usepackage{siunitx}
 
 
 
@@ -36,6 +36,8 @@
 \setlength{\headsep}{25pt}
 \lhead{Yellow-eyed penguins}
 \rhead{\today}
+
+ 
 \cfoot{Page \thepage{} of \pageref{LastPage}}
 \newcommand{\code}[1]{\texttt{#1}}
 
@@ -86,6 +88,8 @@ Thanks
 <<Introduction, child='introduction.Rnw'>>=
 @
 <<Background, child='Background.Rnw'>>=
+@
+<<Data, child='Data.Rnw'>>=
 @
 <<Methods, child='methods.Rnw'>>=
 @

@@ -1,0 +1,30 @@
+\section{Data}
+
+This project aims to examine whether the observed SST data from inside the Otago Harbour is appropriate for describing the fluctuations in the population of the Yellow-eyed penguin. To be able to do that, it is necessary to compare the data to some possibly better representing data. The data used in this project is therefore aquired from satellites. Data in three different resolutions are being analysed in this project, in order to make a proper comparisons of the data used in the article and that from satellites. The first one $\ang{1}\times \ang{1}$ degrees and comes from the Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST), which can be found on the Met office Hadley Centre website (https://www.metoffice.gov.uk). Due to the low resolution, it is not posible to get a good overview of the SST's close to the coast of New Zealand, and thus higher resolutions are needed. The second one is $\ang{0.25}\times\ang{0.25}$ degrees and the third has a higher resolution of $\ang{0.05}\times\ang{0.05}$ degrees which makes up a precision of approx. 5 km. These last two data products are found on the Copernicus website (http://marine.copernicus.eu), which is a part of the EU space programme that seeks to protects the marine and land environment.
+
+Copernicus provides a data product called The global Sea Surface Temperature Reanalysis, which is made by The Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) system. The system produces a daily analysis of SST from data from different satellites and datasets that measures SST with different instruments such as High Resolution Radiometers (AVHRR) and an Along Track Scanning Radiometers (ATSR). In table xx below, some more detailed information about the datasets are provided.There are two data products, containing data from different time periods 1985-2007 and 2007-present respectively, but besides that, they provide the same information.
+
+
+%% lav tabel!
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lrrrrr}
+  \hline
+ & Df & Sum Sq & Mean Sq & F value & Pr($>$F) \\ 
+  \hline
+block       & 5 & 343.29 & 68.66 & 4.45 & 0.0159 \\ 
+  N           & 1 & 189.28 & 189.28 & 12.26 & 0.0044 \\ 
+  P           & 1 & 8.40 & 8.40 & 0.54 & 0.4749 \\ 
+  K           & 1 & 95.20 & 95.20 & 6.17 & 0.0288 \\ 
+  N:P         & 1 & 21.28 & 21.28 & 1.38 & 0.2632 \\ 
+  N:K         & 1 & 33.13 & 33.13 & 2.15 & 0.1686 \\ 
+  P:K         & 1 & 0.48 & 0.48 & 0.03 & 0.8628 \\ 
+  Residuals   & 12 & 185.29 & 15.44 &  &  \\ 
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
+% 
+
+\subsection{Satellite data from Copernicus}
