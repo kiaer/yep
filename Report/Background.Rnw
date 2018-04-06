@@ -50,7 +50,7 @@ The environmental data used in  \cite{mattern} are monthly averages for selected
   \hline
   Variable & Station \\ 
   \hline
-  Total rainfal (mm)  & Southern Reservoir (National Climate database, \\ 
+  Total rainfall (mm)  & Southern Reservoir (National Climate database, \\ 
   & CloFlo ID 5400) \\ 
   Wet days - Number of days with 1 mm or & Southern Reservoir (5400) \\ 
   more of rain (days)  &  \\ 
@@ -69,23 +69,41 @@ Data for the 6 variables listed in table X are received from The National Climat
 \subsection{Sea surface temperature and Yellow-eyed penguin survival}
 The \cite{mattern} uses a population model to describe the variations in the populations explained by the selected environmental variables. The population model used was the Bayesian mark-recapture model that estimates the size of a population. A sample of a population is captured, marked and then released again. Later on another sample is captured and the number of marked individuals is counted. The marked individuals within the second sample should be proportional to the number of marked individuals within the entire population, thus an estimate of the population size can be made by dividing the number of marked individuals by the proportion of marked individuals in the second sample. By developing a mark-recapture model that incorporates the effects from climate variables it was possible for \cite{mattern} to estimate the adult and fledgling survival. The results showed that sea surface temperatures explained 33.2\% of the variation in fledgling survival and 36.8\% of the variation in adult survival. Selected results are shown in table X.
 
-%% estimated effect size for adults survival 
+% Estimated effect size for adult survival 
 \begin{table}[ht]
 \begin{center}
-\begin{tabular}{ll}
+\begin{tabular}{lll}
   \hline
-  Covariate & Median & 2.5\% CI & 97.5\% CI & PVE\\ 
+  Covariate & Median & PVE \\ 
   \hline
-  sst_anomaly_austral & -1.267 & -1.925 & -0.631 & 36.8\% \\ 
-  mean_air_temp_annual & -0.529 & -0.817 & -0.251 & 34.4\% \\ 
-  daily_min_temp_annual & -0.516 & -0.796 & -0.227 & 34.4\% \\
-  sst_anomaly_mar_june & -0.808 & -1.329 & -0.310 & 26.2\% \\ 
-  sst_anomaly_minus_1yr & -1.056 & -1.719 & -0.406 & 25.7\% \\ 
+  Austral annual SST anomaly & -1.267 & 36.8 \\ 
+  Annunal mean air temperature & -0.529 & 34.4 \\ 
+  Annunal daily minimum air temperature & -0.516 & 34.4 \\
+  Mar-June SST anomaly & -0.808 & 26.2 \\
+  Minus 1 year SST anomaly & -1.056 & 25.7 \\
   \hline
 \end{tabular}
 \end{center}
 \end{table}
-% 
+%
+
+% Estimated effect size for fledgling survival 
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lll}
+  \hline
+  Covariate & Median & PVE \\ 
+  \hline
+  Austral annual SST anomaly & -1.967 & 33.2 \\ 
+  Minus 1 year SST anomaly & -1.516 & 24.8 \\
+  Mar-June SST anomaly & -0.970 & 17.4 \\
+  Annunal daily minimum air temperature & -0.644 & 15.4 \\
+  Annunal mean air temperature & -0.590 & 12.4 \\ 
+  \hline
+\end{tabular}
+\end{center}
+\end{table}
+%
 
 Statements from article:
 Temperature affects annual biomass - biomass important as YEP prey (Red cod)
