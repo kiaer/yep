@@ -19,9 +19,9 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 \subsection{Data used in article}
 \subsubsection{Demographic data}
 The demographic data used in \cite{mattern} comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure X), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.    
-The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table X. 
+The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table \ref{tab:demodata}. 
 
-%% table containing information about demographic data
+% table containing information about demographic data
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{ll}
@@ -35,15 +35,18 @@ The extracted data, nest records, was used to calculate the population numbers. 
   & for birds banded as adults (15\% of all banded birds) \\
   \hline
 \end{tabular}
+\caption{Description of demographic data and population numbers used in the development for a YEP population model \citep{mattern}.} 
+\label{tab:demodata}
 \end{center}
 \end{table}
 % 
+
 ID numbers were extracted for individuals banded at the Boulder Beach complex to determine the encounter histories for each of the birds. The data set containing nest records was combined with the data set containing branding records to one data set representing both nest data and individual encounter histories. A bird was defined dead when it had missed at least two consecutive breading seasons \citep{mattern}. 
 
 \subsubsection{Environmental data}
-The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the variable is considered to likely have an influence on the demographic data.  The selected variables are listed in table X. 
+The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the variable is considered to likely have an influence on the demographic data.  The selected variables are listed in table \ref{tab:environdata}. 
 
-%% table containing information about environmental data 
+% table containing information about environmental data 
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{ll}
@@ -61,13 +64,16 @@ The environmental data used in  \cite{mattern} are monthly averages for selected
   Sea surface temperature anomaly & Portobello MArine Lab, University of Otago \\ 
    \hline
 \end{tabular}
+\caption{Description of selected environmental variables used in the development for a YEP population model \citep{mattern}.} 
+\label{tab:environdata}
 \end{center}
 \end{table}
 % 
-Data for the 6 variables listed in table X are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable. A mean has also been calculated for the months covering the penguin’s annual moult and post-moult period (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
+
+Data for the 6 variables listed in table \ref{tab:environdata} are received from The National Climate Database (CliFlo), where records from weather stations in Dunedin and the Otago Peninsula have been maintained continuously since the early 20th century. The austral year (July-June) have been used to calculate the annual means for each variable. A mean has also been calculated for the months covering the penguin’s annual moult and post-moult period (March-May). The austral year (July-June) have been used to calculate the annual means for each variable, also a mean was calculated for the month covering the penguin’s annual moult and post-moult periods (March-May). Data for the local sea surface temperature (SST) are acquired from the Portobello Marine Laboratory (University of Otago). This dataset contains near continuous time series of daily measurements going back to January 1953. Important for the SST data collection site is that it is located within the Otago Harbour and not out on the coast where the penguins are habituated.  The monthly SST anomalies are calculated by subtracting monthly means from the average value calculated from all monthly means ranging from January 1953 to December 2014 and the annual SST anomaly is the mean of the monthly SST anomaly for the corresponding year. 
 
 \subsection{Sea surface temperature and Yellow-eyed penguin survival}
-The \cite{mattern} uses a population model to describe the variations in the populations explained by the selected environmental variables. The population model used was the Bayesian mark-recapture model that estimates the size of a population. A sample of a population is captured, marked and then released again. Later on another sample is captured and the number of marked individuals is counted. The marked individuals within the second sample should be proportional to the number of marked individuals within the entire population, thus an estimate of the population size can be made by dividing the number of marked individuals by the proportion of marked individuals in the second sample. By developing a mark-recapture model that incorporates the effects from climate variables it was possible for \cite{mattern} to estimate the adult and fledgling survival. The results showed that sea surface temperatures explained 33.2\% of the variation in fledgling survival and 36.8\% of the variation in adult survival. Selected results are shown in table X.
+The \cite{mattern} uses a population model to describe the variations in the populations explained by the selected environmental variables. The population model used was the Bayesian mark-recapture model that estimates the size of a population. A sample of a population is captured, marked and then released again. Later on another sample is captured and the number of marked individuals is counted. The marked individuals within the second sample should be proportional to the number of marked individuals within the entire population, thus an estimate of the population size can be made by dividing the number of marked individuals by the proportion of marked individuals in the second sample. By developing a mark-recapture model that incorporates the effects from climate variables it was possible for \cite{mattern} to estimate the adult and fledgling survival. The results showed that sea surface temperatures explained 33.2\% of the variation in fledgling survival and 36.8\% of the variation in adult survival. Selected results are shown in table \ref{tab:adultsur} and table \ref{tab:fledgsur}. Sea surface temperatures had the greatest effect on the adult survival. Years with warmer than usual SST's resulted in a lower adult survival whereas years with cooler than usual SST's resulted in an increased survival. The relationship of SST and YEP survival is visualized in figure X (fig. 4 from article), where the deviation of annual adult survival from the median survival rate is plotted against the SST anomaly.
 
 % Estimated effect size for adult survival 
 \begin{table}[ht]
@@ -83,6 +89,8 @@ The \cite{mattern} uses a population model to describe the variations in the pop
   Minus 1 year SST anomaly & -1.056 & 25.7 \\
   \hline
 \end{tabular}
+\caption{Estimated effect size for adult survival. PVE is the percentage of variance in adult survival explained by each covariate \citep{mattern}.} 
+\label{tab:adultsur}
 \end{center}
 \end{table}
 %
@@ -101,19 +109,15 @@ The \cite{mattern} uses a population model to describe the variations in the pop
   Annunal mean air temperature & -0.590 & 12.4 \\ 
   \hline
 \end{tabular}
+\caption{Estimated effect size for fledgling survival. PVE is the percentage of variance in fledgling survival explained by each covariate \citep{mattern}.} 
+\label{tab:fledgsur}
 \end{center}
 \end{table}
 %
+\textcolor{red}{Figure 4 from article}. 
 
-Statements from article:
-Temperature affects annual biomass - biomass important as YEP prey (Red cod)
-Penguins foraging condition are likely compromised under stratified, warm water conditions.
-Ocean temperatures play important role in spatial distribution of fish population. 
-
-
-Page. 15. 2012 die-off, harmful algae, marine biotoxins not present in any birds, water samples fromsurace water showed no harmful algea, unlikely that it only affects one species. Only bottom foraging YEP were affected suggesting that distribution of a toxin was limited to the near-seafloor region. Speculations. SST coolder than normal probably help reestablish population after die-off in 1989. 
-
-Evidence for their future projections? (YEP is predicted to be ocally extinct by 2043)
+XXXXXXXXXXXXXXXXX
+Tekst der støtter op om figuren 
 
 \subsection{Hypotheses}
 The analytical/statistical work of this project is based on two hypotheses. The two hypotheses are covering the two main assumptions:
