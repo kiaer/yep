@@ -1,7 +1,7 @@
 \section{Methods}
 
 \subsection{Methods from project description}
-Reproduce the results obtained in \cite{mattern}.
+Reproduce the results obtained in \cite{mattern}, \citep{mattern}.
 
 Carry out a statistical analysis to determine whether the SST data from Mattern et al. [2017] is representative as a proxy or not, when compared to satellite data.
 
