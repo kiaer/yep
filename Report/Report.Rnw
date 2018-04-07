@@ -17,6 +17,7 @@
 \usepackage{amsmath}
 \usepackage{stmaryrd}
 \usepackage{graphicx}
+\graphicspath{ {figures/} }
 \usepackage{subcaption}
 \usepackage[bottom]{footmisc}
 \usepackage{hyperref}
@@ -27,7 +28,11 @@
 \usepackage{siunitx}
 \usepackage{sans}
 \renewcommand{\arraystretch}{1.3}
-
+\usepackage{ctable}
+\usepackage{array}
+\newcolumntype{?}{!{\vrule width 1pt}}
+\captionsetup{justification   = raggedright,
+              singlelinecheck = false}
 
 \pagestyle{fancy}
 \fancyhf{}
