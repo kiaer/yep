@@ -1,15 +1,17 @@
-\section{Data}
-
-This project aims to examine whether the observed SST data from inside the Otago Harbour is appropriate for describing the fluctuations in the population of the Yellow-eyed penguin. To be able to do that, it is necessary to compare the data to some possibly better representing data. The data used in this project is therefore aquired from satellites. Data in three different resolutions are being analysed in this project, in order to make a proper comparisons of the data used in the article and that from satellites. The first one $\ang{1}\times \ang{1}$ degrees and comes from the Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST), which can be found on the Met office Hadley Centre website (https://www.metoffice.gov.uk). Due to the low resolution, it is not posible to get a good overview of the SST's close to the coast of New Zealand, and thus higher resolutions are needed. The second one is $\ang{0.25}\times\ang{0.25}$ degrees and the third has a higher resolution of $\ang{0.05}\times\ang{0.05}$ degrees which makes up a precision of approx. 5 km. These last two data products are found on the Copernicus website (http://marine.copernicus.eu), which is a part of the EU space programme that seeks to protects the marine and land environment.
-
-Copernicus provides a data product called The global Sea Surface Temperature Reanalysis, which is made by The Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) system. The system produces a daily analysis of SST from data from different satellites and datasets that measures SST with different instruments such as High Resolution Radiometers (AVHRR) and an Along Track Scanning Radiometers (ATSR). In table \ref{tab: orig data} below, some more detailed information about the datasets are provided.There are two data products, containing data from different time periods 1985-2007 and 2007-present respectively, but besides that, they provide almost the same information. 
+\section{Data} \label{data}
 
 
+This project aims to examine whether the observed SST data from inside the Otago Harbour is appropriate for describing the fluctuations in the population of the Yellow-eyed penguin. To be able to do that, it is necessary to compare the data to some possibly better representing data. The data used in this project is therefore aquired from satellites. Data in three different resolutions are being analysed in this project, in order to make a proper comparisons of the data used in the article and that from satellites. 
 
-%Custom \texttt{special rule}s with  \texttt{ctable} package: 
+\subsection{Hadley Centre data}
+The first one comes from the Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST), which can be found on the Met Office Hadley Centre website (https://www.metoffice.gov.uk). HadISST provides data all the way back to 1871, but the data used in this project is from 1982 and forward, which is obtained from the Met Office Marine Data Bank (MDB), and includes data from the Global Telecommunication System (GTS). The resolution is not very high ($\ang{1}\times \ang{1}$), and to make up for the spatial "holes" in the data, new data was interpolated to fill the gaps \citep{Rayner2003}. Due to the low resolution, it is not posible to get a good overview of the SST's close to the coast of New Zealand, and thus higher resolutions are needed. 
 
-\begin{table} [!htbp]
-\caption{Description of the original data}
+
+\subsection{Copernicus satellite data}
+The second dataset has a resolution of $\ang{0.25}\times\ang{0.25}$ and the third has a higher resolution of $\ang{0.05}\times\ang{0.05}$,  which makes up a precision of approx. 5 km. These last two data products are found on the Copernicus website (http://marine.copernicus.eu), which is a part of the EU space programme that seeks to protects the marine and land environment. Copernicus provides a data product called The global Sea Surface Temperature Reanalysis, which is made by The Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) system. The system produces a daily analysis of SST from data from different satellites and datasets that measures SST with different instruments such as High Resolution Radiometers (AVHRR) and an Along Track Scanning Radiometers (ATSR). In table \ref{tab: orig data} below, some more detailed information about the datasets are provided.There are two data products, containing data from different time periods 1985-2007 and 2007-present respectively, but besides that, they provide almost the same information. 
+
+\begin{table} [ht]
+\caption{Description of the original data.}
 \begin{center}
 \resizebox{\textwidth}{!}{%
     \begin{tabular}{|c?c|c|c|c|}
@@ -27,21 +29,50 @@ Copernicus provides a data product called The global Sea Surface Temperature Rea
     \label{tab: orig data}
  \end{table}
 
-The last row in table \ref{tab: orig data} contains the names, that are used in the code. These are then then merged pairwise to get a full time series from 1985 to 2014, which is needed to compare with the data from the article by \cite{mattern}. Information about the used data from each of the original datafiles is shown in table \ref{tab: code data}.
+The original satellite data does not only contain the SST, but also other parameters, which for the reprocessed data (1985-2007) are:
 
-\begin{table} [!htbp]
+\begin{itemize}
+\item estimated error standard deviation of analysed\_sst
+\item sea\_ice\_area\_fraction
+\item sea/land/lake/ice field composite mask
+\end{itemize}
+
+For the most present data, only sea-ice-fraction is included in the data, besides SST. The reason why the temporal resolution differs, depending on what resolution it is, is that the daily high resolution data has also been used to calculate the monthly means, though this has only been done on a lower resolution.
+
+The datafile names from Copernicus include information about how the data has been obtained and created. There is a little difference between the names, as the most previous data has 'NRT' instead of 'RAN', though this is only a matter of how old the data is. Below, the different parts of the name is decribed:
+
+\begin{itemize}
+\item METOFFICE: The provider of the data: Met Office Hadley Centre.
+\item GLO: The data is provided on a global basis.
+\item SST: It is a Sea Surface Temperature product.
+\item L4: The processing level also mentioned in table \ref{tab: orig data}. Satellite data can be processed in different ways (level 0-4), and according to \cite{NASA}, level 4 data, is "model output or results from analyses of lower-level data (e.g., variables derived from multiple measurements)".
+\item RAN: Data is a result of a Reanalysis.
+\item NRT: Near real time data - the data is updated with the most recent data all every day.
+\item OBS: Data is based on observations.
+\item SST: The data in the file is the daily mean Sea Surface Temperature (SST).
+\item MON: Daily satellite data has been made into monthly means data.
+\end{itemize}
+
+The last row in table \ref{tab: orig data} contains the names, that are used in the code. These are merged pairwise to get a full time series from 1985 to 2014, which is needed to compare with the data from the article by \cite{mattern}. Information about the used data from each of the original datafiles is shown in table \ref{tab: code data} together with the HadISST data mentioned previously in this section. 
+
+\begin{table} [ht]
  \caption{Data used in code for the different resolutions.}
 \begin{center}
     \begin{tabular}{ccc}
     \specialrule{.1em}{.1em}{.1em} 
     Resolution & Data files merged & Data timseries \\ \specialrule{.1em}{.1em}{.1em} 
+    $\ang{1}\times \ang{1}$ & 'HadISST.sst.nc' & From 01.01.1982 to 31.12.2014 \\ \hline
     $\ang{0.25}\times\ang{0.25}$ & 'MET.nc' and 'METnrt.nc' &  \begin{tabular}{@{}c@{}}'MET.nc' from 15.04.1985 to 31.12.2007 \\ 'METnrt.nc' from 01.01.2008 to 31.12.2014\end{tabular}  \\ \hline
-    $\ang{0.05}\times\ang{0.05}$ & 'METHigh.nc' and 'METHighNRT.nc' & \begin{tabular}{@{}c@{}}'METHigh.nc' from 15.04.1985 to 31.12.2007 \\ 'METHighNRT.nc' from 01.01.2008 to 31.12.2014\end{tabular}  \\ \specialrule{.1em}{.1em}{.1em} 
+    $\ang{0.05}\times\ang{0.05}$ & 'METHigh.nc' and 'METHighNRT.nc' & \begin{tabular}{@{}c@{}}'METHigh.nc' from 15.04.1985 to 31.12.2007 \\ 'METHighNRT.nc' from 01.01.2008 to 31.12.2014\end{tabular} 
+    \\ \specialrule{.1em}{.1em}{.1em} 
     \end{tabular}
     \end{center}
     \label{tab: code data}
  \end{table}
 
+
+
+\textcolor{red}{Jeg har ikke naevnt noget med at vi bruger monthly means og anomalys, da jeg taenkte det hører til i metoder?}
 
 
 \begin{figure} [H]
@@ -52,4 +83,3 @@ The last row in table \ref{tab: orig data} contains the names, that are used in 
 \end{figure}
 % 
 
-\subsection{Satellite data from Copernicus}
