@@ -1,7 +1,7 @@
 \section{Background}
 
 \subsection{Species information} \label{species}
-The Yellow-eyed penguin (YEP, Megadyptes antipodes) is a species that is of great cultural and economical importance for New Zealand (Seddon, Ellenberg and van Heezik, 2013). YEP’s are an important tourist attraction at the Otago Peninsula and the local area benefits from the presence of the birds since the tourism industry contributes with more than NZ\$100 mio annually to the local economy (Tisdell, 2007). Furthermore the YEP is a native species to New Zealand and is seen as xxx. 
+The Yellow-eyed penguin (YEP, Megadyptes antipodes) is a species that is of great cultural and economical importance for New Zealand (Seddon, Ellenberg and van Heezik, 2013). YEP’s are an important tourist attraction at the Otago Peninsula and the local area benefits from the presence of the birds since the tourism industry contributes with more than NZ\$100 mio annually to the local economy (Tisdell, 2007). Furthermore the YEP is a native species to New Zealand.
 
 The population of YEP’s are colonised at three different locations: at the Auckland Islands,the Campbell Islands and along New Zealand's south-eastern coastline including the Steward Island. The three subpopulations are considered to be separate since they do not share genes (Boessenkool et al. 2009a). This is represented by figure X. While the total population of breeding birds is approximately 3400 (1700 breeding pairs), around 40\% of them are inhabited on the mainland (Seddon, Ellenberg and van Heezik, 2013). The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 \citep{mattern}.  
 
@@ -10,15 +10,14 @@ YEP are dependent on both marine and terrestrial habitats. While the land provid
 According to the International Union for Conservation of Nature (IUCN) Red List assessment from 2016 the YEP is endangered and has been since 2000. The species is listed as endangered due to the fact that it is limited to a very small range when breeding, in which its habitat also has declined in quality. Furthermore the population undergo extreme fluctuations and is thought to be in overall decline. 
 
 \subsection{Geography}
-Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Harbour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean. This is represented by figure X. 
-
-\textcolor{red}{Map of area - bare lige indtil vi får et andet kort}. 
+Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Harbour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean. This is represented by figure \ref{map}. 
 
 \begin{figure} [ht]
 \begin{center}
 \includegraphics[width=10cm]{Boulder.PNG}
 \end{center}
 \caption{Map showing the three different locations, where the YEP is colonised and the Bould Beach Complex}
+\label{map}
 \end{figure}
 
 \subsubsection{Currents along the east coast of South New Zealand}
@@ -28,7 +27,7 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 
 \subsection{Data used in article}
 \subsubsection{Demographic data}
-The demographic data used in \cite{mattern} comes from The Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure X), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table \ref{tab:demodata}. 
+The demographic data used in \cite{mattern} comes from the Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of Conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure \ref{map}), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table \ref{tab:demodata}. 
 
 % table containing information about demographic data
 \begin{table}[ht]
@@ -123,8 +122,6 @@ Data for the first six variables listed in table \ref{tab:environdata} are recei
 \end{center}
 \end{table}
 %
-
-\textcolor{red}{Figure 4 from article}
 
 \begin{figure} [ht]
 \begin{center}
