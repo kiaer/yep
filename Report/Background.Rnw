@@ -3,27 +3,27 @@
 \subsection{Species information} \label{species}
 The Yellow-eyed penguin (YEP, Megadyptes antipodes) is a species that is of great cultural and economical importance for New Zealand \citep{seddon2013}. YEP’s are an important tourist attraction at the Otago Peninsula and the local area benefits from the presence of the birds since the tourism industry contributes with more than NZ\$100 mio annually to the local economy \citep{tisdell2007}. Furthermore the YEP is a native species to New Zealand.
 
-The population of YEP’s are colonised at three different locations: at the Auckland Islands,the Campbell Islands and along New Zealand's south-eastern coastline including the Steward Island. The three subpopulations are considered to be separate since they do not share genes \citep{boessenkool}. This is represented by figure \ref{map}. While the total population of breeding birds is approximately 3400 (1700 breeding pairs), around 40\% of them are inhabited on the mainland \citep{seddon2013}. The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 \citep{mattern}.  
+The population of YEP’s are colonised at three different locations: at the Auckland Islands,the Campbell Islands and along New Zealand's south-eastern coastline including the Steward Island. The three subpopulations are considered to be separate since they do not share genes \citep{boessenkool}. This is represented by figure \ref{map1}. While the total population of breeding birds is approximately 3400 (1700 breeding pairs), around 40\% of them are inhabited on the mainland \citep{seddon2013}. The biggest colony of YEP on the mainland is represented at the Otago Peninsula and here the number of breeding pairs have declined from 385 in 1996 to 108 in 2011 \citep{mattern}.  
 
 YEP are dependent on both marine and terrestrial habitats. While the land provides the nesting habitat, the sea provides the habitat for the food. At the South Island the nests typically have surrounding vegetation that is thought to hide them from visual contact with conspecifics (Seddon and Davis, 1989 (IUCN)), though is it not believed to be a requirement for a successful breeding (Clarke et at. 2015 (IUCN)).  The breeding season range from mid-September to mid-March. From mid-September to mid-October two eggs are laid and the hatching occurs at the beginning of November. The chicks fledge from mid-February until mid-March. YEP feed mainly along the seafloor (87\% of all dives) and pelagic dives usually occur on their way back to the breeding area \citep{mattern2007}. The depths of the dives are typically less than 100 meters, but can occasionally get deeper than 120 meters \citep{seddon2013}. The individuals have foraging sites they revisit and are very sensitive to disturbance and degradation of their benthic foraging habitat \citep{browne} \citep{mattern2013}.
 
 According to the International Union for Conservation of Nature (IUCN) Red List assessment from 2016 the YEP is endangered and has been since 2000. The species is listed as endangered due to the fact that it is limited to a very small range when breeding, in which its habitat also has declined in quality. Furthermore the population undergo extreme fluctuations and is thought to be in overall decline. 
 
 \subsection{Geography}
-Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Harbour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean. This is represented by figure \ref{map}. 
+Otago Peninsula is located on the South Island of New Zealand in the Otago region close to Dunedin. It is a long hilly piece of land that lies south-east of the water of Otago Harbour and runs parallel to the mainland for 20 km with a maximum witdh of 9 km. Dunedin is located at the end of Otago Harbour, the south-west end of Otago Peninsula and the Boulder Beach Complex is located on the south side of the peninsula towards to the ocean. This is represented by figure \ref{map1}. 
 
-\begin{figure} [ht]
+\begin{figure} [H]
 \begin{center}
-\includegraphics[width=10cm]{Boulder.PNG}
+\includegraphics[width=10cm]{BBcomplex.png}
 \end{center}
 \caption{Map showing the three different locations, where the YEP is colonised and the Bould Beach Complex \citep{mattern}.}
-\label{map}
+\label{map1}
 \end{figure}
 
 \subsubsection{Currents and frontal zones along the southeast coast of South New Zealand}
 The Southland Current runs along the southeast coast of New Zealand's South Island and results in a northward flow of water. This current is linked to the Southland Front, that is a local appearance of the global Subtropical Front (STF) that circles the globe at c. 30-45°S. The Southland Front is a narrow and stable front separating the warm and salty band of Subtropical Water (STW) on the continental shelf from the cold and fresh Subantarctic Water (SAW) running offshore to the east. The front follows the continental shelf break along the southeast coast of New Zealand, where the STF has crossed the Tasman Sea at c. 45°S, then running southward around New Zealand and continuing up north until turning east along the crest of Chatham Rise at c. 43°S \citep{sutton}. How the current runs creating a frontal zone is depicted in figure \ref{frontalzone}. 
 
-\begin{figure} [ht]
+\begin{figure} [H]
 \begin{center}
 \includegraphics[width=10cm]{frontalzone.png}
 \end{center}
@@ -36,12 +36,13 @@ The frontal zone generated by the Southland Current is very important for determ
 
 \subsection{Data used in article}
 \subsubsection{Demographic data}
-The demographic data used in \cite{mattern} comes from the Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of Conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure \ref{map}), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table \ref{tab:demodata}. 
+The demographic data used in \cite{mattern} comes from the Yellow-eyed penguin database (YEPDB), which is maintained by the New Zealand Department of Conservation (DOC). DOC also maintains the YEP banding and monitoring program. From 1982 and onwards complete monitoring data sets have been collected. Banding records have been collected at different areas, but almost one third of all banding records and nest records are from the Boulder Beach (figure \ref{map1}), giving the most recent and consistent monitoring data. Furthermore the Boulder Beach complex is also the area that has been monitored for the longest period of time \citep{mattern}.The extracted data, nest records, was used to calculate the population numbers. How the calculations are made is shown in table \ref{tab:demodata}. 
 
 ID numbers were also extracted for individuals banded at the Boulder Beach complex to determine the encounter histories for each of the birds. The data set containing nest records was combined with the data set containing branding records to one data set representing both nest data and individual encounter histories. A bird was defined dead when it had missed at least two consecutive breading seasons \citep{mattern}. 
 
 % table containing information about demographic data
-\begin{table}[ht]
+\begin{table}[H]
+\caption{Description of demographic data and population numbers used in the development for a YEP population model \citep{mattern}.}
 \begin{center}
 \begin{tabular}{ll}
   \hline
@@ -55,7 +56,6 @@ ID numbers were also extracted for individuals banded at the Boulder Beach compl
   & for birds banded as adults (15\% of all banded birds) \\
   \hline
 \end{tabular}
-\caption{Description of demographic data and population numbers used in the development for a YEP population model \citep{mattern}.} 
 \label{tab:demodata}
 \end{center}
 \end{table}
@@ -65,7 +65,8 @@ ID numbers were also extracted for individuals banded at the Boulder Beach compl
 The environmental data used in  \cite{mattern} are monthly averages for selected climatic variables. Selection of climatic variables is based on whether the variable is considered to likely have an influence on the demographic data. The selected variables are listed in table \ref{tab:environdata}. 
 
 % table containing information about environmental data 
-\begin{table}[ht]
+\begin{table}[H]
+\caption{Description of selected environmental variables used in the development for a YEP population model \citep{mattern}.}
 \begin{center}
 \begin{tabular}{ll}
   \hline
@@ -83,7 +84,6 @@ The environmental data used in  \cite{mattern} are monthly averages for selected
   & of Otago \\
    \hline
 \end{tabular}
-\caption{Description of selected environmental variables used in the development for a YEP population model \citep{mattern}.} 
 \label{tab:environdata}
 \end{center}
 \end{table}
@@ -95,7 +95,8 @@ Data for the first six variables listed in table \ref{tab:environdata} are recei
 \cite{mattern} uses a population model to describe the variations in the YEP population explained by the selected environmental variables. The population model used was the Bayesian mark-recapture model that estimates the size of a population. A sample of a population is captured, marked and then released again. After a certain amount of time another sample is captured and the number of marked individuals is counted. The marked individuals within the second sample should be proportional to the number of marked individuals within the entire population, thus an estimate of the population size can be made by dividing the total number of marked individuals by the proportion of marked individuals in the second sample. By developing a mark-recapture model that incorporates the effects from climate variables it was possible for \cite{mattern} to estimate the adult and fledgling survival. The results showed that sea surface temperatures explained 33.2\% of the variation in fledgling survival and 36.8\% of the variation in adult survival. Selected results are shown in table \ref{tab:adultsur} and table \ref{tab:fledgsur}. Sea surface temperatures had the greatest effect on the adult survival. Years with warmer than usual SST's resulted in a lower adult survival whereas years with cooler than usual SST's resulted in an increased survival. The relationship of SST and YEP survival is visualized in figure \ref{fig4}, where the deviation of annual adult survival from the median survival rate is plotted against the SST anomaly.
 
 % Estimated effect size for adult survival 
-\begin{table}[ht]
+\begin{table}[H]
+\caption{Estimated effect size for adult survival. PVE is the percentage of variance in adult survival explained by each covariate \citep{mattern}.}
 \begin{center}
 \begin{tabular}{lll}
   \hline
@@ -108,14 +109,15 @@ Data for the first six variables listed in table \ref{tab:environdata} are recei
   Minus 1 year SST anomaly & -1.056 & 25.7 \\
   \hline
 \end{tabular}
-\caption{Estimated effect size for adult survival. PVE is the percentage of variance in adult survival explained by each covariate \citep{mattern}.} 
+ 
 \label{tab:adultsur}
 \end{center}
 \end{table}
 %
 
 % Estimated effect size for fledgling survival 
-\begin{table}[ht]
+\begin{table}[H]
+\caption{Estimated effect size for fledgling survival. PVE is the percentage of variance in fledgling survival explained by each covariate \citep{mattern}.}
 \begin{center}
 \begin{tabular}{lll}
   \hline
@@ -128,13 +130,12 @@ Data for the first six variables listed in table \ref{tab:environdata} are recei
   Annunal mean air temperature & -0.590 & 12.4 \\ 
   \hline
 \end{tabular}
-\caption{Estimated effect size for fledgling survival. PVE is the percentage of variance in fledgling survival explained by each covariate \citep{mattern}.} 
 \label{tab:fledgsur}
 \end{center}
 \end{table}
 %
 
-\begin{figure} [ht]
+\begin{figure} [H]
 \begin{center}
 \includegraphics[width=15cm]{fig4.PNG}
 \end{center}
@@ -150,7 +151,8 @@ An increase in sea surface temperature will increase the stratification of the w
 
 Looking at the specific area outside the southeast coast of the South Island, an increased SST will disrupt the processes that regulate the nutrient flow between the benthos and surface waters, also named the benthic-pelagic coupling. The decreased mixing that will lead to reduced primary production will also lead to an decreased flux of particulate organic matter (POC) from the surface water to the benthos that again will lead to an decreased remineralization of nutrients. This flux of POC is a major resource of food and already limiting growth in the benthic communities meaning that a reduced flux over time will potentially alter the benthic community \citep{mcclain2012} \citep{smith2013}. Summing this up then the SST will likely indirectly incluence the YEP population since they primarily feed on the benthic fauna (e.g. sprat, silversides, opalfish, blue cod, arrow squid and ahuru according to \cite{iucn}).  
 
-\begin{figure} [ht]
+
+\begin{figure} [H]
 \begin{center}
 \includegraphics[width=15cm]{drawing.jpg}
 \end{center}

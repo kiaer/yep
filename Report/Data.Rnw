@@ -71,15 +71,3 @@ The last row in table \ref{tab: orig data} contains the names, that are used in 
  \end{table}
 
 
-
-\textcolor{red}{Jeg har ikke naevnt noget med at vi bruger monthly means og anomalys, da jeg taenkte det hører til i metoder?}
-
-
-\begin{figure} [H]
-\begin{center}
-\includegraphics[width=5cm]{YEP.jpg}
-\end{center}
-\caption{The Yellow eyed penguin}
-\end{figure}
-% 
-
