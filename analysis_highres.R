@@ -5,6 +5,8 @@ library(ggplot2)
 library(rasterVis)
 library(lubridate)
 library(raster)
+require(gridExtra)
+
 
 ### High resolution Data 
 
@@ -67,11 +69,18 @@ for (i in 2:30){
 
 r.corrH <- stackApply(r.anomH, indices = c(1), fun = function(x, na.rm) {cor(matten, x)})
 
+
 gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
   xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
   labs(fill="Correlation")
+
+gplot(r.mjmeanH)+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Temperature")
 
 lon.pts <- seq(169.5,169.5, by=1)
 lat.pts <- rep(-47,length(lon.pts))
@@ -87,3 +96,16 @@ x2 <- ann.extractAno[1:30]
 
 matplot(1985:2014,x1,type="l",xlab="Year",ylab="SST (Celsius)")
 matplot(1985:2014,x2,type="l",xlab="Year",ylab="Anomaly")
+
+plot1 <- gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(168:172, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Correlation")
+plot2 <- gplot(r.corr)+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(168:172, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Correlation")
+grid.arrange(plot1, plot2, ncol=2)
+

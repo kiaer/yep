@@ -1,1 +1,35 @@
 \section{Results}
+
+\subsection{Verification of data}
+Using the high resolution satellite data (see figure \ref{fig:highres}), it is clearly seen that close to shore, in the subtropical water, the correlation between the original data used and the SST in these areas a very high. Closer to the subtropical front and in the subanartic waters, the correaltion drops 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{HighResCorr.png}
+\caption{High resolution plot of the correlation between a given 0.05$^\circ$x0.05$^\circ$ gridpoint SST and the dataset used in \cite{mattern}. The plot shows tendencies of very high correlation close to the coastline and on the westcoast of New Zealand. When reaching the Southland Front correlation drops dramatically, due to the colder subanartic waters. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation.\textcolor{red}{Indikation af pingvinernes habitat, plus deres range}}
+\label{fig:highres}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{Boulder.png}
+\caption{High resolution plot of the Boulder Beach habitat correlation with the Ottago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown. \textcolor{red}{Indikation af pingvinernes habitat, plus deres range!! TODO}}
+\label{fig:habitatH}
+\end{figure}
+
+\subsubsection{March-June anomalies and mortality}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{MJano.png}
+\caption{Anomaly in mean temperature in March-June. Plottet also is the - NOT DONE -\textcolor{red}{Needs the yearly mortality of YEP  included}}
+\label{fig:ano}
+\end{figure}
+
+\subsubsection{Comparison with low resolution plot}
+Comparing the high resolution satellite data to the 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{CompHL.png}
+\caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
+\label{fig:compare}
+\end{figure}
+\subsection{Climate analysis}

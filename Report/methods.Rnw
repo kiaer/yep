@@ -1,15 +1,30 @@
 \section{Methods}
 
 \subsection{Methods from project description}
-Reproduce the results obtained in \cite{mattern}, \citep{mattern}.
+Reproduce the results obtained in \cite{mattern}.
 
-Carry out a statistical analysis to determine whether the SST data from Mattern et al. [2017] is representative as a proxy or not, when compared to satellite data.
+Carry out a statistical analysis to determine whether the SST data from \cite{mattern} is representative as a proxy or not, when compared to satellite data.
 
 Use climate data from satellites to determine if other physical or biological  aspects can be associated with the population variation.
 
 \subsection{Verifying the existing analysis}
 
+To determine whether or not the use of SST gathered from within the Otago Harbour as an appropiate proxy for the penguin habitat, analysis on the SST from gathered from satelittes is done and compared to the harbour data. The focus of the analysis is on the anomalies of the March to June data, as \cite{mattern} determined this anomaly to have the highest impact on the Yellow-eyed penguin population.
 
+Using climate data obtained from the Hadley Centre and the Copernicus Monitoring Service, a correlation analysis of the SST within a region of containing the south islands of New Zealand can be done. A region of interest can be seen in figure \ref{fig:ROI}. This region of interest is far larger than the penguin habitat and contains almost all of the southern islands of New Zealand. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{ROI}
+\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from the high resolution Copernicus data. The region spans from S44 to S48 and E165 to E175.\textcolor{red}{MANGLER OGSÅ YEP AREA STØRRE TEKST + Ottago harbour}}
+\label{fig:ROI}
+\end{figure}
+
+As Copernicus data can only be extracted from 1985 and forwards, both the mean and anomaly analysis on this data set will use a smaller timeseries. As this will move the mean, and thereby the anomalies, the March to June anomalies will have different results than \cite{mattern}. But as correlation is the main focus of this analysis, the size of the anomalies is not of importance, and will not affect the results.
+
+The Raster library is used in R for the data analysis, as Raster is able to read, manipulate and analyze spatial gridded data, making it suitable for working with geographical climate data. See \nameref{sec:appendix} for R implementation of the analysis. 
 
 \subsection{Analysing climate data}
+
+\textcolor{red}{Når vi ved hvilke data vi har kan dette skrives}
 

@@ -83,10 +83,10 @@ Mark \textsc{Payne}
 \end{titlepage}
 \newpage
 \section*{Acknowledgement}
-Thanks
+Thanks Mark!
 \newpage
 \section*{Summary}
-\url{https://github.com/kiaer/yep} - R Code
+\url{https://github.com/kiaer/yep} - R Code and report
 \newpage
 \tableofcontents
 \newpage
@@ -111,4 +111,322 @@ Thanks
 \bibliography{references}
 \newpage
 \section{Appendix}
+\label{sec:appendix}
+\subsection{HadISST analysis R-script}
+<<eval=FALSE>>=
+### Analysis main script
+library('raster')
+library('lubridate')
+library(maps)
+library(mapdata)
+library(reshape)
+library(ggplot2)
+library(rasterVis)
+library(lubridate)
+library(raster)
+
+source('monthly_mean.R')
+source('anomaly.R')
+
+fname <- "HadISST_sst.nc"
+HadISST.b <- brick(fname)
+#0.34,-1.14, 0.19,
+matten <- c(  0.66, 0.23, 0.03,-1.06,-0.01, 0.24,-0.27,-1.51,
+            -0.50,-0.23, 0.37, 0.29, 0.13, 0.64, 1.11, 0.41, 0.52, 0.47, 0.67, 
+            -0.36, 0.23, 0.36, 0.74, 0.82, 0.16, 0.21, 0.34,-0.04, 0.94, 0.48)
+
+
+ROI <- extent(165,175,-48,-44)
+lon.pts <- seq(169.5,169.5, by=1)
+lat.pts <- rep(-46.5,length(lon.pts))
+r <- HadISST.b[[1776]]
+r
+r[r < -300] <- NA
+
+r.crop <- crop(r,ROI)
+plot(r.crop)
+points(lon.pts,lat.pts,pch=4,col="red")
+
+
+m <- monthly_mean(lon.pts, lat.pts, HadISST.b, ROI)
+monthly.mean = m[1:12]
+yearly.mean = m[[13]]
+mj.mean = m[[14]]
+
+year = 1981
+
+a <- anomaly(monthly.mean, yearly.mean, mj.mean, year, ROI, HadISST.b, 
+             , lon.pts)[13]
+
+mj.timeseries <- lapply(1:33, function(x) {
+  anomaly(monthly.mean, yearly.mean, mj.mean, year + x, ROI, HadISST.b, 
+          lat.pts, lon.pts)[14]
+})
+an.timeseries <- lapply(1:33, function(x) {
+  anomaly(monthly.mean, yearly.mean, mj.mean, year + x, ROI, HadISST.b, 
+          lat.pts, lon.pts)[13]
+})
+cor(matten, unlist(mj.timeseries))
+
+unlist(mj.timeseries)
+
+plot(1982:2014, unlist(mj.timeseries))
+
+plot(1982:2014, unlist(an.timeseries))
+@
+<<eval=FALSE>>=
+### Anomaly script
+library('raster')
+
+anomaly <- function(monthly.mean, yearly.mean, mj.mean, year,
+                    ROI, HadISST.b, lat.pts, lon.pts){
+  
+  nms <- expand.grid(paste0('X',year:year),c("01","02","03","04","05"
+                                             ,"06","07","08","09","10","11","12"),'16')
+  nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
+  
+  
+  nmsfeb <- expand.grid(paste0('X',year:year),c("02"),'15')
+  nmsfeb <- apply(nmsfeb,1,function(x) paste0(x,collapse = '.'))
+  
+  nms <- append(nms, nmsfeb)
+  nms <- sort(nms)
+  
+  r <- HadISST.b[[nms]]
+  r[r < -300] <- NA
+  
+  r.crop <- crop(r,ROI)
+  
+  extract.pts <- cbind(lon.pts,lat.pts)
+  ext <- extract(r.crop,extract.pts,method="bilinear")
+  
+  ann.extract <- extract(r.crop,extract.pts,method="bilinear")
+  
+  yearly.ano <- mean(ann.extract) - yearly.mean
+  
+  monthly.ano <- lapply(1:12, function(x) ann.extract[x] - monthly.mean[[x]])
+  
+  mj.ano <- mean(ann.extract[3:6]) - mj.mean
+  return(c(monthly.ano, yearly.ano, mj.ano)) 
+
+}
+@
+<<eval=FALSE>>=
+### Mean script
+library('raster')
+
+monthly_mean <- function(lon.pts, lat.pts, HadISST.b, ROI ){
+  nms <- expand.grid(paste0('X',1954:2014),c("01","02","03","04","05"
+                                             ,"06","07","08","09","10","11","12"),'16')
+  nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
+  
+  
+  nmsfeb <- expand.grid(paste0('X',1954:2014),c("02"),'15')
+  nmsfeb <- apply(nmsfeb,1,function(x) paste0(x,collapse = '.'))
+  nmsfeb
+  
+  nms <- append(nms, nmsfeb)
+  nms <- sort(nms)
+  
+  r <- HadISST.b[[nms]]
+  r[r < -300] <- NA
+  r.crop <- crop(r,ROI)
+  
+  extract.pts <- cbind(lon.pts,lat.pts)
+  ext <- extract(r.crop,extract.pts,method="bilinear")
+  
+  ann.extract <- extract(r.crop,extract.pts,method="bilinear")
+  
+  years <- 2014 - 1954
+  months <- years * 12
+  means <- list()
+  
+  sum <- 0
+  
+  for (i in 1:12){
+    for (j in 1:years){
+      pos <- i + ((j - 1) * 12)
+      sum <- sum + head(ann.extract[pos])
+    }
+    means[i] <- sum / years
+    sum <- 0 
+  }
+  
+  yrly = Reduce(`+`, means) / 12
+  mj.means <- mean(unlist(means[3:6]))
+  
+  return(c(means,mj.means,yrly))
+}
+
+@
+\subsection{Low Resolution R-script}
+<<eval=FALSE>>=
+### Low resolution data
+library(maps)
+library(mapdata)
+library(reshape)
+library(ggplot2)
+library(rasterVis)
+library(lubridate)
+library(raster)
+
+fname <- "MET.nc"
+nrtname <- "METnrt.nc"
+
+matten <- c(  0.66, 0.23, 0.03,-1.06,-0.01, 0.24,-0.27,-1.51,
+              -0.50,-0.23, 0.37, 0.29, 0.13, 0.64, 1.11, 0.41, 0.52, 0.47, 0.67, 
+              -0.36, 0.23, 0.36, 0.74, 0.82, 0.16, 0.21, 0.34,-0.04, 0.94, 0.48)
+
+
+nrt.b <- brick(nrtname)
+MET.b <- brick(fname, varname = "analysed_sst")
+#comb.b <- mosaic(MET.b, nrt.b, fun = mean)
+comb <- stack(MET.b, nrt.b)
+z <- list(getZ(MET.b), getZ(nrt.b))  
+#getZ(MET.b)
+z = unlist(z) + ISOdatetime(year = 1981, 1, 1,0,0,0,tz="GMT") 
+
+names(comb) <- year(z)
+#comb
+comb[["X1985.12"]]
+
+ROI <- extent(165,175,-48,-44)
+
+
+nms <- expand.grid(paste0('X',1985:2014),c("3","4","5"
+                                           ,"6"))
+nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
+
+nms <- sort(nms)
+
+r = comb[[nms]]
+r[r < -300] <- NA
+
+r.crop <- crop(r,ROI)
+
+r.mean <- calc(r.crop, mean)
+
+r.mean <- calc(r.mean, fun = function(x) {x - 273.15})
+
+#r.mean[]
+indices = lapply(1:(30*4), function(x) {x %% 30 + 1})
+
+r.mjmean <- stackApply(r.crop, indices = sort(unlist(indices)), fun = sum, na.rm = TRUE)
+#r.mjmean[[30]][]
+r.mjmean <- calc(r.mjmean, fun = function(x) {(x / 4) - 273.15})
+r.mjmean[r.mjmean < -100] <- NA
+
+
+r.anom <- r.mjmean[[1]] - r.mean
+#plot(r.mjmean[[18]])
+for (i in 2:30){
+  temp <- r.mjmean[[i]] - r.mean
+  r.anom <- stack(r.anom, temp)
+}
+
+r.corr <- stackApply(r.anom, indices = c(1), fun = function(x, na.rm) {cor(matten, x)})
+
+gplot(r.corr)+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlOrRd",na.value="black")+ 
+  coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Correlation")
+@
+\subsection{High Resolution R-script}
+<<eval=FALSE>>=
+### High resolution data
+library(maps)
+library(mapdata)
+library(reshape)
+library(ggplot2)
+library(rasterVis)
+library(lubridate)
+library(raster)
+
+### High resolution Data 
+
+METnameH <- "METHigh.nc"
+nrtnameH <- "METHighNRT.nc"
+
+matten <- c(  0.66, 0.23, 0.03,-1.06,-0.01, 0.24,-0.27,-1.51,
+              -0.50,-0.23, 0.37, 0.29, 0.13, 0.64, 1.11, 0.41, 0.52, 0.47, 0.67, 
+              -0.36, 0.23, 0.36, 0.74, 0.82, 0.16, 0.21, 0.34,-0.04, 0.94, 0.48)
+
+
+METH.b <- brick(METnameH)
+nrtH.b <- brick(nrtnameH)
+
+combH <- stack(METH.b, nrtH.b)
+
+z <- list(getZ(METH.b), getZ(nrtH.b))  
+
+z <- unlist(z) + ISOdate(year = 1981, 1, 1,0,0,0,tz="GMT") 
+z <- format(z,format='%Y-%m-%d')
+
+names(combH) <- z
+
+nms <- expand.grid(paste0('X',1985:2014),c("03","04","05"
+                                           ,"06"), 
+                   c("01","02","03","04","05","06","07",
+                     "08","09","10","11","12","13","14",
+                     "15","16","17","18","19","20","21",
+                     "22","23","24","25","26","27","28",
+                     "29","30","31"
+                   ))
+nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
+
+nms <- sort(nms)
+
+r <- combH[[nms]]
+r[r < -300] <- NA
+r <- calc(r, fun = function(x) {x - 273.15})
+
+indices = lapply(1:(30*4*30.5), function(x) {x %% 30 + 1})
+
+r.mjmeanH <- stackApply(r, indices = sort(unlist(indices)), 
+                        fun = function(x, na.rm){sum(x)},  na.rm = FALSE)
+
+r.mjmeanH <- calc(r.mjmeanH, fun = function(x) {(x / 122)})
+
+#r.test[r.test < 0] <- NA
+nms <- expand.grid(paste0('X',1985:2014))
+nms <- apply(nms,1,function(x) paste0(x,collapse = '.'))
+nms <- sort(nms)
+names(r.mjmeanH) <- nms
+
+r.meanH <- calc(r.mjmeanH, mean)
+
+r.anomH <- r.mjmeanH[[1]] - r.meanH
+#plot(r.mjmean[[18]])
+for (i in 2:30){
+  temp <- r.mjmeanH[[i]] - r.meanH
+  r.anomH <- stack(r.anomH, temp)
+}
+
+r.corrH <- stackApply(r.anomH, indices = c(1), fun = function(x, na.rm) {cor(matten, x)})
+
+gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlOrRd",na.value="black")+ 
+  coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Correlation")
+
+lon.pts <- seq(169.5,169.5, by=1)
+lat.pts <- rep(-47,length(lon.pts))
+
+extract.pts <- cbind(lon.pts,lat.pts)
+
+ann.extract <- extract(r.mjmeanH,extract.pts,method="bilinear")
+ann.extractAno <- extract(r.anomH,extract.pts,method="bilinear")
+
+
+x1 <- ann.extract[1:30]
+x2 <- ann.extractAno[1:30]
+
+matplot(1985:2014,x1,type="l",xlab="Year",ylab="SST (Celsius)")
+matplot(1985:2014,x2,type="l",xlab="Year",ylab="Anomaly")
+
+@
 \end{document}
