@@ -173,10 +173,6 @@ Other threats, that could be interesting to look into is e.g. toxins. Toxins are
 
 \subsection{Hypotheses}
 The analytical/statistical work of this project is based on two hypotheses. The two hypotheses are covering the two main assumptions:
-\begin{itemize} 
-\item	Sea surface temperatures used in \cite{mattern} are not representative for sea surface temperatures outside Otago Harbour
-\item	Sea surface temperatures cannot be directly linked to survival of Yellow-eyed penguins due to the fact changes in physical variables will lead to multiple effects in different biological processes.
-\end{itemize}
 
 The two hypotheses tested in this project are the following:
 \begin{itemize} 

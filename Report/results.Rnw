@@ -12,7 +12,7 @@ Using the high resolution satellite data (see figure \ref{fig:highres}), it is c
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{Boulder.png}
-\caption{High resolution plot of the Boulder Beach habitat correlation with the Ottago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown. \textcolor{red}{Indikation af pingvinernes habitat, plus deres range!! TODO}}
+\caption{High resolution plot of the Boulder Beach habitat correlation with the Otago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown. \textcolor{red}{Indikation af pingvinernes habitat, plus deres range!! TODO}}
 \label{fig:habitatH}
 \end{figure}
 
