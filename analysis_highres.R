@@ -75,12 +75,20 @@ gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
   xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
   labs(fill="Correlation")
+r.corrHna <- r.corrH
+r.corrHna[r.corrHna < 0.32] <- NA
+
+gplot(r.corrHna)+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlOrRd",na.value="white")+ coord_quickmap(170:172, -45.5:-46.5, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Correlation") + theme(text = element_text(size=18))
 
 gplot(r.mjmeanH)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
-  scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  scale_fill_distiller(palette="RdBu",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
   xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Temperature")
+  labs(fill="Temperature") + theme(text = element_text(size=18))
 
 lon.pts <- seq(169.5,169.5, by=1)
 lat.pts <- rep(-47,length(lon.pts))
