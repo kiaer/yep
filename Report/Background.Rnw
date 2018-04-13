@@ -147,17 +147,32 @@ Bottom graph: SST anomalies from 1980 to 2016 with the associated deviance (blac
 In 1989 there was a die-off event within the YEP population, which removed about 50 of the breeding population \citep{Efford1996}. This die-off event was followed by a recovery period on six years, where the recovery of the population was assumed to be aided by cooler than normal SST (figure \ref{fig4}) \citep{mattern}. The next die-of in 2001 at Boulder Beach (A Setiawan, pers. comm., 2004) resulted in a local population reduction of almost 40\%. After this die-off there has not been any indication on a recovery of the population. From 1998 until 2017 has in general been a period with SST's warmer than usual, and \cite{mattern} explains the lack of recovery by the association with warmer than usual SST and a reduced adult survival in YEP. 
 
 \subsection{Effects from physical changes on biological processes}
-An increase in sea surface temperature will increase the stratification of the water column meaning that the mixing of the warmer surface layer with cooler bottom water will decrease. Typically the bottom water will be nutrient rich, due to remineralization of organic matter in deep water, whereas the surface layer will be almost depleted in nutrients. This means that the primary production is a result of the mixing of warm nutrient depleted surface water with cold nutrient rich bottom water. The mixing between the two water masses will ensure nutrients for primary production to occur hence a decreased mixing potentially will lead to a reduced primary production due to a reduced nutrient supply \citep{jones2014}. These processes are depicted by figure \ref{phyproc}.
+An increase in sea surface temperature will increase the stratification of the water column meaning that the mixing of the warmer surface layer with cooler bottom water will decrease. Typically the bottom water will be nutrient rich, due to remineralization of organic matter in deep water, whereas the surface layer will be almost depleted in nutrients. This means that the primary production is a result of the mixing of warm nutrient depleted surface water with cold nutrient rich bottom water. The mixing between the two water masses will ensure nutrients for primary production to occur hence a decreased mixing potentially will lead to a reduced primary production due to a reduced nutrient supply \citep{jones2014}. These processes are depicted by figure \ref{physchange}.
 
-Looking at the specific area outside the southeast coast of the South Island, an increased SST will disrupt the processes that regulate the nutrient flow between the benthos and surface waters, also named the benthic-pelagic coupling. The decreased mixing that will lead to reduced primary production will also lead to an decreased flux of particulate organic matter (POC) from the surface water to the benthos that again will lead to an decreased remineralization of nutrients. This flux of POC is a major resource of food and already limiting growth in the benthic communities meaning that a reduced flux over time will potentially alter the benthic community \citep{mcclain2012} \citep{smith2013}. Summing this up then the SST will likely indirectly incluence the YEP population since they primarily feed on the benthic fauna (e.g. sprat, silversides, opalfish, blue cod, arrow squid and ahuru according to \cite{iucn}).  
-
+Looking at the specific area outside the southeast coast of the South Island, an increased SST will disrupt the processes that regulate the nutrient flow between the benthos and surface waters, also named the benthic-pelagic coupling. The decreased mixing that will lead to reduced primary production will also lead to an decreased flux of particulate organic matter (POC) from the surface water to the benthos that again will lead to an decreased remineralization of nutrients. This flux of POC is a major resource of food and already limiting growth in the benthic communities meaning that a reduced flux over time will potentially alter the benthic community \citep{mcclain2012} \citep{smith2013}. These processes are depicted by figure \ref{biology} or \ref{microbial}. Summing this up then the SST will likely indirectly incluence the YEP population since they primarily feed on the benthic fauna (e.g. sprat, silversides, opalfish, blue cod, arrow squid and ahuru according to \cite{iucn}).  
 
 \begin{figure} [H]
 \begin{center}
-\includegraphics[width=15cm]{drawing.jpg}
+\includegraphics[width=12cm]{physchange.jpg}
 \end{center}
-\caption{Quick drawing of processes}
-\label{phyproc}
+\caption{\citep{reusch2013}.}
+\label{physchange}
+\end{figure}
+
+\begin{figure} [H]
+\begin{center}
+\includegraphics[width=12cm]{biology.jpg}
+\end{center}
+\caption{\citep{worden2015}}
+\label{biology}
+\end{figure}
+
+\begin{figure} [H]
+\begin{center}
+\includegraphics[width=12cm]{microbial.jpg}
+\end{center}
+\caption{\citep{worden2015}}
+\label{microbial}
 \end{figure}
 
 \subsubsection{Other processes that could affect the YEP population}
