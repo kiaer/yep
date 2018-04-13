@@ -110,6 +110,7 @@ plot1 <- gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(168:172, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
   xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
   labs(fill="Correlation")
+
 plot2 <- gplot(r.corr)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(168:172, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
