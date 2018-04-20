@@ -159,6 +159,37 @@ Looking at the specific area outside the southeast coast of the South Island, an
 \label{physchange}
 \end{figure}
 
+% Overview of physical and biological processes
+\tikzstyle{box} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\begin{tikzpicture}[node distance=2cm]
+\node (SST) [box] {Increased sea surface temperatures};
+\node (strat) [box, below of=SST, xshift=4cm] {Increased stratification};
+\node (frontal) [box, below of=SST, xshift=-4cm] {Increased strength of frontal zone (increased gradient)};
+\node (inmix) [box, below of=frontal] {Increased mixing};
+\node (demix) [box, below of=strat] {Decreased stratification};
+\node (inprod) [box, below of=inmix] {Increased primary production};
+\node (lessnu) [box, below of=demix] {Less nutrients in surface water};
+\node (deprod) [box, below of=lessnu] {Decreased primary production};
+\node (lessflux) [box, below of=deprod, xshift=-3cm] {Less downward flux of OM};
+\node (desec) [box, right of=lessflux, xshift=3cm] {Decreased secondary production};
+\node (benthic) [box, below of=lessflux, xshift=3cm] {Less production in benthic fauna};
+\node (redcoup) [box, below of=benthic] {Reduced coupling between benthos and surface water};
+\draw [arrow] (SST) -- (strat);
+\draw [arrow] (SST) -- (frontal);
+\draw [arrow] (strat) -- (demix);
+\draw [arrow] (demix) -- (lessnu);
+\draw [arrow] (lessnu) -- (deprod);
+\draw [arrow] (deprod) -- (lessflux);
+\draw [arrow] (lessflux) -- (benthic);
+\draw [arrow] (benthic) -- (redcoup);
+\draw [arrow] (deprod) -- (desec);
+\draw [arrow] (desec) -- (benthic);
+\draw [arrow] (frontal) -- (inmix);
+\draw [arrow] (inprod) --node[anchor=east] {local compensation?} (deprod)[dashed];
+\end{tikzpicture}
+%
+
 \begin{figure} [H]
 \begin{center}
 \includegraphics[width=12cm]{biology.jpg}
