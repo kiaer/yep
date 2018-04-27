@@ -1,13 +1,13 @@
 \section{Data} \label{data}
 
 
-This project aims to examine whether the observed SST data from inside the Otago Harbour is appropriate for describing the fluctuations in the population of the Yellow-eyed penguin. To be able to do that, it is necessary to compare the data to some possibly better representing data. The data used in this project is therefore aquired from satellites. Data in three different resolutions are being analysed in this project, in order to make a proper comparisons of the data used in the article and that from satellites. 
+This project aims to examine whether the observed SST data from inside the Otago Harbour is appropriate for describing the fluctuations in the population of the Yellow-eyed penguin. To be able to do that, it is necessary to compare the data to some possibly better representing data. The data used in this project is therefore aquired from satellites and is given in degrees Kelvin. Data in three different resolutions are being analysed in this project, in order to make a proper comparisons of the data used in the article and that from satellites. 
 
 \subsection{Hadley Centre data}
 The first one comes from the Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST), which can be found on the Met Office Hadley Centre website (https://www.metoffice.gov.uk). HadISST provides data all the way back to 1871, but the data used in this project is from 1982 and forward, which is obtained from the Met Office Marine Data Bank (MDB), and includes data from the Global Telecommunication System (GTS). The resolution is not very high ($\ang{1}\times \ang{1}$), and to make up for the spatial "holes" in the data, new data was interpolated to fill the gaps \citep{Rayner2003}. Due to the low resolution, it is not posible to get a good overview of the SST's close to the coast of New Zealand, and thus higher resolutions are needed. 
 
 
-\subsection{Copernicus satellite data}
+\subsection{Copernicus satellite SST data}
 The second dataset has a resolution of $\ang{0.25}\times\ang{0.25}$ and the third has a higher resolution of $\ang{0.05}\times\ang{0.05}$,  which makes up a precision of approx. 5 km. These last two data products are found on the Copernicus website (http://marine.copernicus.eu), which is a part of the EU space programme that seeks to protects the marine and land environment. Copernicus provides a data product called The global Sea Surface Temperature Reanalysis, which is made by The Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) system. The system produces a daily analysis of SST from data from different satellites and datasets that measures SST with different instruments such as High Resolution Radiometers (AVHRR) and an Along Track Scanning Radiometers (ATSR). In table \ref{tab: orig data} below, some more detailed information about the datasets are provided.There are two data products, containing data from different time periods 1985-2007 and 2007-present respectively, but besides that, they provide almost the same information. 
 
 \begin{table} [ht]
@@ -69,5 +69,33 @@ The last row in table \ref{tab: orig data} contains the names, that are used in 
     \end{center}
     \label{tab: code data}
  \end{table}
+
+\subsection{Copernicus satellite chlorophyll data}
+
+The second part of the project seeks to find linkages between variations in the YEP population and phytoplankton blooms. For this, chlorohyll (chl) data is used, and since there are no actual measurements from the water near Boulder Beach Complex, like there is SST measurements, satellite data is acquired. The data can as the SST data be found on the Copernicus website, ACRI-ST provides the product inside the GlobColour Project, funded by the ESA Data User Element Programme. There are many different chl products, depending on what geographic region is wanted and also depending on the level of processing, as mentioned earlier. In this case, the data comes from the product: OCEANCOLOUR\_GLO\_CHL\_L4\_REP\_OBSERVATIONS\_009\_082. The chl concentration is given in mg/m$^{3}$. As you can see in table \ref{tab: code chl}, there are different resolutions and it is also possible to get the data in both monthly averages and daily. 
+
+\begin{table} [ht]
+ \caption{Description of chlorophyll data.}
+\begin{center}
+    \begin{tabular}{cc}
+    \specialrule{.1em}{.1em}{.1em}
+    Specifications & Data \\ \specialrule{.1em}{.1em}{.1em}
+    Variable & Mass concentration of Chlorophyll in sea water [unit: mg/m$^{3}$] \\ \hline
+   
+    Start time & 1997-09-04T00:00:00Z   \\ \hline
+    End time & 2016-12-31T00:00:00Z  \\ \hline
+    Processing level & L4 \\ \hline
+    Coordinate Reference system & WGS 84/Plate Carree (EPSG 32662) \\ \hline
+    Spatial Resolution & 4km $\times$ 4km, 25km $\times$ 25km, 100km $\times$ 100km \\ \hline
+    Type & Daily-optimal-interpolation/8-days/monthly 
+    
+    \\ \hline
+    \end{tabular}
+    \end{center}
+    \label{tab: code chl}
+ \end{table}
+
+
+There can be some difficulties in using satellite data  when it comes to chlorofyll. One thing is, that light is needed in order to reflect the color of the ocean, and thus in order to get the data. New Zealand is at a low latitude which results in times of the year, where there is not enough light to get proper data. Another problem is that clouds can also result in gaps in the data coverage. In the project, the daily data is used, and due to the above mentioned problems, the data is interpolated to fill out the gaps from e.g. cloud cover, and that is the reason it is called Daily-optimal-interpolation. Unfortunately it is not possible to get chl data that goes further back than late 1997, and thus the data used in the project starts in january 1998 and runs through 2016. 
 
 

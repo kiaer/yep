@@ -6,6 +6,15 @@ Can we see any systems when comparing YEP survival with chlorophyll data?
 Periodic heat wave effects?
 
 Where does the penguin actually forage to?
+\begin{itemize}
+\item Forage in straigt lines
+\item Travel distance change (2004, 2005, 2012)
+\item Breeding pattern and foraging patterns?
+\item "While it has been suggested that yellow-eyed penguins might be selective foragers which actively pursue the most nutritious prey [48], subsequent research indicates that diet composition is more likely related to prey availability in different foraging zones"
+\item Also, in 2004 nearly every second foraging trip featured lines, while in 2005 and 2012 linear foraging occurred considerably less frequently (Table 1). Similarly, penguins spent more time foraging on lines in 2004 when compared to the other two seasons.
+\end{itemize}
+
+
 \begin{figure} [H]
 \centering
 \includegraphics[width=10cm]{foragingpattern.png}

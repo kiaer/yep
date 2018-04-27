@@ -20,7 +20,7 @@ Otago Peninsula is located on the South Island of New Zealand in the Otago regio
 \label{map1}
 \end{figure}
 
-\subsubsection{Currents and frontal zones along the southeast coast of South New Zealand}
+\subsubsection{Currents and frontal zones along the southeast coast of South New Zealand} \label{currents}
 The Southland Current runs along the southeast coast of New Zealand's South Island and results in a northward flow of water. This current is linked to the Southland Front, that is a local appearance of the global Subtropical Front (STF) that circles the globe at c. 30-45°S. The Southland Front is a narrow and stable front separating the warm and salty band of Subtropical Water (STW) on the continental shelf from the cold and fresh Subantarctic Water (SAW) running offshore to the east. The front follows the continental shelf break along the southeast coast of New Zealand, where the STF has crossed the Tasman Sea at c. 45°S, then running southward around New Zealand and continuing up north until turning east along the crest of Chatham Rise at c. 43°S \citep{sutton}. How the current runs creating a frontal zone is depicted in figure \ref{frontalzone}. 
 
 \begin{figure} [H]
@@ -147,9 +147,7 @@ Bottom graph: SST anomalies from 1980 to 2016 with the associated deviance (blac
 In 1989 there was a die-off event within the YEP population, which removed about 50 of the breeding population \citep{Efford1996}. This die-off event was followed by a recovery period on six years, where the recovery of the population was assumed to be aided by cooler than normal SST (figure \ref{fig4}) \citep{mattern}. The next die-of in 2001 at Boulder Beach (A Setiawan, pers. comm., 2004) resulted in a local population reduction of almost 40\%. After this die-off there has not been any indication on a recovery of the population. From 1998 until 2017 has in general been a period with SST's warmer than usual, and \cite{mattern} explains the lack of recovery by the association with warmer than usual SST and a reduced adult survival in YEP. 
 
 \subsection{Effects from physical changes on biological processes}
-An increase in sea surface temperature will increase the stratification of the water column meaning that the mixing of the warmer surface layer with cooler bottom water will decrease. Typically the bottom water will be nutrient rich, due to remineralization of organic matter in deep water, whereas the surface layer will be almost depleted in nutrients. This means that the primary production is a result of the mixing of warm nutrient depleted surface water with cold nutrient rich bottom water. The mixing between the two water masses will ensure nutrients for primary production to occur hence a decreased mixing potentially will lead to a reduced primary production due to a reduced nutrient supply \citep{jones2014}. These processes are depicted by figure \ref{physchange}.
-
-Looking at the specific area outside the southeast coast of the South Island, an increased SST will disrupt the processes that regulate the nutrient flow between the benthos and surface waters, also named the benthic-pelagic coupling. The decreased mixing that will lead to reduced primary production will also lead to an decreased flux of particulate organic matter (POC) from the surface water to the benthos that again will lead to an decreased remineralization of nutrients. This flux of POC is a major resource of food and already limiting growth in the benthic communities meaning that a reduced flux over time will potentially alter the benthic community \citep{mcclain2012} \citep{smith2013}. These processes are depicted by figure \ref{biology} or \ref{microbial}. Summing this up then the SST will likely indirectly incluence the YEP population since they primarily feed on the benthic fauna (e.g. sprat, silversides, opalfish, blue cod, arrow squid and ahuru according to \cite{iucn}).  
+An increase in sea surface temperature will increase the stratification of the water column meaning that the mixing of the warmer surface layer with cooler bottom water will decrease. In figure \ref{biophys}, the influences increasing SST is depicted.Typically the bottom water will be nutrient rich, due to remineralization of organic matter in deep water, whereas the surface layer will be almost depleted in nutrients. This means that the primary production is a result of the mixing of warm nutrient depleted surface water with cold nutrient rich bottom water. The mixing between the two water masses will ensure nutrients for primary production to occur hence a decreased mixing potentially will lead to a reduced primary production due to a reduced nutrient supply \citep{jones2014}. These processes are depicted by figure \ref{physchange}.
 
 \begin{figure} [H]
 \begin{center}
@@ -158,6 +156,58 @@ Looking at the specific area outside the southeast coast of the South Island, an
 \caption{\citep{reusch2013}.}
 \label{physchange}
 \end{figure}
+
+
+Looking at the specific area outside the southeast coast of the South Island, an increased SST will disrupt the processes that regulate the nutrient flow between the benthos and surface waters, also named the benthic-pelagic coupling, which is also shown in figure \ref{biophys}. The decreased mixing that will lead to reduced primary production will also lead to an decreased flux of particulate organic matter (POC) from the surface water to the benthos that again will lead to an decreased remineralization of nutrients. This flux of POC is a major resource of food and already limiting growth in the benthic communities meaning that a reduced flux over time will potentially alter the benthic community \citep{mcclain2012} \citep{smith2013}. These processes are depicted by figure \ref{biology} or \ref{microbial}. Summing this up then the SST will likely indirectly incluence the YEP population since they primarily feed on the benthic fauna (e.g. sprat, silversides, opalfish, blue cod, arrow squid and ahuru according to \cite{iucn}).  
+
+
+% Overview of physical and biological processes
+\begin{figure}
+\begin{center}
+\tikzstyle{box} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\begin{tikzpicture}[node distance=2cm]
+\node (SST) [box] {Increased sea surface temperatures};
+\node (strat) [box, below of=SST, xshift=4cm] {Increased stratification};
+\node (frontal) [box, below of=SST, xshift=-4cm] {Increased strength of frontal zone (increased gradient)};
+\node (inmix) [box, below of=frontal] {Increased mixing};
+\node (demix) [box, below of=strat] {Decreased vertical mixing};
+\node (inprod) [box, below of=inmix] {Increased primary production};
+\node (lessnu) [box, below of=demix] {Less nutrients in surface water};
+\node (deprod) [box, below of=lessnu] {Decreased primary production};
+\node (lessflux) [box, below of=deprod, xshift=-3cm] {Less downward flux of OM};
+\node (desec) [box, right of=lessflux, xshift=3cm] {Decreased secondary production};
+\node (benthic) [box, below of=lessflux, xshift=3cm] {Less production in benthic fauna};
+\node (redcoup) [box, below of=benthic] {Reduced coupling between benthos and surface water};
+\draw [arrow] (SST) -- (strat);
+\draw [arrow] (SST) -- (frontal);
+\draw [arrow] (strat) -- (demix);
+\draw [arrow] (demix) -- (lessnu);
+\draw [arrow] (lessnu) -- (deprod);
+\draw [arrow] (deprod) -- (lessflux);
+\draw [arrow] (lessflux) -- (benthic);
+\draw [arrow] (benthic) -- (redcoup);
+\draw [arrow] (deprod) -- (desec);
+\draw [arrow] (desec) -- (benthic);
+\draw [arrow] (frontal) -- (inmix);
+\draw [arrow] (inmix) -- (inprod);
+\draw [arrow] (inprod) --node[anchor=east] {local compensation?} (deprod)[dashed];
+
+
+\end{tikzpicture}
+\caption{Overview of effects on biological processes, when SST is increased.}
+\label{biophys}
+\end{center}
+\end {figure}
+%
+
+From figure \ref{biophys}, it is seen, that changes in sea surface temperatures will also influence the strength of currents, which in this case is very relevant, because the Southland Current, as mentioned in section \ref{currents}, runs close by the New Zealand southern coast. If the strenght of the front increases, it means that the gradient between the two watermasses increases \citep{Woodson2015}. This can potentially increase the biodiversity in the frontal area due to increased vertical mixing and thus increased availability of nutrients, though it is hard to say how far this change reaches horizontally and whether it will have an effect on the YEP. 
+
+Another impact, physical changes can have on biological processes are increased harmful algal blooms. If SST increases, this can as mentioned earlier result in increased production of phytoplankton, but as not all phytoplankton species are harmless, this can too result in more frequent and largers scale harmfull algal blooms. Toxins are produced in some species of phytoplankton, and one way they can indirectly influence the YEP, is that if the blooms affect the shellsfish off New Zealand's coast \citep{Jacobs2015}. Toxins accumulate in shellfish and since they are a main contributor to the food web, and an especially important source of food for the Yellow-eyed penguins, the penguins are in risk of being intoxicated and in worse case scenario die.
+
+
+\textcolor{red}{jeg synes vi skal putte disse i appendix og henvise til dem der, da vi ikke referer saa dybdegaaende til dem}
+
 
 \begin{figure} [H]
 \begin{center}
@@ -176,13 +226,9 @@ Looking at the specific area outside the southeast coast of the South Island, an
 \end{figure}
 
 \subsubsection{Other processes that could affect the YEP population}
-- At the same time, predation on the YEP is also a threat, since more predators have been introduced on the mainland. Since the penguins, as mentioned in section \ref{species}, nest in forrest, such predators can have a large influence on the breeding of the Yellow-eyed penguin. Food availability and amount of predators can vary due to e.g. changes in physical parameters. Besides that, forrest fires, diseases and human influences are also thought to have a large influence on the YEP population \citep{iucn}.
+The YEP are threatened by several processes and parameters, though it is difficult to quantify the effect of most of them. Predation is one that can be mentioned, since more predators have been introduced on the mainland in the recent years. Since the penguins, as mentioned in section \ref{species}, nest in forrest, such predators can have a large influence on the breeding of the Yellow-eyed penguin. At some sites it has been found, that predators have been killing up to 60\% of the chicks \textcolor{red}{nz gov ref}. Food availability and amount of predators can vary due to e.g. changes in physical parameters. Besides that, forrest fires, diseases and human influences are also thought to have a large influence on the YEP population \citep{iucn}. Also anthropogenic disturbances such as tourism is expected to have an influence on the YEP
 
-Other threats, that could be interesting to look into is e.g. toxins. Toxins are poisonous subtances, that are produced in living organisms/cells. Usually the amount of toxic algal blooms increases with temperature increase (climate change). 
 
-- how does increased temperatures etc. effect toxins?
-
-- Another thing that can change, are the ocean currents. If they move closer to or away from the coast, it is possible, that this can have an influence on the penguins.
 
 
 
