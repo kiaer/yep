@@ -16,9 +16,8 @@ Where does the penguin actually forage to?
 
 
 \begin{figure} [H]
-\begin{center}
+\centering
 \includegraphics[width=10cm]{foragingpattern.png}
-\end{center}
 \caption{Figure 1. Foraging patterns of Yellow-eyed penguins. Mid-shelf foraging tracks of yellow-eyed penguins recorded in 2004 (A), 2005 (B) and 2012 (C) that feature straight-line patterns. Foraging track segments in light grey represent outgoing and incoming stages of foraging trips; dark grey segments highlight the foraging stage. Dashed line segments indicate where linearity of the track is a result of interpolation. Track portions that met line criteria (see Methods in \cite{mattern2013}) are highlighted in different colours; line identifiers shown in capital letters of the same colour. Small arrows in (D) indicate sites of ROV deployments in February 2013. Trips with lines from all three seasons are combined in (D) \citep{mattern2013}.}
 \label{foragingpattern}
 \end{figure}
