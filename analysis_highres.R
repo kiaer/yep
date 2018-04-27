@@ -118,3 +118,59 @@ plot2 <- gplot(r.corr)+geom_raster(aes(fill=value), interpolate = FALSE)+
   labs(fill="Correlation")
 grid.arrange(plot1, plot2, ncol=2)
 
+
+# crop of perpendicular line from shore
+plot(r.mjmeanH[[1]])
+lon.pts <- seq(170.5,171.5, by=0.05)
+lat.pts <- seq(-46,-46.5, by=-0.025)
+plot(r.mjmeanH[[1]])
+points(lon.pts,lat.pts,pch=4,col="red")
+ROI <- extent(170,172,-47,-45.5)
+r.cropped <- crop(r.mjmeanH, ROI)
+plot(r.cropped[[1]])
+points(lon.pts,lat.pts,pch=4,col="red")
+extract.pts <- cbind(lon.pts,lat.pts)
+ann.extract <- extract(r.cropped,extract.pts,method="bilinear")
+framepts <- (as.data.frame(extract.pts))
+
+gplot(r.mjmeanH[[1]])+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="RdBu",na.value="black")+ coord_quickmap(166:172, -44.5:-47.5, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Temperature") + theme(text = element_text(size=18))+
+  geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=4,col="red")
+
+# SST diff
+ann.extractdiff <- lapply(1985:2014, function(i){
+  yr <- paste0('X',i)
+  i <- lapply(1:20, function(x){ann.extract[x+1, yr] - ann.extract[x, yr]})
+})
+test1 <- matrix(unlist(ann.extractdiff), ncol = 20, byrow = TRUE)
+test2 <- matrix(unlist(ann.extractdiff), ncol = 30, byrow = FALSE)
+matplot(lon.pts[1:20],test2,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST")),cex.lab=1.5)
+yrs <- unlist(lapply(1985:2014, function(x){toString(x)}))
+
+# Cluster dendrogram with distances frontal zone distances from shore 
+rownames(test1) <- yrs
+testdist <- dist(test1)
+hcd <- as.dendrogram(hclust(testdist))
+plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE, cex.lab=1.5)
+
+
+# Selected years diff plot 
+colnames(test2) <- (yrs)
+test2sel <- test2[,c("1989","2001","2004","2005","2012")]
+matplot(lon.pts[1:20],test2sel,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST")),cex.lab=1.5)
+legend("bottomright", inset=.05, legend=c("1989","2001","2004","2005","2012"), lty=1 , col=c(1,2,3,4,5), horiz=FALSE)
+
+# temperature gradient versus dT
+test2min <- apply(test2,2,min)
+test2tdif <- lapply(1985:2014, function(i){
+  yr <- paste0('X',i)
+  i <- lapply(21, function(x){ann.extract[x, yr] - ann.extract[x-20, yr]})
+})
+
+plot(test2min, unlist(test2tdif), xlab=expression(paste("Gradient [",Delta,"SST/longitude]")), ylab=expression(paste("Temperature difference [",Delta,"SST]")),cex.lab=1.5,col="red")
+fit <- lm(unlist(test2tdif) ~ test2min)
+abline(fit)
+summary(fit)
