@@ -21,6 +21,7 @@
 \usepackage{subcaption}
 \usepackage[bottom]{footmisc}
 \usepackage{hyperref}
+\usepackage{cleveref}
 \linespread{1.3}
 \usepackage{datenumber}
 \usepackage{color}
@@ -113,9 +114,31 @@ Thanks Mark!
 \bibliographystyle{agsm}
 \bibliography{references}
 \newpage
-\section{Appendix}
-\label{sec:appendix}
-\subsection{HadISST analysis R-script}
+
+\appendix
+\label{appendix}
+
+\section{\\Biological processes and interactions}
+\label{sec:phys effects}
+\begin{figure} [H]
+\begin{center}
+\includegraphics[width=12cm]{biology.jpg}
+\end{center}
+\caption{\citep{worden2015}}
+\label{biology}
+\end{figure}
+
+\section{\\Microbial loop}
+\label{sec:micro}
+\begin{figure} [H]
+\begin{center}
+\includegraphics[width=12cm]{microbial.jpg}
+\end{center}
+\caption{\citep{worden2015}}
+\label{microbial}
+\end{figure}
+
+\section{HadISST analysis R-script}
 <<eval=FALSE>>=
 ### Analysis main script
 library('raster')
