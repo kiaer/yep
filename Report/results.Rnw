@@ -33,3 +33,11 @@ Comparing the high resolution satellite data to the
 \label{fig:compare}
 \end{figure}
 \subsection{Climate analysis}
+
+\subsubsection{Chlorophyll}
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{chloctmay.png}
+\caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
+\label{fig:compare}
+\end{figure}
