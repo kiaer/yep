@@ -9,7 +9,7 @@ Use climate data from satellites to determine if other physical or biological  a
 
 \subsection{Verifying the existing analysis}
 
-To determine whether or not the use of SST gathered from within the Otago Harbour as an appropiate proxy for the penguin habitat, analysis on the SST from gathered from satelittes is done and compared to the harbour data. The focus of the analysis is on the anomalies of the March to June data, as \cite{mattern} determined this anomaly to have the highest impact on the Yellow-eyed penguin population.
+To determine whether or not the use of SST gathered from within the Otago Harbour is an appropiate proxy for the penguin habitat, analysis on the SST gathered from satelittes is done and compared to the harbour data. The focus of the analysis is on the anomalies of the March to June data, as \cite{mattern} determined this anomaly to have the highest impact on the Yellow-eyed penguin population.
 
 Using climate data obtained from the Hadley Centre and the Copernicus Monitoring Service, a correlation analysis of the SST within a region of containing the south islands of New Zealand can be done. A region of interest can be seen in figure \ref{fig:ROI}. This region of interest is far larger than the penguin habitat and contains almost all of the southern islands of New Zealand. 
 
@@ -24,7 +24,15 @@ As Copernicus data can only be extracted from 1985 and forwards, both the mean a
 
 The Raster library is used in R for the data analysis, as Raster is able to read, manipulate and analyze spatial gridded data, making it suitable for working with geographical climate data. See \nameref{sec:appendix} for R implementation of the analysis. 
 
-\subsection{Analysing climate data}
+\subsection{Determination of frontal zone}
+The location of the frontal zone along southeast coast of South New Zealand is determined by extracting sea surface temperature data points creating a transect perpendicular to the coast. The transect crosses the area where the penguins forage to and is illustrated by figure \ref{fig:range}.  
 
-\textcolor{red}{Når vi ved hvilke data vi har kan dette skrives}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{range}
+\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from the high resolution Copernicus data. The region spans from S44 to S48 and E165 to E175}
+\label{fig:range}
+\end{figure}
+
+The SST data along the transect can be used to determine the location of frontal zone by finding the temperature gradient. The point where the slope of the gradient equals zero is where the frontal zone is located.  The gradient is calculated in R by finding the difference in sea surface temperature in between data points and plotting the difference by longitude. Furthermore is the total sea surface temperature difference between the data point closest to the coast and the longest away calculated. Both gradients and total SST difference is calculated from year 1985 until 2014 using Copernicus data. 
 
