@@ -1,8 +1,31 @@
 \section{Discussion}
 
+\subsection{Sea surface temperatures}
+
+\subsection{Foraging patterns and position of frontal zone}
+
+% table from article
+\begin{table}[H]
+\caption{Foraging parameters of yellow-eyed penguins fitted with GPS dive loggers \citep{mattern2013}.}
+\begin{center}
+\begin{tabular}{llll}
+  \hline
+  & 2004 & 2005 & 2012 \\ 
+  \hline
+  Number of birds  & 8 & 4 & 11 \\ 
+  Inshore trips ($<$15km from coast)  & 3 & 12 & 33 \\
+  Mid-shelf trips ($>$15km from coast)  & 7 & 5 & 11 \\
+  Trip duration (h)  & $15.5 \pm 4.1$ & $9.1 \pm 2.6$  & $9.9 \pm 4.6$ \\ 
+  Travel distance (km) & $54.5 \pm 12.0$ & $30.5 \pm 10.3$ & $33.6 \pm 18.9$ \\
+  Foraging range (km)  & $21.1 \pm 5.9$ & $11.0 \pm 3.1$ & $10.8 \pm 6.2$ \\ 
+  \hline
+\end{tabular}
+\label{tab:forage}
+\end{center}
+\end{table}
+% 
+
 Can we see any systems when comparing YEP survival with chlorophyll data?
-
-
 Periodic heat wave effects?
 
 Where does the penguin actually forage to?
