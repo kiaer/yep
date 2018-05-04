@@ -46,21 +46,28 @@ Comparing the high resolution satellite data to the
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{deltaSST.png}
+\includegraphics[scale=0.35]{SSTfrontal.png}
+\caption{All years frontal}
+\label{fig:SST}
+\end{figure}frontal
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{deltaSST.png}
 \caption{All years from XX}
 \label{fig:deltaSST}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{deltaSSTselected.png}
+\includegraphics[scale=0.35]{deltaSSTselected.png}
 \caption{Selected years from XX}
 \label{fig:deltaSSTselected}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{dSSTdgradient.png}
+\includegraphics[scale=0.35]{dSSTdgradient.png}
 \caption{Delta SST versus gradient}
 \label{fig:dSSTdgradient}
 \end{figure}

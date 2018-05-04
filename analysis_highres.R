@@ -140,6 +140,9 @@ gplot(r.mjmeanH[[1]])+geom_raster(aes(fill=value), interpolate = FALSE)+
   labs(fill="Temperature") + theme(text = element_text(size=18))+
   geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=4,col="red")
 
+# SST
+matplot(lon.pts,ann.extract,type="l",xlab="Longitude",ylab=expression(paste("SST [",~degree~C, "]")),cex.lab=1.5, ylim=c(9, 13))
+
 # SST diff
 ann.extractdiff <- lapply(1985:2014, function(i){
   yr <- paste0('X',i)
@@ -147,7 +150,7 @@ ann.extractdiff <- lapply(1985:2014, function(i){
 })
 test1 <- matrix(unlist(ann.extractdiff), ncol = 20, byrow = TRUE)
 test2 <- matrix(unlist(ann.extractdiff), ncol = 30, byrow = FALSE)
-matplot(lon.pts[1:20],test2,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST")),cex.lab=1.5)
+matplot(lon.pts[1:20],test2,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST [",~degree~C,"]")),cex.lab=1.5)
 yrs <- unlist(lapply(1985:2014, function(x){toString(x)}))
 
 # Cluster dendrogram with distances frontal zone distances from shore 
@@ -160,7 +163,7 @@ plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE, cex.l
 # Selected years diff plot 
 colnames(test2) <- (yrs)
 test2sel <- test2[,c("1989","2001","2004","2005","2012")]
-matplot(lon.pts[1:20],test2sel,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST")),cex.lab=1.5)
+matplot(lon.pts[1:20],test2sel,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST [",~degree~C,"]")),cex.lab=1.5)
 legend("bottomright", inset=.05, legend=c("1989","2001","2004","2005","2012"), lty=1 , col=c(1,2,3,4,5), horiz=FALSE)
 
 # temperature gradient versus dT
@@ -170,7 +173,7 @@ test2tdif <- lapply(1985:2014, function(i){
   i <- lapply(21, function(x){ann.extract[x, yr] - ann.extract[x-20, yr]})
 })
 
-plot(test2min, unlist(test2tdif), xlab=expression(paste("Gradient [",Delta,"SST/longitude]")), ylab=expression(paste("Temperature difference [",Delta,"SST]")),cex.lab=1.5,col="red")
+plot(test2min, unlist(test2tdif), xlab=expression(paste("Gradient [",~degree~C,"/longitude]")), ylab=expression(paste(paste(paste("",Delta,"SST"[total]," [",~degree~C,"]")))),cex.lab=1.5,col="red")
 fit <- lm(unlist(test2tdif) ~ test2min)
 abline(fit)
 summary(fit)
