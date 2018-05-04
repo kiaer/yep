@@ -15,6 +15,13 @@ Where does the penguin actually forage to?
 \end{itemize}
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{deltaSSTselected.png}
+\caption{Selected years from XX}
+\label{deltaSSTselected}
+\end{figure}
+
 \begin{figure} [H]
 \centering
 \includegraphics[width=10cm]{foragingpattern.png}
