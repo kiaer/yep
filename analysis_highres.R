@@ -157,7 +157,7 @@ yrs <- unlist(lapply(1985:2014, function(x){toString(x)}))
 rownames(test1) <- yrs
 testdist <- dist(test1)
 hcd <- as.dendrogram(hclust(testdist))
-plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE, cex.lab=1.5)
+plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE)
 
 
 # Selected years diff plot 
@@ -177,3 +177,4 @@ plot(test2min, unlist(test2tdif), xlab=expression(paste("Gradient [",~degree~C,"
 fit <- lm(unlist(test2tdif) ~ test2min)
 abline(fit)
 summary(fit)
+

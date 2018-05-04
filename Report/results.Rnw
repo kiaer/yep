@@ -1,4 +1,4 @@
-\section{Results}
+¢\section{Results}
 
 \subsection{Verification of data}
 Using the high resolution satellite data (see figure \ref{fig:highres}), it is clearly seen that close to shore, in the subtropical water, the correlation between the original data used and the SST in these areas is very high. Closer to the subtropical front and in the subanartic waters, the correaltion drops. 
@@ -44,40 +44,41 @@ Comparing the high resolution satellite data to the
 \end{figure}
 
 \subsection{Positioning of frontal zone}
-In figure \ref{fig:SSTfrontal} the SSTs are plotted against the corresponding longitudes for each year from 1985 until 2014.  There is a clear pattern showing warmer temperatures at lower longitudes, near coast that declines as moving further out in the ocean.  For all years it is seen that in between 170.6 degrees east and 171.0 degrees east the biggest change in temperature appears representing the location of the frontal zone. 
+In figure \ref{SSTfrontal} the SSTs are plotted against the corresponding longitudes for each year from 1985 until 2014.  There is a clear pattern showing warmer temperatures at lower longitudes, near coast that declines as moving further out in the ocean.  For all years it is seen that in between 170.6 degrees east and 171.0 degrees east the biggest change in temperature appears representing the location of the frontal zone. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{SSTfrontal.png}
 \caption{All years frontal}
-\label{fig:SSTfrontal}
+\label{SSTfrontal}
 \end{figure}
 
-For determining the exact position of the frontal zone the difference in SST in between each longitude point are plotted against the longitudes in figure \ref{fig:deltaSST}. In the figure a minimum appears for all years around 170.8 degrees east, representing the area of the biggest temperature difference along the transect. Small variances in between years can also be seen from the plot. Some years have the minimum at lower values of temperature difference meaning that the temperature gradient is bigger for those years.  Also the exact longitude position of the minimum varies in between years, hence some years the frontal zone is closer to the coast whereas other years have the frontal zone further off shore.
+For determining the exact position of the frontal zone the difference in SST in between each longitude point are plotted against the longitudes in figure \ref{deltaSST}. In the figure a minimum appears for all years around 170.8 degrees east, representing the area of the biggest temperature difference along the transect. Small variances in between years can also be seen from the plot. Some years have the minimum at lower values of temperature difference meaning that the temperature gradient is bigger for those years.  Also the exact longitude position of the minimum varies in between years, hence some years the frontal zone is closer to the coast whereas other years have the frontal zone further off shore.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{deltaSST.png}
 \caption{All years from XX}
-\label{fig:deltaSST}
+\label{deltaSST}
 \end{figure}
 
-When plotting the total SST difference between the the data point closest to the coast and one the furthest away ($\Delta SST_{total}$)
+From figure \ref{deltaSST} it is difficult to distinguish the differences and similarities in between years. In the try to see if some years correspond more or less to each other a cluster showing the dissimilarities of the frontal zones in between years have been made (figure \ref{clusterfrontal}. From the cluster it is seen that the similarity of the frontal zone between all years is more than 65\%. Furthermore years being the most similar are clustered together where the height of the cluster represents the degree of dissimilarity. Looking at the cluster it is seen that the dissimilarity of 2005 and 2012 is about 5\% and for 2001 a dissimilarity of 20\% is needed before the year can be clustered together with other years. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{clusterfrontal.png}
+\caption{Cluster representing XX}
+\label{clusterfrontal}
+\end{figure}
+
+In figure \ref{dSSTdgradient} the total SST difference between the data point closest to the coast and one the furthest away ($\Delta SST_{total}$) is plotted against the corresponding value of the gradient in the frontal zone for each year. The plot shows a linear relation between the strength of the total SST difference and the gradient in the frontal zone. A bigger difference between the temperature in and off shore results in a higher gradient.  
+\textcolor{red}{Write the statistics}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{dSSTdgradient.png}
 \caption{Delta SST versus gradient}
-\label{fig:dSSTdgradient}
-\end{figure}
-
-Cluster
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.35]{clusterfrontal.png}
-\caption{Cluster representing XX}
-\label{fig:clusterfrontal}
+\label{dSSTdgradient}
 \end{figure}
 
 
