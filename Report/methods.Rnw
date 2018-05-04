@@ -11,12 +11,12 @@ Use climate data from satellites to determine if other physical or biological  a
 
 To determine whether or not the use of SST gathered from within the Otago Harbour is an appropiate proxy for the penguin habitat, analysis on the SST gathered from satelittes is done and compared to the harbour data. The focus of the analysis is on the anomalies of the March to June data, as \cite{mattern} determined this anomaly to have the highest impact on the Yellow-eyed penguin population.
 
-Using climate data obtained from the Hadley Centre and the Copernicus Monitoring Service, a correlation analysis of the SST within a region of containing the south islands of New Zealand can be done. A region of interest, which spans from \ang{44} South to \ang{48} South and \ang{165} East to \ang{175} East, can be seen in figure \ref{fig:ROI}. This region of interest is far larger than the penguin habitat and contains almost all of the southern islands of New Zealand. 
+Using climate data obtained from the Hadley Centre and the Copernicus Monitoring Service, a correlation analysis of the SST within a region of containing the south islands of New Zealand can be done. A region of interest, which spans from $\ang{44}$ South to $\ang{48}$ South and $\ang{165}$ East to $\ang{175}$ East, can be seen in figure \ref{fig:ROI}. This region of interest is far larger than the penguin habitat and contains almost all of the southern islands of New Zealand. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{area1.jpg}
-\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from Google Earth and shows polygon of the area from \ang{44}S to \ang{48}S and \ang{165}E to \ang{175}E.
+\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from Google Earth and shows polygon of the area from $\ang{44}S$ to $\ang{48}S$ and $\ang{165}E$ to $\ang{175}$E.}
 \label{fig:ROI}
 \end{figure}
 
