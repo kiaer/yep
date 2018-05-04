@@ -27,7 +27,7 @@ The Raster library is used in R for the data analysis, as Raster is able to read
 \subsection{Analysis of chlorophyll satellite data and penguin survival}
 
 \subsection{Determination of frontal zone}
-The location of the frontal zone along southeast coast of South New Zealand is determined by extracting sea surface temperature data points creating a transect perpendicular to the coast. The transect crosses the area where the penguins forage to and is illustrated by figure \ref{fig:range}.  
+The location of the frontal zone along southeast coast of South New Zealand is determined by extracting sea surface temperature data points creating a transect perpendicular to the coast. The transect crosses the area where the penguins forage to and is illustrated by figure \ref{fig:range}. In total 21 points are extracted from each year going from $\ang{170.5}E$ and $\ang{46}S$ to $\ang{171.5}E$ and $\ang{46.5}S$. 
 
 \begin{figure}[H]
 \centering
