@@ -26,6 +26,7 @@ Using the high resolution satellite data (see figure \ref{fig:highres}), it is c
 
 \subsubsection{Comparison with low resolution plot}
 Comparing the high resolution satellite data to the 
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{CompHL.png}
@@ -39,17 +40,20 @@ Comparing the high resolution satellite data to the
 \centering
 \includegraphics[scale=0.5]{chloctmay.png}
 \caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
-\label{fig:compare}
+\label{fig:chloctmay}
 \end{figure}
 
 \subsection{Positioning of frontal zone}
+In figure \ref{fig:SSTfrontal} the SSTs are plotted against the corresponding longitudes for each year from 1985 until 2014.  There is a clear pattern showing warmer temperatures at lower longitudes, near coast that declines as moving further out in the ocean.  For all years it is seen that in between 170.6 degrees east and 171.0 degrees east the biggest change in temperature appears representing the location of the frontal zone. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{SSTfrontal.png}
 \caption{All years frontal}
-\label{fig:SST}
-\end{figure}frontal
+\label{fig:SSTfrontal}
+\end{figure}
+
+For determining the exact position of the frontal zone the difference in SST in between each longitude point are plotted against the longitudes in figure \ref{fig:deltaSST}. In the figure a minimum appears for all years around 170.8 degrees east, representing the area of the biggest temperature difference along the transect. Small variances in between years can also be seen from the plot. Some years have the minimum at lower values of temperature difference meaning that the temperature gradient is bigger for those years.  Also the exact longitude position of the minimum varies in between years, hence some years the frontal zone is closer to the coast whereas other years have the frontal zone further off shore.
 
 \begin{figure}[H]
 \centering
@@ -58,12 +62,7 @@ Comparing the high resolution satellite data to the
 \label{fig:deltaSST}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.35]{deltaSSTselected.png}
-\caption{Selected years from XX}
-\label{fig:deltaSSTselected}
-\end{figure}
+When plotting the total SST difference between the the data point closest to the coast and one the furthest away ($\Delta SST_{total}$)
 
 \begin{figure}[H]
 \centering
@@ -71,6 +70,20 @@ Comparing the high resolution satellite data to the
 \caption{Delta SST versus gradient}
 \label{fig:dSSTdgradient}
 \end{figure}
+
+Cluster
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{clusterfrontal.png}
+\caption{Cluster representing XX}
+\label{fig:clusterfrontal}
+\end{figure}
+
+
+
+
+
 
 
 
