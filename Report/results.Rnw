@@ -1,7 +1,7 @@
 \section{Results}
 
 \subsection{Verification of data}
-Using the high resolution satellite data (see figure \ref{fig:highres}), it is clearly seen that close to shore, in the subtropical water, the correlation between the original data used and the SST in these areas a very high. Closer to the subtropical front and in the subanartic waters, the correaltion drops 
+Using the high resolution satellite data (see figure \ref{fig:highres}), it is clearly seen that close to shore, in the subtropical water, the correlation between the original data used and the SST in these areas is very high. Closer to the subtropical front and in the subanartic waters, the correaltion drops. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{HighResCorr.png}

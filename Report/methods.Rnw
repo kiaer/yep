@@ -11,18 +11,20 @@ Use climate data from satellites to determine if other physical or biological  a
 
 To determine whether or not the use of SST gathered from within the Otago Harbour is an appropiate proxy for the penguin habitat, analysis on the SST gathered from satelittes is done and compared to the harbour data. The focus of the analysis is on the anomalies of the March to June data, as \cite{mattern} determined this anomaly to have the highest impact on the Yellow-eyed penguin population.
 
-Using climate data obtained from the Hadley Centre and the Copernicus Monitoring Service, a correlation analysis of the SST within a region of containing the south islands of New Zealand can be done. A region of interest can be seen in figure \ref{fig:ROI}. This region of interest is far larger than the penguin habitat and contains almost all of the southern islands of New Zealand. 
+Using climate data obtained from the Hadley Centre and the Copernicus Monitoring Service, a correlation analysis of the SST within a region of containing the south islands of New Zealand can be done. A region of interest, which spans from \ang{44} South to \ang{48} South and \ang{165} East to \ang{175} East, can be seen in figure \ref{fig:ROI}. This region of interest is far larger than the penguin habitat and contains almost all of the southern islands of New Zealand. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{ROI}
-\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from the high resolution Copernicus data. The region spans from S44 to S48 and E165 to E175.\textcolor{red}{MANGLER OGSÅ YEP AREA STØRRE TEKST + Ottago harbour}}
+\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from the high resolution Copernicus data. The region spans from \ang{44}S to \ang{48}S and \ang{165}E to \ang{175}E.\textcolor{red}{MANGLER OGSÅ YEP AREA STØRRE TEKST + Ottago harbour}}
 \label{fig:ROI}
 \end{figure}
 
 As Copernicus data can only be extracted from 1985 and forwards, both the mean and anomaly analysis on this data set will use a smaller timeseries. As this will move the mean, and thereby the anomalies, the March to June anomalies will have different results than \cite{mattern}. But as correlation is the main focus of this analysis, the size of the anomalies is not of importance, and will not affect the results.
 
 The Raster library is used in R for the data analysis, as Raster is able to read, manipulate and analyze spatial gridded data, making it suitable for working with geographical climate data. See \cref{sec:Had}, \cref{sec:Low} and \cref{sec:High} for R implementation of the analysis. 
+
+\subsection{Analysis of chlorophyll satellite data and penguin survival}
 
 \subsection{Determination of frontal zone}
 The location of the frontal zone along southeast coast of South New Zealand is determined by extracting sea surface temperature data points creating a transect perpendicular to the coast. The transect crosses the area where the penguins forage to and is illustrated by figure \ref{fig:range}.  
