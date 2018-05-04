@@ -41,3 +41,6 @@ Comparing the high resolution satellite data to the
 \caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
 \label{fig:compare}
 \end{figure}
+
+\subsection{Positioning of frontal zone}
+
