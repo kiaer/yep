@@ -35,7 +35,7 @@ Comparing the high resolution satellite data to the
 \subsection{Climate analysis}
 
 \subsubsection{Chlorophyll}
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{chloctmay.png}
 \caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
@@ -43,4 +43,27 @@ Comparing the high resolution satellite data to the
 \end{figure}
 
 \subsection{Positioning of frontal zone}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{deltaSST.png}
+\caption{All years from XX}
+\label{fig:deltaSST}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{deltaSSTselected.png}
+\caption{Selected years from XX}
+\label{fig:deltaSSTselected}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{dSSTdgradient.png}
+\caption{Delta SST versus gradient}
+\label{fig:dSSTdgradient}
+\end{figure}
+
+
 
