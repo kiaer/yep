@@ -15,8 +15,8 @@ Using climate data obtained from the Hadley Centre and the Copernicus Monitoring
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{ROI}
-\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from the high resolution Copernicus data. The region spans from \ang{44}S to \ang{48}S and \ang{165}E to \ang{175}E.\textcolor{red}{MANGLER OGSÅ YEP AREA STØRRE TEKST + Ottago harbour}}
+\includegraphics[scale=0.3]{area1.jpg}
+\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from Google Earth and shows polygon of the area from \ang{44}S to \ang{48}S and \ang{165}E to \ang{175}E.
 \label{fig:ROI}
 \end{figure}
 
@@ -32,7 +32,7 @@ The location of the frontal zone along southeast coast of South New Zealand is d
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.3]{range.png}
-\caption{Region of interest. The region contains both the penguin habitat and Otago Harbour. Region of interest is made from the high resolution Copernicus data. The region spans from S44 to S48 and E165 to E175}
+\caption{Region of interest including red crosses showing the created transect approximately perpendicular to the coast of New Zealand.}
 \label{fig:range}
 \end{figure}
 
