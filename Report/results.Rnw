@@ -49,7 +49,7 @@ In figure \ref{SSTfrontal} the SSTs are plotted against the corresponding longit
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{SSTfrontal.png}
-\caption{All years frontal}
+\caption{SSTs from the transect plotted against longitudes. Each line represents a specific year ranging from 1985 until 2014.}
 \label{SSTfrontal}
 \end{figure}
 
@@ -58,26 +58,25 @@ For determining the exact position of the frontal zone the difference in SST in 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{deltaSST.png}
-\caption{All years from XX}
+\caption{The difference in SST in between points from the transect ($\Delta SST$) plotted against corresponding longitudes. Each line represents a specific year ranging from 1985 until 2014.}
 \label{deltaSST}
 \end{figure}
 
-From figure \ref{deltaSST} it is difficult to distinguish the differences and similarities in between years. In the try to see if some years correspond more or less to each other a cluster showing the dissimilarities of the frontal zones in between years have been made (figure \ref{clusterfrontal}. From the cluster it is seen that the similarity of the frontal zone between all years is more than 65\%. Furthermore years being the most similar are clustered together where the height of the cluster represents the degree of dissimilarity. Looking at the cluster it is seen that the dissimilarity of 2005 and 2012 is about 5\% and for 2001 a dissimilarity of 20\% is needed before the year can be clustered together with other years. 
+From figure \ref{deltaSST} it is difficult to distinguish the differences and similarities in between years. In the try to see if some years correspond more or less to each other a cluster showing the dissimilarities of the frontal zones in between years have been made (figure \ref{clusterfrontal}. From the cluster it is seen that the similarity of the frontal zone between all years is more than 65\%. Furthermore years being the most similar are clustered together where the height of the cluster represents the decimal of dissimilarity. Looking at the cluster it is seen that the dissimilarity of 2005 and 2012 is about 5\% and for 2001 a dissimilarity of 20\% is needed before the year can be clustered together with other years. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{clusterfrontal.png}
-\caption{Cluster representing XX}
+\caption{A hierarchical cluster showing the dissimilarities of the frontal zones in between years. The height describes the decimal of dissimilarity in between years and clusters.}
 \label{clusterfrontal}
 \end{figure}
 
-In figure \ref{dSSTdgradient} the total SST difference between the data point closest to the coast and one the furthest away ($\Delta SST_{total}$) is plotted against the corresponding value of the gradient in the frontal zone for each year. The plot shows a linear relation between the strength of the total SST difference and the gradient in the frontal zone. A bigger difference between the temperature in and off shore results in a higher gradient.  
-\textcolor{red}{Write the statistics}
+In figure \ref{dSSTdgradient} the total SST difference between the data point closest to the coast and one the furthest away ($\Delta SST_{total}$) is plotted against the corresponding value of the gradient in the frontal zone for each year. The plot shows a linear relation between the strength of the total SST difference and the gradient in the frontal zone. A bigger difference between the temperature in and off shore results in a higher gradient. The linear regression of the relation shows a significant relation with a p-value on 1.32 $\cdot 10^{-7}$.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{dSSTdgradient.png}
-\caption{Delta SST versus gradient}
+\caption{The total temperature difference between the data point closest to the coast and one the furthest away ($\Delta SST_{total}$) plotted against the corresponding value of the gradient in the frontal zone. Each point represents a specific year ranging from 1985 until 2014.}
 \label{dSSTdgradient}
 \end{figure}
 
