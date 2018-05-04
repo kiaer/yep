@@ -138,7 +138,9 @@ Thanks Mark!
 \label{microbial}
 \end{figure}
 
-\section{HadISST analysis R-script}
+\section{\\R-scripts for the SST analyses}
+\subsection{\\HadISST analysis R-script}
+\label{sec:Had}
 <<eval=FALSE>>=
 ### Analysis main script
 library('raster')
@@ -286,6 +288,7 @@ monthly_mean <- function(lon.pts, lat.pts, HadISST.b, ROI ){
 
 @
 \subsection{Low Resolution R-script}
+\label{sec:Low}
 <<eval=FALSE>>=
 ### Low resolution data
 library(maps)
@@ -360,6 +363,7 @@ gplot(r.corr)+geom_raster(aes(fill=value), interpolate = FALSE)+
   labs(fill="Correlation")
 @
 \subsection{High Resolution R-script}
+\label{sec:High}
 <<eval=FALSE>>=
 ### High resolution data
 library(maps)

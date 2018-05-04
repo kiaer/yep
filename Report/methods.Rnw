@@ -22,7 +22,7 @@ Using climate data obtained from the Hadley Centre and the Copernicus Monitoring
 
 As Copernicus data can only be extracted from 1985 and forwards, both the mean and anomaly analysis on this data set will use a smaller timeseries. As this will move the mean, and thereby the anomalies, the March to June anomalies will have different results than \cite{mattern}. But as correlation is the main focus of this analysis, the size of the anomalies is not of importance, and will not affect the results.
 
-The Raster library is used in R for the data analysis, as Raster is able to read, manipulate and analyze spatial gridded data, making it suitable for working with geographical climate data. See \nameref{sec:appendix} for R implementation of the analysis. 
+The Raster library is used in R for the data analysis, as Raster is able to read, manipulate and analyze spatial gridded data, making it suitable for working with geographical climate data. See \cref{sec:Had}, \cref{sec:Low} and \cref{sec:High} for R implementation of the analysis. 
 
 \subsection{Determination of frontal zone}
 The location of the frontal zone along southeast coast of South New Zealand is determined by extracting sea surface temperature data points creating a transect perpendicular to the coast. The transect crosses the area where the penguins forage to and is illustrated by figure \ref{fig:range}.  
@@ -34,5 +34,10 @@ The location of the frontal zone along southeast coast of South New Zealand is d
 \label{fig:range}
 \end{figure}
 
+<<<<<<< HEAD
 The SST data along the transect can be used to determine the location of frontal zone by finding the temperature gradient. The point where the slope of the gradient equals zero is where the frontal zone is located.  The gradient is calculated in R by finding the difference in sea surface temperature in between data points and plotting the difference by longitude. Furthermore is the total sea surface temperature difference between the data point closest to the coast and the one furthest away calculated for each year. Both gradients and total SST difference is calculated from year 1985 until 2014 using Copernicus data. 
+=======
+The SST data along the transect can be used to determine the location of frontal zone by finding the temperature gradient. The point where the slope of the gradient equals zero is where the frontal zone is located.  The gradient is calculated in R by finding the difference in sea surface temperature in between data points and plotting the difference by longitude. Furthermore is the total sea surface temperature difference between the data point closest to the coast and the longest away calculated. Both gradients and total SST difference is calculated from year 1985 until 2014 using Copernicus data. For further information about the R implementation in \cref{sec:High}. 
+
+>>>>>>> 7fece815e0c1087ff2de50e36f3365d1ce8b42ca
 
