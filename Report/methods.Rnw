@@ -34,10 +34,4 @@ The location of the frontal zone along southeast coast of South New Zealand is d
 \label{fig:range}
 \end{figure}
 
-<<<<<<< HEAD
-The SST data along the transect can be used to determine the location of frontal zone by finding the temperature gradient. The point where the slope of the gradient equals zero is where the frontal zone is located.  The gradient is calculated in R by finding the difference in sea surface temperature in between data points and plotting the difference by longitude. Furthermore is the total sea surface temperature difference between the data point closest to the coast and the one furthest away calculated for each year. Both gradients and total SST difference is calculated from year 1985 until 2014 using Copernicus data. 
-=======
-The SST data along the transect can be used to determine the location of frontal zone by finding the temperature gradient. The point where the slope of the gradient equals zero is where the frontal zone is located.  The gradient is calculated in R by finding the difference in sea surface temperature in between data points and plotting the difference by longitude. Furthermore is the total sea surface temperature difference between the data point closest to the coast and the longest away calculated. Both gradients and total SST difference is calculated from year 1985 until 2014 using Copernicus data. For further information about the R implementation in \cref{sec:High}. 
-
->>>>>>> 7fece815e0c1087ff2de50e36f3365d1ce8b42ca
-
+The SST data along the transect can be used to determine the location of frontal zone by finding the temperature gradient. The point where the slope of the gradient equals zero is where the frontal zone is located.  The gradient is calculated in R by finding the difference in sea surface temperature in between data points and plotting the difference by longitude. Furthermore is the total sea surface temperature difference between the data point closest to the coast and the one furthest away calculated for each year. Both gradients and total SST difference is calculated from year 1985 until 2014 using Copernicus data. For further information about the R implementation in \cref{sec:High}.
