@@ -126,7 +126,7 @@ rownames(tot2) <- yrs
 totdist <- dist(tot2)
 hcd <- as.dendrogram(hclust(totdist))
 
-hc <- hclus(totdist)
+hc <- hclust(totdist)
 colors = c("red", "blue", "green", "black")
 clus4 = cutree(hc, h = 1)
 
