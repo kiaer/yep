@@ -130,7 +130,7 @@ hc <- hclust(totdist)
 colors = c("red", "blue", "green", "black")
 clus4 = cutree(hc, h = 1)
 
-plot(hc, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE)
+plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE)
 
 months = c("oct", "nov", "dec", "jan", "feb", "mar", "apr", "may")
 test <- matrix(unlist(c(tot1[,2000-1997], tot1[,2003-1997], tot1[,2004-1997], tot1[,2011-1997])), ncol=4, byrow = FALSE)
@@ -141,6 +141,20 @@ legend("topright", inset=.00, legend=c("2000/2001", "2003/2004", "2004/2005", "2
 
 lon.pts <- seq(170.4,170.4, by=1)
 lat.pts <- rep(-46.1,length(lon.pts))
+
+lon.pts <- 170.6
+lat.pts <- -46.05
+extract.pts <- cbind(lon.pts,lat.pts)
+framepts <- (as.data.frame(extract.pts))
+
+
+gplot(chl.b[[12]])+geom_raster(aes(fill=value), interpolate = FALSE)+
+  borders(fill="black",colour="black",size=2) +
+  scale_fill_distiller(palette="YlGnBu",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
+  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
+  labs(fill="Chl. conc.") + theme(text = element_text(size=18)) +
+  geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=1,col="red", size = 3,stroke = 2)
+
 
 
 #r.mean <- calc(r.mean, function(x) {exp(x)})

@@ -15,14 +15,14 @@ Using the high resolution satellite data, a correlationmap of satellite SSTs and
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{HighResCorr.png}
+\includegraphics[scale=0.5]{HighResCorr.png}  
 \caption{High resolution plot of the correlation between a given 0.05$^\circ$x0.05$^\circ$ gridpoint SST and the dataset used in \cite{mattern}. The plot shows tendencies of very high correlation close to the coastline and on the westcoast of New Zealand. When reaching the Southland Front correlation drops dramatically, due to the colder subanartic waters. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation.\textcolor{red}{Indikation af pingvinernes habitat, plus deres range}}
 \label{fig:highres}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.45]{habitat.png}
+\includegraphics[scale=0.45]{habitat.PNG}
 \caption{Map showing YEP measured foraging range (blue and green areas) and the estimated YEP foraging range (pink colors). The map is created on the \url{Seasketch.doc.govt.nz} website (Department of Conservation - Te Papa Atawhai).} 
 \label{fig:habitat}
 \end{figure}
@@ -34,31 +34,23 @@ Using the high resolution satellite data, a correlationmap of satellite SSTs and
 \label{fig:habitatH}
 \end{figure}
 
-\subsubsection{March-June anomalies and mortality}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{MJano.png}
-\caption{Anomaly in mean temperature in March-June. Plottet also is the - NOT DONE -\textcolor{red}{Needs the yearly mortality of YEP  included}}
-\label{fig:ano}
-\end{figure}
 
-\subsubsection{Comparison with low resolution plot}
-Comparing the high resolution satellite data to the 
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{CompHL.png}
-\caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
-\label{fig:compare}
-\end{figure}
 \subsection{Climate analysis}
 
 \subsubsection{Chlorophyll}
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{chloctmay.png}
-\caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
-\label{fig:chloctmay}
+\includegraphics[scale=0.5]{chldot.png}
+\caption{Map showing the chlorophyll plot of New Zealand. The red dot marks the area of interest, as it is within the given dot penguins are seen.}
+\label{fig:chldot}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{clustchl.png}
+\caption{Hierarchical cluster analysis on the chlorophyll time series. The cluster will group years toghether that show same levels of chlorophyll. Analysis on the cluster is needed to get information on how the chlorophyll levels of each group within it behaves.}
+\label{fig:chlclust}
 \end{figure}
 
 \subsection{Positioning of frontal zone}

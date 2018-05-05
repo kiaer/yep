@@ -2,6 +2,25 @@
 
 \subsection{Sea surface temperatures}
 
+\subsubsection{Comparison with low resolution satellite data}
+Comparing the high resolution satellite data to the 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{CompHL.png}
+\caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
+\label{fig:compare}
+\end{figure}
+
+\subsection{Chlorophyll analysis}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{chloctmay.png}
+\caption{Hierarchical cluster analysis on the chlorophyll time series. The cluster will group years toghether that show same levels of chlorophyll. Analysis on the cluster is needed to get information on how the chlorophyll levels of each group within it behaves.}
+\label{fig:octmay}
+\end{figure}
+
 \subsection{Foraging patterns and position of frontal zone}
 \cite{mattern2013} found in a study, where they deployed GPS dive loggers on yellow-eyed penguins from the Otago Peninsula, that the birds tend to go back to same area and forage in strait lines. The GPS dive loggers where deployed in on the penguins in 2004, 2005 and 2012. The results from the logged GPS dives can be seen in table \ref{tab:forage}. The main differences in between the was found to be that in 2004 almost every second foraging trip contained straight line foraging whereas the frequency of straight line foraging were much smaller in 2005 and 2012. Also in 2004 a larger amount of the penguins foraged in less than 15 km from shore and interesting is that 2004 was found to be a year of poor breeding success. The study furthermore stated it important that the penguins forage in straight line when they forage further that 15 km from the coast. The same pattern has been seen in a study from XXX. 
 
@@ -38,5 +57,7 @@ Even though figure \ref{clusterfrontal} together with figure \ref{deltaSSTselect
 \caption{The difference in SST in between points from the transect ($\Delta SST$) plotted against corresponding longitudes. Each line represents a specific year corresponding to 1989, 2001, 2004, 2005 and 2012.}
 \label{deltaSSTselected}
 \end{figure}
+
+\subsection{Future research}
 
 

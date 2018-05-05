@@ -96,16 +96,22 @@ Thanks Mark!
 \newpage
 <<Introduction, child='introduction.Rnw'>>=
 @
+\newpage
 <<Background, child='Background.Rnw'>>=
 @
+\newpage
 <<Data, child='Data.Rnw'>>=
 @
+\newpage
 <<Methods, child='methods.Rnw'>>=
 @
+\newpage
 <<Results, child='results.Rnw'>>=
 @
+\newpage
 <<Discussion, child='discussion.Rnw'>>=
 @
+\newpage
 <<Conclusion, child='conclusion.Rnw'>>=
 @
 \newpage
