@@ -120,7 +120,7 @@ Thanks Mark!
 
 \section{\\Biological processes and interactions}
 \label{sec:phys effects}
-\begin{figure} [H]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=12cm]{biology.jpg}
 \end{center}
@@ -136,6 +136,16 @@ Thanks Mark!
 \end{center}
 \caption{\citep{worden2015}}
 \label{microbial}
+\end{figure}
+
+\section{\\Foraging pattern}
+\label{sec:foragepattern}
+\begin{figure} [H]
+\begin{center}
+\includegraphics[width=10cm]{foragingpattern.png}
+\end{center}
+\caption{Foraging patterns of Yellow-eyed penguins. Mid-shelf foraging tracks of yellow-eyed penguins recorded in 2004 (A), 2005 (B) and 2012 (C) that feature straight-line patterns. Foraging track segments in light grey represent outgoing and incoming stages of foraging trips; dark grey segments highlight the foraging stage. Dashed line segments indicate where linearity of the track is a result of interpolation. Track portions showing straight line foraging are highlighted in different colours. Trips with lines from all three seasons are combined in (D) \citep{mattern2013}.}
+\label{foragepattern}
 \end{figure}
 
 \section{\\R-scripts for the SST analyses}

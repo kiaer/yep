@@ -3,10 +3,11 @@
 \subsection{Sea surface temperatures}
 
 \subsection{Foraging patterns and position of frontal zone}
+\cite{mattern2013} found in a study, where they deployed GPS dive loggers on yellow-eyed penguins from the Otago Peninsula, that the birds tend to go back to same area and forage in strait lines. The GPS dive loggers where deployed in on the penguins in 2004, 2005 and 2012. The results from the logged GPS dives can be seen in table \ref{tab:forage}. The main differences in between the was found to be that in 2004 almost every second foraging trip contained straight line foraging whereas the frequency of straight line foraging were much smaller in 2005 and 2012. Also in 2004 a larger amount of the penguins foraged in less than 15 km from shore and interesting is that 2004 was found to be a year of poor breeding success. The study furthermore stated it important that the penguins forage in straight line when they forage further that 15 km from the coast. The same pattern has been seen in a study from XXX. 
 
 % table from article
 \begin{table}[H]
-\caption{Foraging parameters of yellow-eyed penguins fitted with GPS dive loggers \citep{mattern2013}.}
+\caption{Foraging parameters of yellow-eyed penguins fitted with GPS dive loggers \citep{mattern2013}. To visualize the tracked trips where the birds foraged in straight lines, see \cref{sec:foragepattern}.}
 \begin{center}
 \begin{tabular}{llll}
   \hline
@@ -18,36 +19,24 @@
   Trip duration (h)  & $15.5 \pm 4.1$ & $9.1 \pm 2.6$  & $9.9 \pm 4.6$ \\ 
   Travel distance (km) & $54.5 \pm 12.0$ & $30.5 \pm 10.3$ & $33.6 \pm 18.9$ \\
   Foraging range (km)  & $21.1 \pm 5.9$ & $11.0 \pm 3.1$ & $10.8 \pm 6.2$ \\ 
+  Trips with straight line & 5 & 2 & 6 \\
+  \% trips with straight lines & 45.5 & 11.8 & 25.0 \\
   \hline
 \end{tabular}
 \label{tab:forage}
 \end{center}
 \end{table}
-% 
 
-Can we see any systems when comparing YEP survival with chlorophyll data?
-Periodic heat wave effects?
+Comparing the results from \cite{mattern2013} with the results for the frontal zone position makes it interesting to see whether the position of the frontal zone affects the foraging pattern of the penguins. From figure \ref{clusterfrontal} it is seen that the frontal zone in year 2005 and 2012 only have a dissimilarity of 5\% whereas a when comparing the years with 2004 there is a dissimilarity on about 35\%.  Indicating that the frontal zone in 2004 have had another profile that very alike years of 2005 and 2012, questioning whether the position of the frontal zone potentially could be affecting the foraging pattern in the yellow-eyed penguins.  In figure \ref{deltaSSTselected} the profiles from 2004, 2005 and 2012 have been extracted from figure \ref{deltaSST} together with the years with die-off events in the yellow-eyed penguin population (1989 and 2001). From the figure it is seen that frontal zone in 2005 and 2012 have a relatively larger gradient in the frontal zone compared to 2014, indicating a higher strength of frontal zone in 2005 and 2014. Minding figure \ref{biophys}, an increased strength of the frontal zone can potentially increase the productivity around the frontal zone due to increased mixing in the near area.  
 
-Where does the penguin actually forage to?
-\begin{itemize}
-\item Forage in straigt lines
-\item Travel distance change (2004, 2005, 2012)
-\item Breeding pattern and foraging patterns?
-\item "While it has been suggested that yellow-eyed penguins might be selective foragers which actively pursue the most nutritious prey [48], subsequent research indicates that diet composition is more likely related to prey availability in different foraging zones"
-\item Also, in 2004 nearly every second foraging trip featured lines, while in 2005 and 2012 linear foraging occurred considerably less frequently (Table 1). Similarly, penguins spent more time foraging on lines in 2004 when compared to the other two seasons.
-\end{itemize}
+Even though figure \ref{clusterfrontal} together with figure \ref{deltaSSTselected} indicates that the foraging patterns in the yellow-eyed penguin population might be affected by the strength of the frontal zone it does not look like the position or strength have caused to the die-off events in 1989, 2001 and 2012. Nevertheless it is interesting that the frontal zone in 2001 need dissimilarity on almost 20\% before it can be clustered together with other years.
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{deltaSSTselected.png}
-\caption{Selected years from XX}
+\caption{The difference in SST in between points from the transect ($\Delta SST$) plotted against corresponding longitudes. Each line represents a specific year corresponding to 1989, 2001, 2004, 2005 and 2012.}
 \label{deltaSSTselected}
 \end{figure}
 
-\begin{figure} [H]
-\centering
-\includegraphics[width=10cm]{foragingpattern.png}
-\caption{Figure 1. Foraging patterns of Yellow-eyed penguins. Mid-shelf foraging tracks of yellow-eyed penguins recorded in 2004 (A), 2005 (B) and 2012 (C) that feature straight-line patterns. Foraging track segments in light grey represent outgoing and incoming stages of foraging trips; dark grey segments highlight the foraging stage. Dashed line segments indicate where linearity of the track is a result of interpolation. Track portions that met line criteria (see Methods in \cite{mattern2013}) are highlighted in different colours; line identifiers shown in capital letters of the same colour. Small arrows in (D) indicate sites of ROV deployments in February 2013. Trips with lines from all three seasons are combined in (D) \citep{mattern2013}.}
-\label{foragingpattern}
-\end{figure}
+
