@@ -7,25 +7,20 @@ Before being able to conclude whether the measured data form Otago harbour is re
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{ROI.png}
-\caption{High resolution 0.05$^\circ$x0.05$^\circ$ gridpoint SST in the region of interest.}
+\caption{High resolution 0.05$^\circ\times 0.05^\circ$ gridpoint SST (in $^\circ$C) in the region of interest.}
 \label{fig:SST}
 \end{figure}
 
-Using the high resolution satellite data, a correlationmap of satellite SSTs and measured SSTs is created (see figure \ref{fig:highres}). It is clear, that close to shore, in the subtropical water, the correlation between the original data used and the SST in these areas is very high. Closer to the subtropical front and in the subantartic waters, the correlation drops. This corresponds to the SST plot in figure \ref{fig:SST}. 
+Using the high resolution satellite data, a correlation map of satellite SSTs and measured SSTs is created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations (around 0.8) close to the coastline and on the westcoast of New Zealand. If the correlation was 1.0, it would indicate, that the two datasets were exactly the same. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:SST}, since when the SSTs are colder in the SAW, they then differ more from the measured costal temperatures, making the correlation decrease.   
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{HighResCorr.png}  
-\caption{High resolution plot of the correlation between a given 0.05$^\circ$x0.05$^\circ$ gridpoint SST and the dataset used in \cite{mattern}. The plot shows tendencies of very high correlation close to the coastline and on the westcoast of New Zealand. When reaching the Southland Front correlation drops dramatically, due to the colder subanartic waters. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation.\textcolor{red}{Indikation af pingvinernes habitat, plus deres range}}
+\caption{High resolution plot of the correlation between a given 0.05$^\circ\times 0.05^\circ$ gridpoint SST and the dataset used in \cite{mattern}.}
 \label{fig:highres}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.45]{habitat.PNG}
-\caption{Map showing YEP measured foraging range (blue and green areas) and the estimated YEP foraging range (pink colors). The map is created on the \url{Seasketch.doc.govt.nz} website (Department of Conservation - Te Papa Atawhai).} 
-\label{fig:habitat}
-\end{figure}
+Figure \ref{fig:habitatH} shows a close-up of the area, where the YEP live and forage. In this plot it is a bit more clear to see the correlations and how they decline with distance from the coast. At the same time, only the area with a correlation that is significant is showed.
 
 \begin{figure}[H]
 \centering
@@ -35,23 +30,36 @@ Using the high resolution satellite data, a correlationmap of satellite SSTs and
 \end{figure}
 
 
-\subsection{Chlorophyll analysis}
+To try to find a correlation between the SST and the variations in the YEP population, it would be ideal to compare the temperatures with their actual habitat. In figure \ref{fig:habitat}, the habitat of the Yellow-eyed penguins is depicted. Both the measured and the estimated foraging ranges are shown. If comparing the foraging range with e.g. the correlation plot in figure \ref{fig:highres}, it seems that they primarily feed in the warmer waters, and they do not reach out into the area of the front. This will be looked further into in section \ref{sec:res:front}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{chldot.png}
-\caption{Map showing the chlorophyll plot of New Zealand. The red dot marks the area of interest, as it is within the given dot penguins are seen.}
+\includegraphics[scale=0.45]{habitat.PNG}
+\caption{Map showing YEP measured foraging range (blue and green areas) and the estimated YEP foraging range (pink colors). The map is created on the \url{Seasketch.doc.govt.nz} website (Department of Conservation - Te Papa Atawhai).} 
+\label{fig:habitat}
+\end{figure}
+
+\subsection{Chlorophyll analysis}
+
+One of the aims of this projects is to see whether there is a relationship between chlorophyll concentrations and the Yellow-eyed penguin die offs. Thus a map showing the Chl concentrations in the region of interest was made (figure \ref{fig:chldot}). The concentrations clearly do not show the same tendencies as the SSTs, though there are some areas, that over the timeperiod fro 1998 to 2015 show higher concentrations than others. One such area is up coast from the Otago Peninsula, where the concentrations on average during the the New Zealand spring and summer seasons reach app. 1.6 mg/$m^3$. At the Boulder Beach Complex (red dot), the concentrations are lower, only reaching concentrations between 0.8 and 1.2 mg/$m^3$. Further away from coast, the concentrations decrease, though not in the same paste as the SST from figure \ref{fig:SST}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{chldot.png}
+\caption{Map showing a chlorophyll plot of New Zealand as the average of the concentration during the seasonal cycle (october to may). The chlorophyll concentration has the unit mg/$m^3$. The red dot marks the area where the YEP forage.}
 \label{fig:chldot}
 \end{figure}
 
+The chlorophyll map does not provide information about the individual years, and thus a cluster analysis was created. The cluster will group years together that show same levels of chlorophyll. There are 5 clusters, that has 0 \% simmilarity, since they are below the height of 1.0, but in some of the 5 clusters there are up to 20\% simmilarities btween the years. On of these clusters are the years 2002 and 2011. 2004, 2005 and 2013 are in a cluster by itself, and are therefore different from all other years, while they themselves have app. 10\% similarity. These correlations are not very high in general.
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{clustchl.png}
-\caption{Hierarchical cluster analysis on the chlorophyll time series. The cluster will group years toghether that show same levels of chlorophyll. Analysis on the cluster is needed to get information on how the chlorophyll levels of each group within it behaves.}
+\includegraphics[scale=0.7]{clustchl.png}
+\caption{Hierarchical cluster analysis on the chlorophyll time series, comparing each year's Chl concentration with the others.}
 \label{fig:chlclust}
 \end{figure}
 
-\subsection{Positioning of frontal zone}
+\subsection{Positioning of frontal zone} \label{sec:res:front}
 In figure \ref{SSTfrontal} the SSTs are plotted against the corresponding longitudes for each year from 1985 until 2014.  There is a clear pattern showing warmer temperatures at lower longitudes, near coast that declines as moving further out in the ocean.  For all years it is seen that in between 170.6 degrees east and 171.0 degrees east the biggest change in temperature appears representing the location of the frontal zone. 
 
 \begin{figure}[H]
