@@ -35,9 +35,7 @@ Using the high resolution satellite data, a correlationmap of satellite SSTs and
 \end{figure}
 
 
-\subsection{Climate analysis}
-
-\subsubsection{Chlorophyll}
+\subsection{Chlorophyll analysis}
 
 \begin{figure}[H]
 \centering
@@ -58,7 +56,7 @@ In figure \ref{SSTfrontal} the SSTs are plotted against the corresponding longit
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.35]{SSTfrontal.png}
+\includegraphics[scale=0.4]{SSTfrontal.png}
 \caption{SSTs from the transect plotted against longitudes. Each line represents a specific year ranging from 1985 until 2014.}
 \label{SSTfrontal}
 \end{figure}
@@ -67,7 +65,7 @@ For determining the exact position of the frontal zone the difference in SST in 
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.35]{deltaSST.png}
+\includegraphics[scale=0.4]{deltaSST.png}
 \caption{The difference in SST in between points from the transect ($\Delta SST$) plotted against corresponding longitudes. Each line represents a specific year ranging from 1985 until 2014.}
 \label{deltaSST}
 \end{figure}
@@ -76,7 +74,7 @@ From figure \ref{deltaSST} it is difficult to distinguish the differences and si
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.7]{clusterfrontal.png}
+\includegraphics[scale=0.4]{clusterfrontal.png}
 \caption{A hierarchical cluster showing the dissimilarities of the frontal zones in between years. The height describes the decimal of dissimilarity in between years and clusters.}
 \label{clusterfrontal}
 \end{figure}
@@ -85,7 +83,7 @@ In figure \ref{dSSTdgradient} the total SST difference between the data point cl
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.35]{dSSTdgradient.png}
+\includegraphics[scale=0.4]{dSSTdgradient.png}
 \caption{The total temperature difference between the data point closest to the coast and one the furthest away ($\Delta SST_{total}$) plotted against the corresponding value of the gradient in the frontal zone. Each point represents a specific year ranging from 1985 until 2014.}
 \label{dSSTdgradient}
 \end{figure}

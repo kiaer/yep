@@ -12,6 +12,9 @@ Comparing the high resolution satellite data to the
 \label{fig:compare}
 \end{figure}
 
+\subsubsection{Measured SSTs as an approximation for satellite SSTs}
+
+
 \subsection{Chlorophyll analysis}
 
 \begin{figure}[H]
