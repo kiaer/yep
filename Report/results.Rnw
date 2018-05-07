@@ -35,18 +35,16 @@ To try to find a correlation between the SST and the variations in the YEP popul
 
 \subsection{Chlorophyll analysis}
 
-Using satellite data in the area shown in Figure \ref{fig:chldot}, a monthly average ranging from October to May was done. The output contained the monthly chlorophyll averages for every season ranging from 1998/1999 to 2015/2016.
+Using satellite data in the area shown in Figure \ref{fig:chldot}, a monthly average ranging from October to May was computed. The output contained the averages for every season ranging from 1998/1999 to 2015/2016, computed using daily cholorphyll averages during the time period.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{chldot.png}
-\caption{Map showing a chlorophyll plot of New Zealand as the average of the concentration during the seasonal cycle (october to may). The chlorophyll concentration has the unit mg/$m^3$. The red dot marks the area where the YEP forage.}
+\caption{Map showing a chlorophyll plot of New Zealand on the 12th of January 1998. The chlorophyll concentration has the unit mg/$m^3$. The red dot marks the area where the YEP forage. Daily data is used to compute the average concentration in the marked area.}
 \label{fig:chldot}
 \end{figure}
 
-The chlorophyll map does not provide information about the individual years, and thus a cluster analysis was created. The cluster will group years together that show same levels of chlorophyll. There are 5 clusters, that has 0 \% simmilarity, since they are below the height of 1.0, but in some of the 5 clusters there are up to 20\% simmilarities btween the years. On of these clusters are the years 2002 and 2011. 2004, 2005 and 2013 are in a cluster by itself, and are therefore different from all other years, while they themselves have app. 10\% similarity. These correlations are not very high in general.
-
-Using the monthly averages, each season was analysed using a hierarchichal analysis. The resulting hierachy grouped every year that shows similar trends (See Figure \ref{fig:chlclust}). As chlorophyll data is scarce, only a few of the die off events can analysed with the chlorophyll data. Initially the hierachy and year groups does not show any mutual trends between the die off events and seasonal chlorophyll concentration. The two biggest die off events since 1998, namely 2000/2001 and 2011/2012, are seen in two different groups of the cluster.
+Using the monthly averages, each season was analysed using a hierarchical cluster analysis. The resulting hierarchy grouped every season that shows similar trends (See Figure \ref{fig:chlclust}). As chlorophyll data is limited, only a few of the die off events can analysed with the chlorophyll data.  Looking at Figure \ref{fig:chlclust} two clusters appear, showing around 50\% similarity. The two clusters split at around levels 70\% similarities, and end up in multiple clusters showing almost completely similar seasons. The two biggest die off events since 1998, namely 2000/2001 and 2011/2012, are seen in two different groups of the cluster, therefore showing dissimilarities of above 50\%.
 
 \begin{figure}[H]
 \centering
