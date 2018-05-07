@@ -141,7 +141,7 @@ gplot(r.mjmeanH[[1]])+geom_raster(aes(fill=value), interpolate = FALSE)+
   geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=4,col="red")
 
 # SST
-matplot(lon.pts,ann.extract,type="l",xlab="Longitude",ylab=expression(paste("SST [",~degree~C, "]")),cex.lab=1.5, ylim=c(9, 13),lwd=1.5)
+matplot(lon.pts,ann.extract,type="l",xlab="Longitude [degrees]",ylab=expression(paste("SST [",~degree~C, "]")),cex.lab=1.5, ylim=c(9, 13),lwd=1.5)
 
 # SST diff
 ann.extractdiff <- lapply(1985:2014, function(i){
@@ -150,12 +150,13 @@ ann.extractdiff <- lapply(1985:2014, function(i){
 })
 test1 <- matrix(unlist(ann.extractdiff), ncol = 20, byrow = TRUE)
 test2 <- matrix(unlist(ann.extractdiff), ncol = 30, byrow = FALSE)
-matplot(lon.pts[1:20],test2,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST [",~degree~C,"]")),cex.lab=1.5,lwd=1.5)
+matplot(lon.pts[1:20],test2,type="l",xlab="Longitude [degrees]",ylab=expression(paste("",Delta, "SST [",~degree~C,"]")),cex.lab=1.5,lwd=1.5)
 yrs <- unlist(lapply(1985:2014, function(x){toString(x)}))
 
 # Cluster dendrogram with distances frontal zone distances from shore 
+library(vegan)
 rownames(test1) <- yrs
-testdist <- dist(test1)
+testdist <- vegdist(abs(test1), method="jaccard")
 hcd <- as.dendrogram(hclust(testdist))
 plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE,cex.lab=1.5)
 
@@ -163,7 +164,7 @@ plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE,cex.la
 # Selected years diff plot 
 colnames(test2) <- (yrs)
 test2sel <- test2[,c("1989","2001","2004","2005","2012")]
-matplot(lon.pts[1:20],test2sel,type="l",xlab="Longitude",ylab=expression(paste("",Delta, "SST [",~degree~C,"]")),cex.lab=1.5,lwd=2)
+matplot(lon.pts[1:20],test2sel,type="l",xlab="Longitude [degrees]",ylab=expression(paste("",Delta, "SST [",~degree~C,"]")),cex.lab=1.5,lwd=2)
 legend("bottomright", inset=.05, legend=c("1989","2001","2004","2005","2012"), lty=1 , col=c(1,2,3,4,5), horiz=FALSE,lwd=2)
 
 # temperature gradient versus dT
