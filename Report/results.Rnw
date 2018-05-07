@@ -2,16 +2,16 @@
 
 \subsection{Verification of data}
 
-Before being able to conclude whether the measured data form Otago harbour is representative or not, a map of the SSTs from the high resolution satellite data in the region of interest is created. This map is shown in figure \ref{fig:SST}, and it gives a good overview of where the temperatures shift from the more warm coastal area to the colder Southland Current. West of southern New Zealand, the temperatures are generally higher than to the east (up to app. $\ang{16}$C). When looking at the Boulder Beach area, the temperatures are a bit lower (app. 12-$\ang{13}$C), whereas the SST are down to 9-$\ang{10}$C in the area of the Southland Current.
+In the aim to state whether the measured data form Otago Harbour is representative or not, monthly anomalies of the SSTs from March-June have been calculated. Figure \ref{fig:SSTanom} shows the March-June anomalies calculated in 1985. From the figure it is seen that the temperatures in 1985 was higher than the overall mean for all years.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{Anom.png}
-\caption{High resolution 0.05$^\circ\times 0.05^\circ$ gridpoint SST (in $^\circ$C) in the region of interest.}
-\label{fig:SST}
+\caption{High resolution 0.05$^\circ\times 0.05^\circ$ gridpoint March-June anomalies in 1985 in the region of interest.}
+\label{fig:SSTanom}
 \end{figure}
 
-Using the high resolution satellite data, a correlation map of satellite SSTs and measured SSTs is created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations (around 0.8) close to the coastline and on the westcoast of New Zealand. If the correlation was 1.0, it would indicate, that the two datasets were exactly the same. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:SST}, since when the SSTs are colder in the SAW, they then differ more from the measured costal temperatures, making the correlation decrease.   
+Using the high resolution satellite data, a correlation map of satellite SSTs and measured SSTs is created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations, around 0.8, close to the coastline and on the westcoast of New Zealand. If the correlation was 1.0, it would indicate, that the two datasets were exactly the same. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:ROI}, since when the SSTs are colder in the SAW, they then differ more from the measured temperatures within Otago Harbour hence a lower correlation.   
 
 \begin{figure}[H]
 \centering
@@ -25,12 +25,9 @@ Figure \ref{fig:habitatH} shows a close-up of the area, where the YEP live and f
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Boulder.png}
-\caption{High resolution plot of the Boulder Beach habitat correlation with the Otago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown. \textcolor{red}{Indikation af pingvinernes habitat, plus deres range!! TODO}}
+\caption{High resolution plot of the Boulder Beach habitat correlation with the Otago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown.}
 \label{fig:habitatH}
 \end{figure}
-
-
-To try to find a correlation between the SST and the variations in the YEP population, it would be ideal to compare the temperatures with their actual habitat. In figure \ref{fig:habitat}, the habitat of the Yellow-eyed penguins is depicted. Both the measured and the estimated foraging ranges are shown. If comparing the foraging range with e.g. the correlation plot in figure \ref{fig:highres}, it seems that they primarily feed in the warmer waters, and they do not reach out into the area of the front. This will be looked further into in section \ref{sec:res:front}.
 
 
 \subsection{Chlorophyll analysis}

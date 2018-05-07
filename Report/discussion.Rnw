@@ -14,6 +14,9 @@ Comparing the high resolution satellite data to the
 
 \subsubsection{Measured SSTs as an approximation for satellite SSTs}
 
+\textcolor{red}{From results:
+To try to find a correlation between the SST and the variations in the YEP population, it would be ideal to compare the temperatures with their actual habitat. In figure \ref{fig:habitat}, the habitat of the Yellow-eyed penguins is depicted. Both the measured and the estimated foraging ranges are shown. If comparing the foraging range with e.g. the correlation plot in figure \ref{fig:highres}, it seems that they primarily feed in the warmer waters, and they do not reach out into the area of the front. This will be looked further into in section \ref{sec:res:front}.}
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.45]{habitat.PNG}
