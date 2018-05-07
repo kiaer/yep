@@ -7,7 +7,7 @@ In the aim to state whether the measured data form Otago Harbour is representati
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{Anom.png}
-\caption{High resolution 0.05$^\circ\times 0.05^\circ$ gridpoint March-June anomalies in 1985 in the region of interest.}
+\caption{High resolution 0.05$^\circ\times 0.05^\circ$ gridpoint March-June anomalies in 1985 in the region of interest. The timeseries of March-June anomalies from 1985 to 2014 is used to compute the correlation map.}
 \label{fig:SSTanom}
 \end{figure}
 
@@ -16,7 +16,7 @@ Using the high resolution satellite data, a correlation map between the measured
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{HighResCorr.png}  
-\caption{High resolution plot of the correlation between a given 0.05$^\circ\times 0.05^\circ$ gridpoint SST and the dataset used in \cite{mattern}.}
+\caption{High resolution plot of the correlation between a given 0.05$^\circ\times 0.05^\circ$ gridpoint SST and the dataset used in \cite{mattern}. Overall the correaltion to the data from Otago Harbour is high. Correlation sees a huge drop when the Southland Front/Subtropical Front is passed and waters are Subanarctic Water.}
 \label{fig:highres}
 \end{figure}
 
@@ -25,7 +25,7 @@ Figure \ref{fig:habitatH} shows a close-up of the area, where the population of 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{Boulder.png}
-\caption{High resolution plot of the Boulder Beach habitat correlation with the Otago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown.}
+\caption{High resolution plot of the Boulder Beach habitat correlation with the Otago Harbour. Correlation below 0.32 is removed due to having a $p > 0.05$, resulting in only highly significant correlation being shown. Red circle marks the area of the penguins foraging.}
 \label{fig:habitatH}
 \end{figure}
 
@@ -46,7 +46,7 @@ Using the monthly averages, each season was analysed using a hierarchical cluste
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{clustchl.png}
-\caption{Hierarchical cluster analysis on the chlorophyll time series, comparing each year's Chl concentration with the others.}
+\caption{Hierarchical cluster analysis on the chlorophyll time series, comparing each year's Chl concentration with the others. Clusters are made by the Jaccard index distance, where the height determines the percentage of similarities between years.}
 \label{fig:chlclust}
 \end{figure}
 
@@ -74,7 +74,7 @@ From figure \ref{deltaSST} it is difficult to distinguish the differences and si
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{clusterfrontal.png}
-\caption{A hierarchical cluster showing the dissimilarities of the frontal zones in between years. The height describes the decimal of dissimilarity in between years and clusters.}
+\caption{A hierarchical cluster showing the dissimilarities of the frontal zones in between years. The height describes the decimal of dissimilarity in between years and clusters. Clusters are made by the Jaccard index distance, where the height determines the percentage of similarities between years.}
 \label{clusterfrontal}
 \end{figure}
 

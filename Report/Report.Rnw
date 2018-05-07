@@ -87,7 +87,9 @@ Mark \textsc{Payne}
 \end{titlepage}
 \newpage
 \section*{Acknowledgement}
-Thanks Mark!
+We would like to thank Mark R. Payne for structuring and providing guidance throughout the project. He was an invaluable help with the project background, data gathering and analysis.
+
+We would also like to thank Professor Torkel Gissel Nielsen and Professor Colin Stedmon for running the Topics in Aquatic Science course, providing feedback and helping throughout the project.
 \newpage
 \section*{Summary}
 The Yellow-eyed penguin is found only in certain areas of New Zealand and is categorized as an endangered species on the IUCN red list. \cite{mattern} results showed that sea surface temperatures alone explained 33.2\% of the variation in fledgling survival and 36.8\% of the variation in adult survival using a Bayesian mark-recapture model.  The climate data used in \cite{mattern} is taken from inside the Otago Harbour whereas the habitat of the yellow-eyed penguin is out on the coast. A description of the biological baseline of the yellow-eyed penguin, including important physical processes that can affect biology, is used as a background for carrying out data analysis on satellite data. This will be used to investigate whether or not the sea surface temperatures used in \cite{mattern} is an appropriate proxy and if other physical processes can be linked to the variation in survival of the population.
@@ -102,10 +104,9 @@ A correlation of rougly 0.8 between the sea surface temperature anomalies inside
 <<Background, child='Background.Rnw'>>=
 @
 \newpage
-<<Data, child='Data.Rnw'>>=
-@
-\newpage
 <<Methods, child='methods.Rnw'>>=
+@
+<<Data, child='Data.Rnw'>>=
 @
 \newpage
 <<Results, child='results.Rnw'>>=
