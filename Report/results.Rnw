@@ -45,7 +45,7 @@ Using the monthly averages, each season was analysed using a hierarchical cluste
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{clustchl.png}
+\includegraphics[scale=0.6]{clustchl.png}
 \caption{Hierarchical cluster analysis on the chlorophyll time series, comparing each year's Chl concentration with the others.}
 \label{fig:chlclust}
 \end{figure}
@@ -73,7 +73,7 @@ From figure \ref{deltaSST} it is difficult to distinguish the differences and si
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{clusterfrontal.png}
+\includegraphics[scale=0.6]{clusterfrontal.png}
 \caption{A hierarchical cluster showing the dissimilarities of the frontal zones in between years. The height describes the decimal of dissimilarity in between years and clusters.}
 \label{clusterfrontal}
 \end{figure}
