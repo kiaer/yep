@@ -74,7 +74,7 @@ For determining the exact position of the frontal zone the difference in SST in 
 \label{deltaSST}
 \end{figure}
 
-From figure \ref{deltaSST} it is difficult to distinguish the differences and similarities in between years. In the try to see if some years correspond more or less to each other a cluster showing the dissimilarities of the frontal zones in between years have been made (figure \ref{clusterfrontal}. From the cluster it is seen that the similarity of the frontal zone between all years is about 50\%. Furthermore years being the most similar are clustered together where the height of the cluster represents the decimal of dissimilarity. Looking at the cluster it is seen that the dissimilarity of 2005 and 2012 is about 8\% and for 2001 a dissimilarity of 40\% is needed before the year can be clustered together with other years. 
+From figure \ref{deltaSST} it is difficult to distinguish the differences and similarities in between years. In the try to see if some years more or less alike a cluster showing the dissimilarities of the frontal zones in between years have been made (figure \ref{clusterfrontal}. From the cluster it is seen that the similarity of the frontal zone between all years is about 50\%. Furthermore years being the most similar are clustered together where the height of the cluster represents the decimal of dissimilarity. Looking at the cluster it is seen that the dissimilarity of 2005 and 2012 is about 8\% and for 2001 a dissimilarity of 40\% is needed before the year can be clustered together with other years. 
 
 \begin{figure}[H]
 \centering
