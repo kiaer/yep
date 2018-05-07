@@ -11,7 +11,7 @@ In the aim to state whether the measured data form Otago Harbour is representati
 \label{fig:SSTanom}
 \end{figure}
 
-Using the high resolution satellite data, a correlation map of satellite SSTs and measured SSTs is created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations, around 0.8, close to the coastline and on the westcoast of New Zealand. If the correlation was 1.0, it would indicate, that the two datasets were exactly the same. Correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:ROI}, since when the SSTs are colder in the SAW, they then differ more from the measured temperatures within Otago Harbour hence a lower correlation.   
+Using the high resolution satellite data, a correlation map between the measured SSTs inside Otago Harbour and SSTs from satellite data was created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations, around 0.8, close to the coastline and on the westcoast of New Zealand. A correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:ROI}, since when the SSTs are colder in the SAW, they then differ more from the measured temperatures within Otago Harbour hence a lower correlation.   
 
 \begin{figure}[H]
 \centering
@@ -20,7 +20,7 @@ Using the high resolution satellite data, a correlation map of satellite SSTs an
 \label{fig:highres}
 \end{figure}
 
-Figure \ref{fig:habitatH} shows a close-up of the area, where the YEP live and forage. In this plot it is a bit more clear to see the correlations and how they decline with distance from the coast. At the same time, only the area with a correlation that is significant is showed.
+Figure \ref{fig:habitatH} shows a close-up of the area, where the population of the YEP live and forage. In this plot the correlations is more clear, showing a tend where the correlation decrease with increasing distance from coast. The plot only shows the the part of the ocean with a correlation that is significant meaning a correlation with $p > 0.05$.
 
 \begin{figure}[H]
 \centering
