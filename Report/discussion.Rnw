@@ -3,8 +3,7 @@
 \subsection{Sea surface temperatures}
 
 \subsubsection{Comparison with low resolution satellite data}
-Comparing the high resolution satellite data to the 
-
+Comparing the high resolution to the lower resolution satellite data can be seen in Figure \ref{fig:compare}. The correlation plots show similar trends, which is to be expected from satellite data of same level. But as the resolution increases its possible to distinguish between smaller differences, thus providing the ability to more easily identify the correlation in the habitat and detect the front. This is especially important when investigating the front position and temperature gradiant. During the data analysis an even lower resultion than what is seen in Figure \ref{fig:compare} was analysed. Results from this analyses ended up being hard to interpret due to the small region and $\ang{1}\times\ang{1}$ resolution.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{CompHL.png}
@@ -31,12 +30,16 @@ The first aim of this project is to evaluate whether SSTs measured inside the Ot
 
 \subsection{Chlorophyll analysis}
 
+From the chlorophyll analysis, it is seen from the hierarchical cluster that the two major die off events are located within two different clusters (Figure \ref{fig:chlclust}), showing dissimilarities of above 50\%. Combine this with the face data limitations is present, it is initially hard to find correlations between mortality and chlorophyll concentration. From Figure \ref{fig:octmay} a number of seasons, showing different parts of the cluster and the two major die off events, is shown. It is seen that die off events happend at both the lowest and highest March to May chlorohyll concentration. Other parts of the cluster seems to include an earlier bloom, as seen in 2004/2005, and a more stable concentration throughout the season from 2003/2004. 
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{chloctmay.png}
-\caption{Monthly chlorophyll concentrations ranging from October to May, picked out from  \ref{fig:clustchl} and die off events. This show tendencies of different parts of the cluster and during the die off events of 2000/2001 and 2011/2012. Solid black line is 2000/2001, dashed red line is 2003/2004, dotted green line shows 2004/2005 and dashed blue line shows 2011/2012.}
+\caption{Monthly chlorophyll concentrations ranging from October to May, picked out from  \ref{fig:chlclust} and die off events. This show tendencies of different parts of the cluster and during the die off events of 2000/2001 and 2011/2012. Solid black line is 2000/2001, dashed red line is 2003/2004, dotted green line shows 2004/2005 and dashed blue line shows 2011/2012.}
 \label{fig:octmay}
 \end{figure}
+
+Further research into chlorophyll needs to be done to show an actual connection, which can include testing for delayed effects. At the moment there is checked for immediate influence of higher mortality as a result of higher chlorophyll concentrations. This might be a wrong approach, as it is possible that a high or low concentration of chlorophyll during one season, might affect the next season. This could result in lower recruitment or relocation of the fish eaten by the penguins.
 
 \subsection{Foraging patterns and position of frontal zone}
 \cite{mattern2013} found in a study, where they deployed GPS dive loggers on yellow-eyed penguins from the Otago Peninsula, that the birds tend to go back to same area and forage in strait lines. The GPS dive loggers where deployed in on the penguins in 2004, 2005 and 2012. The results from the logged GPS dives can be seen in table \ref{tab:forage}. The main differences in between them was found to be that in 2004 almost every second foraging trip contained straight line foraging whereas the frequency of straight line foraging were much smaller in 2005 and 2012. Also in 2004 a larger amount of the penguins foraged in less than 15 km from shore and interesting is that 2004 was found to be a year of poor breeding success. The study furthermore stated it important that the penguins forage in straight line when they forage further that 15 km from the coast. The same pattern has been seen in a study from XXX. 
