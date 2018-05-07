@@ -121,23 +121,24 @@ require(graphics); require(utils)
 
 
 yrs <- unlist(lapply(1998:2015, function(x){toString(x)}))
-
+library(vegan)
 rownames(tot2) <- yrs
-totdist <- dist(tot2)
+totdist <- vegdist(tot2, method = "jaccard")
 hcd <- as.dendrogram(hclust(totdist))
 
 hc <- hclust(totdist)
 colors = c("red", "blue", "green", "black")
 clus4 = cutree(hc, h = 1)
 
-plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE)
+plot(hcd, xlab="Years grouped by cluster", ylab = "Height", horiz = FALSE, cex.lab=1.5)
+a = expression(paste("Avg. Chl. conc. [",~mg~m^3,"]"))
 
 months = c("oct", "nov", "dec", "jan", "feb", "mar", "apr", "may")
 test <- matrix(unlist(c(tot1[,2000-1997], tot1[,2003-1997], tot1[,2004-1997], tot1[,2011-1997])), ncol=4, byrow = FALSE)
 rownames(test) <- months
-matplot(test, type = c("b"),pch=1, col=1:4, xlab = "Month", ylab = "Average chl concentration", xaxt="n",cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
+matplot(test, type = c("b"),pch=1, col=1:4, xlab = "Month", ylab = "Average chl concentration [mg m^-3]", xaxt="n",cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5, lwd=2)
 axis(1,at=1:8,labels=rownames(test), cex.axis=1.5)
-legend("topright", inset=.00, legend=c("2000/2001", "2003/2004", "2004/2005", "2011/2012"), lty=c(1,2,3,4,5), col=c(1:4), horiz=FALSE)
+legend("topright", inset=.00, legend=c("2000/2001", "2003/2004", "2004/2005", "2011/2012"), lty=c(1,2,3,4,5), col=c(1:4), horiz=FALSE, lwd=2)
 
 lon.pts <- seq(170.4,170.4, by=1)
 lat.pts <- rep(-46.1,length(lon.pts))
@@ -147,12 +148,14 @@ lat.pts <- -46.05
 extract.pts <- cbind(lon.pts,lat.pts)
 framepts <- (as.data.frame(extract.pts))
 
+a = expression(paste("Chl. conc. [",~mg~m^3,"]"))
+
 
 gplot(chl.b[[12]])+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlGnBu",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Chl. conc.") + theme(text = element_text(size=18)) +
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill=a) + theme(text = element_text(size=18)) +
   geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=1,col="red", size = 3,stroke = 2)
 
 

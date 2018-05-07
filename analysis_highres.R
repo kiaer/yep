@@ -73,22 +73,31 @@ r.corrH <- stackApply(r.anomH, indices = c(1), fun = function(x, na.rm) {cor(mat
 gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Correlation")
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill="Correlation") + theme(text = element_text(size=18))
 r.corrHna <- r.corrH
 r.corrHna[r.corrHna < 0.32] <- NA
+
+lon.pts <- 170.55
+lat.pts <- -46.03
+extract.pts <- cbind(lon.pts,lat.pts)
+framepts <- (as.data.frame(extract.pts))
+
 
 gplot(r.corrHna)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlOrRd",na.value="white")+ coord_quickmap(170:172, -45.5:-46.5, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Correlation") + theme(text = element_text(size=18))
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill="Correlation") + theme(text = element_text(size=18))  +
+  geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=1,col="red", size = 30,stroke = 2)
 
-gplot(r.mjmeanH)+geom_raster(aes(fill=value), interpolate = FALSE)+
+a = expression(paste("", "Anom. [",~degree~C,"]"))
+
+gplot(r.anomH[[1]])+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="RdBu",na.value="black")+ coord_quickmap(165:174.95, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Temperature") + theme(text = element_text(size=18))
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill=a) + theme(text = element_text(size=18))
 
 lon.pts <- seq(169.5,169.5, by=1)
 lat.pts <- rep(-47,length(lon.pts))
@@ -108,18 +117,18 @@ matplot(1985:2014,x2,type="l",xlab="Year",ylab="Anomaly")
 plot1 <- gplot(r.corrH)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(168:172, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Correlation")
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill="Correlation")  + theme(text = element_text(size=16))
 
 plot2 <- gplot(r.corr)+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="YlOrRd",na.value="black")+ coord_quickmap(168:172, -44:-48, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Correlation")
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill="Correlation")  + theme(text = element_text(size=16))
 grid.arrange(plot1, plot2, ncol=2)
 
 
-# crop of perpendicular line from shore
+1# crop of perpendicular line from shore
 plot(r.mjmeanH[[1]])
 lon.pts <- seq(170.5,171.5, by=0.05)
 lat.pts <- seq(-46,-46.5, by=-0.025)
@@ -132,13 +141,14 @@ points(lon.pts,lat.pts,pch=4,col="red")
 extract.pts <- cbind(lon.pts,lat.pts)
 ann.extract <- extract(r.cropped,extract.pts,method="bilinear")
 framepts <- (as.data.frame(extract.pts))
+a = expression(paste("", "Temp. [",~degree~C,"]"))
 
 gplot(r.mjmeanH[[1]])+geom_raster(aes(fill=value), interpolate = FALSE)+
   borders(fill="black",colour="black",size=2) +
   scale_fill_distiller(palette="RdBu",na.value="black")+ coord_quickmap(166:172, -44.5:-47.5, expand=FALSE)+xlim(165,175)+ylim(-48,-44)+
-  xlab("Longitude (degrees)") + ylab("Latitude (degrees)") + #theme_bw()+
-  labs(fill="Temperature") + theme(text = element_text(size=18))+
-  geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=4,col="red")
+  xlab("Longitude [degrees]") + ylab("Latitude [degrees]") + #theme_bw()+
+  labs(fill=a) + theme(text = element_text(size=18))+
+  geom_point(data = framepts, aes(x=lon.pts,y=lat.pts),pch=4,col="red", size=3)
 
 # SST
 matplot(lon.pts,ann.extract,type="l",xlab="Longitude [degrees]",ylab=expression(paste("SST [",~degree~C, "]")),cex.lab=1.5, ylim=c(9, 13),lwd=1.5)

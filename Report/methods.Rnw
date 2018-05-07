@@ -26,7 +26,7 @@ The location of the frontal zone along southeast coast of South New Zealand is d
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{range.png}
+\includegraphics[scale=0.5]{range.png}
 \caption{Region of interest including red crosses showing the created transect approximately perpendicular to the coast of New Zealand.}
 \label{fig:range}
 \end{figure}

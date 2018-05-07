@@ -7,12 +7,19 @@ Comparing the high resolution satellite data to the
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{CompHL.png}
+\includegraphics[scale=0.7]{CompHL.png}
 \caption{Comparison plot between the high and low resolution satellite data. Generally the same overall picture is seen when comparing the two, but using the high resolution plot results in the abillity to distinguish between small differences. This makes identification and influence of the STF easier.}
 \label{fig:compare}
 \end{figure}
 
 \subsubsection{Measured SSTs as an approximation for satellite SSTs}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{habitat.PNG}
+\caption{Map showing YEP measured foraging range (blue and green areas) and the estimated YEP foraging range (pink colors). The map is created on the \url{Seasketch.doc.govt.nz} website (Department of Conservation - Te Papa Atawhai).} 
+\label{fig:habitat}
+\end{figure}
 
 
 \subsection{Chlorophyll analysis}
@@ -20,7 +27,7 @@ Comparing the high resolution satellite data to the
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{chloctmay.png}
-\caption{Hierarchical cluster analysis on the chlorophyll time series. The cluster will group years toghether that show same levels of chlorophyll. Analysis on the cluster is needed to get information on how the chlorophyll levels of each group within it behaves.}
+\caption{Monthly chlorophyll concentrations ranging from October to May, picked out from  \ref{fig:clustchl} and die off events. This show tendencies of different parts of the cluster and during the die off events of 2000/2001 and 2011/2012. Solid black line is 2000/2001, dashed red line is 2003/2004, dotted green line shows 2004/2005 and dashed blue line shows 2011/2012.}
 \label{fig:octmay}
 \end{figure}
 
