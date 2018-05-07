@@ -12,6 +12,9 @@ Comparing the high resolution to the lower resolution satellite data can be seen
 \end{figure}
 
 \subsubsection{Measured SSTs as an approximation for satellite SSTs}
+
+\textcolor{red}{From results:
+To try to find a correlation between the SST and the variations in the YEP population, it would be ideal to compare the temperatures with their actual habitat. In figure \ref{fig:habitat}, the habitat of the Yellow-eyed penguins is depicted. Both the measured and the estimated foraging ranges are shown. If comparing the foraging range with e.g. the correlation plot in figure \ref{fig:highres}, it seems that they primarily feed in the warmer waters, and they do not reach out into the area of the front. This will be looked further into in section \ref{sec:res:front}.}
 The first aim of this project is to evaluate whether SSTs measured inside the Otago Habour is and appropriate proxy for the SST in the area where the yellow-eyed penguins live and forage, and whether it is therefore possible to use it for describing possible variations in the YEP population. From the correlation plot in figure \ref{fig:habitatH} and \ref{fig:highres} it is reasonable to argument, that the correlation between satellite data and measured data is very high in the areas where the YEP are present. This can be seen, if looking at at map showing the habitat of the penguins, as shown in figure \ref{fig:habitat}, where both the estimated and the measured foraging range is depicted. As seen here, and as described previously, the penguins do not move far away from the coast, and since the correlations in this area are all high, it seems, that the measured SST is a good proxy. Though it must be said, that the correlation is declining with distance to the coat, and it some years the penguins for some reason swim further out, then the measured SSTs are no longer a good proxy. If the penguins forage in areas, where the temperatures are actually lower than close to the coast, then it could be argued, that the SSTs from Otago harbour cannot describe possible die-offs. This could be one explanation why \cite{mattern} found that 33\% of the population variations were explained by SST. If concidering the placement and the the SST at the same time, there is reasons to believe that this explained part could be even higher.
 
 \begin{figure}[H]
@@ -20,7 +23,6 @@ The first aim of this project is to evaluate whether SSTs measured inside the Ot
 \caption{Map showing YEP measured foraging range (blue and green areas) and the estimated YEP foraging range (pink colors). The map is created on the \url{Seasketch.doc.govt.nz} website (Department of Conservation - Te Papa Atawhai).} 
 \label{fig:habitat}
 \end{figure}
-
 
 \subsection{Chlorophyll analysis}
 
