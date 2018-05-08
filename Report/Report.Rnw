@@ -106,6 +106,7 @@ A correlation of rougly 0.8 between the sea surface temperature anomalies inside
 \newpage
 <<Methods, child='methods.Rnw'>>=
 @
+\newpage
 <<Data, child='Data.Rnw'>>=
 @
 \newpage
