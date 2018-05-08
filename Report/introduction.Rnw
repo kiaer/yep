@@ -13,8 +13,8 @@ In order to answer the problem statement, some hypotheses are going to be tested
 
 The two hypotheses tested in this project are the following:
 \begin{itemize} 
-\item	The sea surface temperatures used in \cite{mattern} will not correlate with satelite data. 
-\item	The variation in population size of the Yellow-eyed penguin can be explained by using other variables such as chlorophyll concentration instead of sea surface temperatures. 
+\item	The sea surface temperatures in Otago Harbour do not correlate with satelite data from outside. 
+\item	The variation in population size of the Yellow-eyed penguin can be explained better by using other variables such as chlorophyll concentration instead of sea surface temperatures. 
 \end{itemize}
 
 
