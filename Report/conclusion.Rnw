@@ -1,3 +1,6 @@
 \section{Conclusion}
 
-Using Otago Harbour as a proxy for SST temperature in the areas where yellow-eyed penguins are seen is valid. Looking at the correlation map, the temperatures near the coastline of New Zealand 
+Using Otago Harbour as a proxy for SST temperature in the areas where yellow-eyed penguins are seen is valid. Looking at the correlation map, the temperatures near the coastline of New Zealand all have strong a correlation of around $\approx 0.8$ to the data from Otago Harbour. As SST only explains around 33\% of the variation in population numbers according to \cite{mattern}, the possible link between die-off events and both chlorophyll concentrations and the nearby frontal zone was investigated.
+
+The chlorophyll data time series is shorter than SST and only two major die-off can be compared to the chlorophyll concentration. The events of 2001 and 2012 happened at two very different seasons. While the 2000/2001 season saw very low chlorophyll concentrations, the 2011/2012 season was generally one of the most productive seasons seen. The delayed effect of chlorophyll concentrations was not investigated.
+
