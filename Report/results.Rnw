@@ -7,16 +7,16 @@ In the aim to state whether the measured data form Otago Harbour is representati
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{Anom.png}
-\caption{High resolution 0.05$^\circ\times 0.05^\circ$ gridpoint March-June anomalies in 1985 in the region of interest. The timeseries of March-June anomalies from 1985 to 2014 is used to compute the correlation map.}
+\caption{High resolution 0.05$^\circ\times 0.05^\circ$ grid point March-June anomalies in 1985 in the region of interest. The time series of March-June anomalies from 1985 to 2014 is used to compute the correlation map.}
 \label{fig:SSTanom}
 \end{figure}
 
-Using the high resolution satellite data, a correlation map between the measured SSTs inside Otago Harbour and SSTs from satellite data was created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations, around 0.8, close to the coastline and on the westcoast of New Zealand. A correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:ROI}, since when the SSTs are colder in the SAW, they then differ more from the measured temperatures within Otago Harbour hence a lower correlation.   
+Using the high resolution satellite data, a correlation map between the measured SSTs inside Otago Harbour and SSTs from satellite data was created (see figure \ref{fig:highres}). The plot shows tendencies of very high correlations, around 0.8, close to the coastline and on the west coast of New Zealand. A correlation above 0.32 corresponds to a $p < 0.05$ indicating highly significant correlation. When reaching the Southland Current, the correlation drops dramatically. This corresponds to the SST plot in figure \ref{fig:ROI}, since when the SSTs are colder in the SAW, they then differ more from the measured temperatures within Otago Harbour hence a lower correlation.   
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{HighResCorr.png}  
-\caption{High resolution plot of the correlation between a given 0.05$^\circ\times 0.05^\circ$ gridpoint SST and the dataset used in \cite{mattern}. Overall the correaltion to the data from Otago Harbour is high. Correlation sees a huge drop when the Southland Front/Subtropical Front is passed and waters are Subanarctic Water.}
+\caption{High resolution plot of the correlation between a given 0.05$^\circ\times 0.05^\circ$ grid point SST and the dataset used in \cite{mattern}. Overall the correlation to the data from Otago Harbour is high. Correlation sees a huge drop when the Southland Front/Subtropical Front is passed and waters are Subanarctic Water.}
 \label{fig:highres}
 \end{figure}
 
@@ -32,7 +32,7 @@ Figure \ref{fig:habitatH} shows a close-up of the area, where the population of 
 
 \subsection{Chlorophyll analysis}
 
-Using satellite data in the area shown in Figure \ref{fig:chldot}, a monthly average ranging from October to May was computed. The output contained the averages for every season ranging from 1998/1999 to 2015/2016, computed using daily cholorphyll averages during the time period.
+Using satellite data in the area shown in Figure \ref{fig:chldot}, a monthly average ranging from October to May was computed. The output contained the averages for every season ranging from 1998/1999 to 2015/2016, computed using daily chlorophyll averages during the time period.
 
 \begin{figure}[H]
 \centering
