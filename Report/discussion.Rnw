@@ -3,11 +3,7 @@
 \subsection{Sea surface temperatures}
 
 \subsubsection{Comparison with low resolution satellite data}
-<<<<<<< HEAD
-Comparing the high resolution to the lower resolution satellite data can be seen in Figure \ref{fig:compare}. The correlation plots show similar trends, which is to be expected from satellite data of same level. But as the resolution increases it is possible to distinguish between smaller differences, thus providing the ability to more easily identify the correlation in the habitat and detect the front. This is especially important when investigating the front position and temperature gradiant. During the data analysis an even lower resultion than what is seen in Figure \ref{fig:compare} was analysed. Results from this analyses ended up being hard to interpret due to the small region and $\ang{1}\times\ang{1}$ resolution.
-=======
 Comparing the high resolution to the lower resolution satellite data can be seen in Figure \ref{fig:compare}. The correlation plots show similar trends, which is to be expected from satellite data of same level. But as the resolution increases its possible to distinguish between smaller differences, thus providing the ability to more easily identify the correlation in the habitat and detect the front. This is especially important when investigating the front position and temperature gradient. During the data analysis an even lower resolution than what is seen in Figure \ref{fig:compare} was analysed. Results from this analyses ended up being hard to interpret due to the small region and $\ang{1}\times\ang{1}$ resolution.
->>>>>>> Some spelling
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{CompHL.png}
@@ -16,8 +12,6 @@ Comparing the high resolution to the lower resolution satellite data can be seen
 \end{figure}
 
 \subsubsection{Measured SSTs as an approximation for satellite SSTs}
-
-
 
 The first aim of this project is to evaluate whether SSTs measured inside the Otago Harbour is and appropriate proxy for the SST in the area where the yellow-eyed penguins live and forage, and whether it is therefore possible to use it for describing possible variations in the YEP population. From the correlation plot in figure \ref{fig:habitatH} and \ref{fig:highres} it is reasonable to argument, that the correlation between satellite data and measured data is very high in the areas where the YEP are present. This can be seen, if looking at at map showing the habitat of the penguins, as shown in figure \ref{fig:habitat}, where both the estimated and the measured foraging range is depicted. As seen here, and as described previously, the penguins do not move far away from the coast, and since the correlations in this area are all high, it seems, that the measured SST is a good proxy. Though it must be said, that the correlation is declining with distance to the coast, and in some years the penguins for some reason swim further out, then the measured SSTs are no longer a good proxy. If the penguins forage in areas, where the temperatures are actually lower than close to the coast, then it could be argued, that the SSTs from Otago harbour cannot describe possible die-offs. This could be one explanation why \cite{mattern} found that 33\% of the population variations were explained by SST. Considering the placement and the the SST at the same time, there is reasons to believe that this explained part could be even higher.
 
