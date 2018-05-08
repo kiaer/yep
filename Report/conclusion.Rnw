@@ -1,2 +1,3 @@
 \section{Conclusion}
-TEST
+
+Using Otago Harbour as a proxy for SST temperature in the areas where yellow-eyed penguins are seen is valid. Looking at the correlation map, the temperatures near the coastline of New Zealand 
